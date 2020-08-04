@@ -1,6 +1,6 @@
 {
     "version": "version: 0.4",
-    "name": "DSRC",
+    "name": "Assessment DSRC",
     "sections": {
         "section 1": {
             "order_id": "1",
@@ -14,6 +14,16 @@
                     "question_text": "En ce qui concerne les données personnelles et/ou confidentielles, les exigences légales, statutaires, réglementaires et contractuelles en vigueur et concernant votre organisation sont :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains secteurs), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules]().",
+                    "explanation_links": {
+                        "Welfare surveillance system violates human rights, Dutch court rules": {
+                            "name": "Welfare surveillance system violates human rights, Dutch court rules",
+                            "link": "https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules",
+                            "type": "explication",
+                            "additional text": ""
+                        }
+                    },
+                    "resources": "n/a",
                     "answer_items": {
                         "1.1.a": {
                             "order_id": "a",
@@ -40,17 +50,7 @@
                             "answer_text": "identifiées, documentées et maîtrisées par les collaborateurs",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains secteurs), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules]().",
-                    "explanation links": {
-                        "Welfare surveillance system violates human rights, Dutch court rules": {
-                            "name": "Welfare surveillance system violates human rights, Dutch court rules",
-                            "link": "https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules",
-                            "type": "explication",
-                            "additional text": ""
-                        }
-                    },
-                    "resources": "n/a"
+                    }
                 },
                 "element2": {
                     "order_id": "2",
@@ -59,6 +59,9 @@
                     "question_text": "Pour satisfaire à ces exigences, l’approche adoptée par votre organisation est :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Il s'agit de s'interroger sur la gestion des données personnelles ou confidentielles (stockage, accès, transfert, protection, responsabilités...), et de documenter les choix effectués.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "1.2.a": {
                             "order_id": "a",
@@ -80,10 +83,7 @@
                             "answer_text": "formalisée, maîtrisée par les collaborateurs, documentée pour chaque traitement de données personnelles ou confidentielles",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Il s'agit de s'interroger sur la gestion des données personnelles ou confidentielles (stockage, accès, transfert, protection, responsabilités...), et de documenter les choix effectués.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
@@ -92,6 +92,16 @@
                     "question_text": "Un processus de veille réglementaire est-il mis en place, en interne ou via un prestataire spécialisé, pour connaître les évolutions applicables et impactantes pour votre organisation ?",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains secteurs), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules]().",
+                    "explanation_links": {
+                        "Welfare surveillance system violates human rights, Dutch court rules": {
+                            "name": "Welfare surveillance system violates human rights, Dutch court rules",
+                            "link": "https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules",
+                            "type": "explication",
+                            "additional text": ""
+                        }
+                    },
+                    "resources": "n/a",
                     "answer_items": {
                         "1.3.a": {
                             "order_id": "a",
@@ -108,17 +118,7 @@
                             "answer_text": "nous avons une veille formalisée, les responsables sont identifiés, le processus est documenté",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains secteurs), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules]().",
-                    "explanation links": {
-                        "Welfare surveillance system violates human rights, Dutch court rules": {
-                            "name": "Welfare surveillance system violates human rights, Dutch court rules",
-                            "link": "https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules",
-                            "type": "explication",
-                            "additional text": ""
-                        }
-                    },
-                    "resources": "n/a"
+                    }
                 },
                 "element4": {
                     "order_id": "4",
@@ -127,6 +127,9 @@
                     "question_text": "La conformité de l'organisation aux exigences relatives aux données personnelles et confidentielles a-t-elle été auditée et est-elle reconnue par une certification, un organisme tiers ou équivalent ?",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Dans de nombreux secteurs il existe des exigences de conformité spécifiques. Il est généralement possible de formaliser la conformité d'une organisation par une certification ou un audit spécialisé, l'obtention d'un label.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "1.4.a": {
                             "order_id": "a",
@@ -138,10 +141,7 @@
                             "answer_text": "Non",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Dans de nombreux secteurs il existe des exigences de conformité spécifiques. Il est généralement possible de formaliser la conformité d'une organisation par une certification ou un audit spécialisé, l'obtention d'un label.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element5": {
                     "order_id": "5",
@@ -150,6 +150,9 @@
                     "question_text": "Dans le cadre des projets de data science, le principe de minimisation doit guider la collecte et l'utilisation de données personnelles ou confidentielles. Comment est-il mis en oeuvre au sein de votre organisation ?",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": "n/a",
                     "answer_items": {
                         "1.5.a": {
                             "order_id": "a",
@@ -171,18 +174,18 @@
                             "answer_text": "Le réflexe \"qui peut le plus peut le moins\" vis-à-vis des données existe encore ici et là au sein de notre organisation. Dans certains projets, nous conservons des jeux de données beaucoup plus riches en données personnelles et confidentielles que ce qui est strictement utile au projet",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": "n/a"
+                    }
                 },
                 "element6": {
                     "order_id": "6",
                     "name": "Projet impliquant un nouveau traitement de données personnelles ou confidentielles",
-                    "condition": "Condition : R1.5 <> 1ère réponse",
+                    "condition": "1.5.a",
                     "question_text": "Pour chaque traitement de données personnelles ou confidentielles nécessaire dans le cadre d'un projet de data science, au sein de votre organisation :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": "n/a",
                     "answer_items": {
                         "1.6.a": {
                             "order_id": "a",
@@ -204,18 +207,80 @@
                             "answer_text": "nous contractualisons les relations avec les fournisseurs et les clients et les responsabilités qui en découlent",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": "n/a"
+                    }
                 },
                 "element7": {
                     "order_id": "7",
                     "name": "Sécurité de l'apprentissage automatique et _PETs_ - Niveau de connaissance",
-                    "condition": "Condition : R1.5 <> 1ère réponse",
+                    "condition": "1.5.a",
                     "question_text": "La sécurité de l'apprentissage automatique (_ML security_) est un domaine en plein développement. Dans certains cas de figure, les modèles prédictifs appris sur des données confidentielles peuvent révéler des éléments de ces données confidentielles. Au sein de votre organisation, au sujet des vulnérabilités liées aux modèles de ML et aux _Privacy Enhancing Technologies (PETs)_, le niveau de connaissance générale des collaborateurs intervant sur les projets de data science est :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "L'état de l'art de la sécurité du ML est en constante évolution. S'il est impossible de se prémunir contre toutes les vulnérabilités à tout instant, il est crucial de s'en préoccuper et se tenir au courant. Le [OWASP Top Five ML risks]() est par exemple un point d'entrée intéressant.",
+                    "explanation_links": {
+                        "OWASP Top Five ML risks": {
+                            "name": "OWASP Top Five ML risks",
+                            "link": "https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md",
+                            "type": "explication",
+                            "additional text": ""
+                        }
+                    },
+                    "resources": {
+                        "Top Five ML risks": {
+                            "name": "Top Five ML risks",
+                            "link": "https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md",
+                            "type": "ressource",
+                            "additional text": ", OWASP"
+                        },
+                        "The secret-sharer: evaluating and testing unintended memorization in neural networks": {
+                            "name": "The secret-sharer: evaluating and testing unintended memorization in neural networks",
+                            "link": "https://blog.acolyer.org/2019/09/23/the-secret-sharer/",
+                            "type": "ressource",
+                            "additional text": ", A. Colyer, 2019"
+                        },
+                        "ML Privacy Meter": {
+                            "name": "ML Privacy Meter",
+                            "link": "https://github.com/privacytrustlab/ml_privacy_meter",
+                            "type": "ressource",
+                            "additional text": " to quantify the privacy risks of machine learning models with respect to inference attacks is also available"
+                        },
+                        "Demystifying the membership inference attack": {
+                            "name": "Demystifying the membership inference attack",
+                            "link": "https://medium.com/disaitek/demystifying-the-membership-inference-attack-e33e510a0c39",
+                            "type": "ressource",
+                            "additional text": ", Disaitek, 2019. A tool called "
+                        },
+                        "Inverting Gradients - How easy is it to break privacy in federated learning?": {
+                            "name": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+                            "link": "https://arxiv.org/abs/2003.14053",
+                            "type": "ressource",
+                            "additional text": ", J. Geiping, H. Bauermeister, H. Dröge, M. Moeller, 2020"
+                        },
+                        "PyDP": {
+                            "name": "PyDP",
+                            "link": "https://github.com/OpenMined/PyDP",
+                            "type": "ressource",
+                            "additional text": " by OpenMined"
+                        },
+                        "differential privacy library": {
+                            "name": "differential privacy library",
+                            "link": "https://github.com/google/differential-privacy",
+                            "type": "ressource",
+                            "additional text": " and its Python wrapper "
+                        },
+                        "Distilling the Knowledge in a Neural Network": {
+                            "name": "Distilling the Knowledge in a Neural Network",
+                            "link": "https://arxiv.org/abs/1503.02531",
+                            "type": "ressource",
+                            "additional text": ", G. Hinton, O. Vinyals, J. Dean, 2015"
+                        },
+                        "Knowledge Distillation : Simplified": {
+                            "name": "Knowledge Distillation : Simplified",
+                            "link": "https://towardsdatascience.com/knowledge-distillation-simplified-dd4973dbc764",
+                            "type": "ressource",
+                            "additional text": ", Towards Data Science, 2019, et *"
+                        }
+                    },
                     "answer_items": {
                         "1.7.a": {
                             "order_id": "a",
@@ -237,9 +302,17 @@
                             "answer_text": "Expert",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "L'état de l'art de la sécurité du ML est en constante évolution. S'il est impossible de se prémunir contre toutes les vulnérabilités à tout instant, il est crucial de s'en préoccuper et se tenir au courant. Le [OWASP Top Five ML risks]() est par exemple un point d'entrée intéressant.",
-                    "explanation links": {
+                    }
+                },
+                "element8": {
+                    "order_id": "8",
+                    "name": "Sécurité de l'apprentissage automatique et _PETs_ - Mise en oeuvre",
+                    "condition": "1.5.a",
+                    "question_text": "Toujours au sujet des vulnérabilités liées aux modèles de ML et aux _PETs_ :",
+                    "question_type": "checkbox",
+                    "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
+                    "explanation_text": "L'état de l'art de la sécurité du ML est en constante évolution. S'il est impossible de se prémunir contre toutes les vulnérabilités à tout instant, il est crucial de s'en préoccuper et d'organiser une veille. Le [OWASP Top Five ML risks]() est par exemple un point d'entrée intéressant.\n\nSelon les niveaux de risque et de sensibilité des projets, certaines approches _PETs_ seront sélectionnées et implémentées. Il est important de suivre l'évolution de l'état de l'art et des pratiques, et de documenter les choix réalisés. On introduit ici la notion de [\"généalogie de bout-en-bout\"](#section-4---etablir-et-maintenir-une-généalogie-des-modèles).",
+                    "explanation_links": {
                         "OWASP Top Five ML risks": {
                             "name": "OWASP Top Five ML risks",
                             "link": "https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md",
@@ -302,15 +375,7 @@
                             "type": "ressource",
                             "additional text": ", Towards Data Science, 2019, et *"
                         }
-                    }
-                },
-                "element8": {
-                    "order_id": "8",
-                    "name": "Sécurité de l'apprentissage automatique et _PETs_ - Mise en oeuvre",
-                    "condition": "Condition : R1.5 <> 1ère réponse",
-                    "question_text": "Toujours au sujet des vulnérabilités liées aux modèles de ML et aux _PETs_ :",
-                    "question_type": "checkbox",
-                    "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
+                    },
                     "answer_items": {
                         "1.8.a": {
                             "order_id": "a",
@@ -332,80 +397,25 @@
                             "answer_text": "Sur chaque projet, les vulnérabilités qui s'y appliquent et les _PETs_ mises en oeuvre sont documentées dans la Généalogie de Bout-en-Bout (G2B) de chaque modèle",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "L'état de l'art de la sécurité du ML est en constante évolution. S'il est impossible de se prémunir contre toutes les vulnérabilités à tout instant, il est crucial de s'en préoccuper et d'organiser une veille. Le [OWASP Top Five ML risks]() est par exemple un point d'entrée intéressant.\n\nSelon les niveaux de risque et de sensibilité des projets, certaines approches _PETs_ seront sélectionnées et implémentées. Il est important de suivre l'évolution de l'état de l'art et des pratiques, et de documenter les choix réalisés. On introduit ici la notion de [\"généalogie de bout-en-bout\"](#section-4---etablir-et-maintenir-une-généalogie-des-modèles).",
-                    "explanation links": {
-                        "OWASP Top Five ML risks": {
-                            "name": "OWASP Top Five ML risks",
-                            "link": "https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md",
-                            "type": "explication",
-                            "additional text": ""
-                        }
-                    },
-                    "resources": {
-                        "Top Five ML risks": {
-                            "name": "Top Five ML risks",
-                            "link": "https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md",
-                            "type": "ressource",
-                            "additional text": ", OWASP"
-                        },
-                        "The secret-sharer: evaluating and testing unintended memorization in neural networks": {
-                            "name": "The secret-sharer: evaluating and testing unintended memorization in neural networks",
-                            "link": "https://blog.acolyer.org/2019/09/23/the-secret-sharer/",
-                            "type": "ressource",
-                            "additional text": ", A. Colyer, 2019"
-                        },
-                        "ML Privacy Meter": {
-                            "name": "ML Privacy Meter",
-                            "link": "https://github.com/privacytrustlab/ml_privacy_meter",
-                            "type": "ressource",
-                            "additional text": " to quantify the privacy risks of machine learning models with respect to inference attacks is also available"
-                        },
-                        "Demystifying the membership inference attack": {
-                            "name": "Demystifying the membership inference attack",
-                            "link": "https://medium.com/disaitek/demystifying-the-membership-inference-attack-e33e510a0c39",
-                            "type": "ressource",
-                            "additional text": ", Disaitek, 2019. A tool called "
-                        },
-                        "Inverting Gradients - How easy is it to break privacy in federated learning?": {
-                            "name": "Inverting Gradients - How easy is it to break privacy in federated learning?",
-                            "link": "https://arxiv.org/abs/2003.14053",
-                            "type": "ressource",
-                            "additional text": ", J. Geiping, H. Bauermeister, H. Dröge, M. Moeller, 2020"
-                        },
-                        "PyDP": {
-                            "name": "PyDP",
-                            "link": "https://github.com/OpenMined/PyDP",
-                            "type": "ressource",
-                            "additional text": " by OpenMined"
-                        },
-                        "differential privacy library": {
-                            "name": "differential privacy library",
-                            "link": "https://github.com/google/differential-privacy",
-                            "type": "ressource",
-                            "additional text": " and its Python wrapper "
-                        },
-                        "Distilling the Knowledge in a Neural Network": {
-                            "name": "Distilling the Knowledge in a Neural Network",
-                            "link": "https://arxiv.org/abs/1503.02531",
-                            "type": "ressource",
-                            "additional text": ", G. Hinton, O. Vinyals, J. Dean, 2015"
-                        },
-                        "Knowledge Distillation : Simplified": {
-                            "name": "Knowledge Distillation : Simplified",
-                            "link": "https://towardsdatascience.com/knowledge-distillation-simplified-dd4973dbc764",
-                            "type": "ressource",
-                            "additional text": ", Towards Data Science, 2019, et *"
-                        }
                     }
                 },
                 "element9": {
                     "order_id": "9",
                     "name": "Notifications d’incidents de sécurité aux autorités de régulation",
-                    "condition": "Condition : R1.5 <> 1ère réponse",
+                    "condition": "1.5.a",
                     "question_text": "Dans le cas de figure où un modèle que l'organisation a élaboré est utilisé ou accessible par une(des) partie(s) prenante(s) externe(s), et qu'une vulnérabilité nouvelle est publiée, présente un risque de s'y appliquer et crée ainsi un risque d'exposition de données personnelles ou confidentielles :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
+                    "explanation_text": "Il existe dans certains secteurs des obligations de signalement des incidents de sécurité aux autorités de régulation (e.g. CNIL, ANSSI, ARS...). Un point d'entrée intéressant : [Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?]() sur le site de la CNIL.",
+                    "explanation_links": {
+                        "Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?": {
+                            "name": "Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?",
+                            "link": "https://www.cnil.fr/fr/notifications-dincidents-de-securite-aux-autorites-de-regulation-comment-sorganiser-et-qui-sadresser",
+                            "type": "explication",
+                            "additional text": ""
+                        }
+                    },
+                    "resources": "n/a",
                     "answer_items": {
                         "1.9.a": {
                             "order_id": "a",
@@ -422,17 +432,7 @@
                             "answer_text": "Notre procédure référence les autorités auxquelles nous devons faire un signalement",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Il existe dans certains secteurs des obligations de signalement des incidents de sécurité aux autorités de régulation (e.g. CNIL, ANSSI, ARS...). Un point d'entrée intéressant : [Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?]() sur le site de la CNIL.",
-                    "explanation links": {
-                        "Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?": {
-                            "name": "Notifications d’incidents de sécurité aux autorités de régulation : comment s’organiser et à qui s’adresser ?",
-                            "link": "https://www.cnil.fr/fr/notifications-dincidents-de-securite-aux-autorites-de-regulation-comment-sorganiser-et-qui-sadresser",
-                            "type": "explication",
-                            "additional text": ""
-                        }
-                    },
-                    "resources": "n/a"
+                    }
                 }
             }
         },
@@ -448,20 +448,8 @@
                     "question_text": "Au sein des projets de data science et lors de l'élaboration de jeux de données d'entraînement, un travail de réflexion et recherche de phénomènes intempestifs ou parasites du fait de l'époque, du contexte, des outils ou processus d'enregistrement peut s'avérer crucial pour prévenir des biais malencontreux. Votre organisation :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
-                    "answer_items": {
-                        "2.1.a": {
-                            "order_id": "a",
-                            "answer_text": "fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées",
-                            "depends_on": ""
-                        },
-                        "2.1.b": {
-                            "order_id": "b",
-                            "answer_text": "dispose d'une approche documentée et systématiquement mise en oeuvre",
-                            "depends_on": ""
-                        }
-                    },
-                    "explanation text": "Il s'agit de s'obliger à s'interroger sur ces sujets et donc à réfléchir aux données utilisées, la manière dont elles ont été produites etc.",
-                    "explanation links": {},
+                    "explanation_text": "Il s'agit de s'obliger à s'interroger sur ces sujets et donc à réfléchir aux données utilisées, la manière dont elles ont été produites etc.",
+                    "explanation_links": {},
                     "resources": {
                         "Tour of Data Sampling Methods for Imbalanced Classification": {
                             "name": "Tour of Data Sampling Methods for Imbalanced Classification",
@@ -481,6 +469,18 @@
                             "type": "ressource",
                             "additional text": " explorable from "
                         }
+                    },
+                    "answer_items": {
+                        "2.1.a": {
+                            "order_id": "a",
+                            "answer_text": "fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées",
+                            "depends_on": ""
+                        },
+                        "2.1.b": {
+                            "order_id": "b",
+                            "answer_text": "dispose d'une approche documentée et systématiquement mise en oeuvre",
+                            "depends_on": ""
+                        }
                     }
                 },
                 "element2": {
@@ -490,6 +490,9 @@
                     "question_text": "Votre organisation est-elle concernée par des cas de figure où des modèles prédictifs sont utilisés dans des environnements thématiques pour lesquels des risques de discrimination à l'encontre de certains groupes sociaux (genre, origine, âge, etc.) existent ?",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": "n/a",
                     "answer_items": {
                         "2.2.a": {
                             "order_id": "a",
@@ -501,47 +504,17 @@
                             "answer_text": "Non concerné",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
                     "name": "Prévention des biais discriminatoires",
-                    "condition": "Condition : R2.2 = Concerné",
+                    "condition": "2.2.b",
                     "question_text": "Dans les cas de figure où les modèles prédictifs que votre organisation élabore sont utilisés dans des environnements thématiques où il y a des risques de discrimination à l'encontre de certains groupes sociaux (genre, origine, âge, etc.) :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
-                    "answer_items": {
-                        "2.3.a": {
-                            "order_id": "a",
-                            "answer_text": "Nous portons une attention particulière à l'identification de variables protégées et à leurs proxys éventuels",
-                            "depends_on": ""
-                        },
-                        "2.3.b": {
-                            "order_id": "b",
-                            "answer_text": "Nous procédons à des évaluations sur des données de test comprenant différentes sous-populations afin d'identifier les éventuels biais problématiques",
-                            "depends_on": ""
-                        },
-                        "2.3.c": {
-                            "order_id": "c",
-                            "answer_text": "Nous sélectionnons et mettons en oeuvre une ou plusieurs mesure(s) de justice et d'équité (_fairness metric_)",
-                            "depends_on": ""
-                        },
-                        "2.3.d": {
-                            "order_id": "d",
-                            "answer_text": "Nous mettons en oeuvre des approches de type _data augmentation_ ou _re-weighting_",
-                            "depends_on": ""
-                        },
-                        "2.3.e": {
-                            "order_id": "e",
-                            "answer_text": "Les pratiques ci-dessus que nous mettons en oeuvre sont dûment documentées intégrées à la G2B des modèles concernés",
-                            "depends_on": ""
-                        }
-                    },
-                    "explanation text": "Il s'agit de s'interroger systématiquement, à chaque projet de data science et selon l'objectif et l'usage cible du modèle que l'on veut élaborer, sur les features pouvant directement ou indirectement être à l'origine d'un risque de biais discriminatoire.\nComplément sur l'utilisation de données synthétiques et d'approches de _data augmentation_, _re-weighting_ : lorsque de telles techniques sont utilisées il est important de les expliciter, au risque sinon de perdre de l'information sur la manière dont un modèle a été élaboré.",
-                    "explanation links": {},
+                    "explanation_text": "Il s'agit de s'interroger systématiquement, à chaque projet de data science et selon l'objectif et l'usage cible du modèle que l'on veut élaborer, sur les features pouvant directement ou indirectement être à l'origine d'un risque de biais discriminatoire.\nComplément sur l'utilisation de données synthétiques et d'approches de _data augmentation_, _re-weighting_ : lorsque de telles techniques sont utilisées il est important de les expliciter, au risque sinon de perdre de l'information sur la manière dont un modèle a été élaboré.",
+                    "explanation_links": {},
                     "resources": {
                         "PAIR": {
                             "name": "PAIR",
@@ -573,6 +546,33 @@
                             "type": "ressource",
                             "additional text": "_, _"
                         }
+                    },
+                    "answer_items": {
+                        "2.3.a": {
+                            "order_id": "a",
+                            "answer_text": "Nous portons une attention particulière à l'identification de variables protégées et à leurs proxys éventuels",
+                            "depends_on": ""
+                        },
+                        "2.3.b": {
+                            "order_id": "b",
+                            "answer_text": "Nous procédons à des évaluations sur des données de test comprenant différentes sous-populations afin d'identifier les éventuels biais problématiques",
+                            "depends_on": ""
+                        },
+                        "2.3.c": {
+                            "order_id": "c",
+                            "answer_text": "Nous sélectionnons et mettons en oeuvre une ou plusieurs mesure(s) de justice et d'équité (_fairness metric_)",
+                            "depends_on": ""
+                        },
+                        "2.3.d": {
+                            "order_id": "d",
+                            "answer_text": "Nous mettons en oeuvre des approches de type _data augmentation_ ou _re-weighting_",
+                            "depends_on": ""
+                        },
+                        "2.3.e": {
+                            "order_id": "e",
+                            "answer_text": "Les pratiques ci-dessus que nous mettons en oeuvre sont dûment documentées intégrées à la G2B des modèles concernés",
+                            "depends_on": ""
+                        }
                     }
                 }
             }
@@ -589,6 +589,9 @@
                     "question_text": "Au sein des projets de data science et lors de l'élaboration de jeux de données de test, il est capital d'assurer la non-contamination par des données d'entraînement. Votre organisation :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": "n/a",
                     "answer_items": {
                         "3.1.a": {
                             "order_id": "a",
@@ -610,10 +613,7 @@
                             "answer_text": "prévoit systématiquement l'élaboration de deux testsets ou plus pour gagner en résilience",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": "n/a"
+                    }
                 },
                 "element2": {
                     "order_id": "2",
@@ -622,6 +622,9 @@
                     "question_text": "Dans les cas de figure de projets de data science basé sur l'apprentissage distribué ou fédéré (_distributed learning_ ou _federated learning_) sur des jeux de données multiples et dont la confidentialité doit être préservée vis-à-vis des autres (_privacy-preserving_) :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": "n/a",
                     "answer_items": {
                         "3.2.a": {
                             "order_id": "a",
@@ -638,10 +641,7 @@
                             "answer_text": "À ce stade nous ne maîtrisons pas les méthodes permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
@@ -650,6 +650,9 @@
                     "question_text": "Au sein des projets de data science et lors de l'élaboration de jeux de données de test, un travail de réflexion et recherche de phénomènes intempestifs ou parasites du fait de l'époque, du contexte, des outils ou processus d'enregistrement peut s'avérer crucial pour la signification des scores de performance. Votre organisation :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "L'utilisation de modèles prédictifs testés sur des données historiques peut se révéler contre-productive lorsque les données historiques en question sont contaminées par des phénomènes problématiques (e.g. qualité de certains points de données, données non comparables, phénomène social non souhaitable du fait de l'époque...). Il apparaît indispensable de s'interroger sur ce risque et d'étudier la nature des données utilisées, les conditions dans lesquelles elles ont été produites et assembées, et ce qu'elles représentent.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "3.3.a": {
                             "order_id": "a",
@@ -661,10 +664,7 @@
                             "answer_text": "dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "L'utilisation de modèles prédictifs testés sur des données historiques peut se révéler contre-productive lorsque les données historiques en question sont contaminées par des phénomènes problématiques (e.g. qualité de certains points de données, données non comparables, phénomène social non souhaitable du fait de l'époque...). Il apparaît indispensable de s'interroger sur ce risque et d'étudier la nature des données utilisées, les conditions dans lesquelles elles ont été produites et assembées, et ce qu'elles représentent.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element4": {
                     "order_id": "4",
@@ -673,6 +673,23 @@
                     "question_text": "Votre organisation met-elle en oeuvre les approches suivantes :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation",
+                    "explanation_text": "Voir par exemple le _[p-hacking / data dredging]()_.",
+                    "explanation_links": {
+                        "p-hacking / data dredging": {
+                            "name": "p-hacking / data dredging",
+                            "link": "https://fr.wikipedia.org/wiki/Data_dredging",
+                            "type": "explication",
+                            "additional text": ""
+                        }
+                    },
+                    "resources": {
+                        "noise sensitivity score": {
+                            "name": "noise sensitivity score",
+                            "link": "https://arxiv.org/abs/1806.01477",
+                            "type": "ressource",
+                            "additional text": "_."
+                        }
+                    },
                     "answer_items": {
                         "3.4.a": {
                             "order_id": "a",
@@ -689,23 +706,6 @@
                             "answer_text": "Les pratiques ci-dessus que nous mettons en oeuvre sont dûment documentées intégrées à la [G2B](#section-4---etablir-et-maintenir-une-généalogie-des-modèles) des modèles concernés, y compris les métriques de performance",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Voir par exemple le _[p-hacking / data dredging]()_.",
-                    "explanation links": {
-                        "p-hacking / data dredging": {
-                            "name": "p-hacking / data dredging",
-                            "link": "https://fr.wikipedia.org/wiki/Data_dredging",
-                            "type": "explication",
-                            "additional text": ""
-                        }
-                    },
-                    "resources": {
-                        "noise sensitivity score": {
-                            "name": "noise sensitivity score",
-                            "link": "https://arxiv.org/abs/1806.01477",
-                            "type": "ressource",
-                            "additional text": "_."
-                        }
                     }
                 },
                 "element5": {
@@ -715,6 +715,28 @@
                     "question_text": "Dans les cas de figure où des modèles prédictifs élaborés par votre organisation sont utilisés dans des systèmes en production :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Même sur un modèle stable il existe un risque que les données d'entrée ne soient plus dans le domaine au bout d'un certain temps (population & distribution), exemple : une variable qui ne serait plus renseignée à la même fréquence qu'avant par les utilisateurs dans un SI. Il est donc nécessaire de contrôler régulièrement la performance d'un modèle utilisé dans son contexte d'utilisation.",
+                    "explanation_links": {},
+                    "resources": {
+                        "Continuous delivery for machine learning": {
+                            "name": "Continuous delivery for machine learning",
+                            "link": "https://martinfowler.com/articles/cd4ml.html",
+                            "type": "ressource",
+                            "additional text": ""
+                        },
+                        "Monitoring Machine Learning Models in Production - A comprehensive guide": {
+                            "name": "Monitoring Machine Learning Models in Production - A comprehensive guide",
+                            "link": "https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/",
+                            "type": "ressource",
+                            "additional text": ", ChristopherGS, March 2020"
+                        },
+                        "Google’s medical AI was super accurate in a lab. Real life was a different story": {
+                            "name": "Google’s medical AI was super accurate in a lab. Real life was a different story",
+                            "link": "https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/",
+                            "type": "ressource",
+                            "additional text": "_, MIT Technology Review"
+                        }
+                    },
                     "answer_items": {
                         "3.5.a": {
                             "order_id": "a",
@@ -741,28 +763,6 @@
                             "answer_text": "Des contrôles aléatoires sont réalisés sur des prédictions afin d'en contrôler la cohérence",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "Même sur un modèle stable il existe un risque que les données d'entrée ne soient plus dans le domaine au bout d'un certain temps (population & distribution), exemple : une variable qui ne serait plus renseignée à la même fréquence qu'avant par les utilisateurs dans un SI. Il est donc nécessaire de contrôler régulièrement la performance d'un modèle utilisé dans son contexte d'utilisation.",
-                    "explanation links": {},
-                    "resources": {
-                        "Continuous delivery for machine learning": {
-                            "name": "Continuous delivery for machine learning",
-                            "link": "https://martinfowler.com/articles/cd4ml.html",
-                            "type": "ressource",
-                            "additional text": ""
-                        },
-                        "Monitoring Machine Learning Models in Production - A comprehensive guide": {
-                            "name": "Monitoring Machine Learning Models in Production - A comprehensive guide",
-                            "link": "https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/",
-                            "type": "ressource",
-                            "additional text": ", ChristopherGS, March 2020"
-                        },
-                        "Google’s medical AI was super accurate in a lab. Real life was a different story": {
-                            "name": "Google’s medical AI was super accurate in a lab. Real life was a different story",
-                            "link": "https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/",
-                            "type": "ressource",
-                            "additional text": "_, MIT Technology Review"
-                        }
                     }
                 },
                 "element6": {
@@ -772,6 +772,16 @@
                     "question_text": "Lors de l'élaboration d'un modèle de classification, pour la définition des seuils de décision, votre organisation :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": {
+                        "Opening the algorithm’s black box and understand its outputs": {
+                            "name": "Opening the algorithm’s black box and understand its outputs",
+                            "link": "https://medium.com/@asaboni/opening-the-algorithms-black-box-and-understand-its-outputs-e2363b0a887c)*, A. Saboni (Octo Technologies",
+                            "type": "ressource",
+                            "additional text": ", April 2020"
+                        }
+                    },
                     "answer_items": {
                         "3.6.a": {
                             "order_id": "a",
@@ -793,16 +803,6 @@
                             "answer_text": "les choix réalisés pour chaque modèle et mis en oeuvre sont dûment documentées intégrées à la G2B des modèles concernés",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": {
-                        "Opening the algorithm’s black box and understand its outputs": {
-                            "name": "Opening the algorithm’s black box and understand its outputs",
-                            "link": "https://medium.com/@asaboni/opening-the-algorithms-black-box-and-understand-its-outputs-e2363b0a887c)*, A. Saboni (Octo Technologies",
-                            "type": "ressource",
-                            "additional text": ", April 2020"
-                        }
                     }
                 },
                 "element7": {
@@ -812,6 +812,34 @@
                     "question_text": "Au sein des projets de data science qui visent à élaborer des modèles prédictifs en vue d'être utilisés en inférence :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "n/a",
+                    "explanation_links": "n/a",
+                    "resources": {
+                        "La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle": {
+                            "name": "La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle",
+                            "link": "https://blog.octo.com/la-confiance-des-utilisateurs-dans-les-systemes-impliquant-de-lintelligence-artificielle/",
+                            "type": "ressource",
+                            "additional text": ", Blog Octo Technologies, octobre 2019"
+                        },
+                        "Interpretable Machine Learning, A Guide for Making Black Box Models Explainable": {
+                            "name": "Interpretable Machine Learning, A Guide for Making Black Box Models Explainable",
+                            "link": "https://christophm.github.io/interpretable-ml-book/",
+                            "type": "ressource",
+                            "additional text": ", Christoph Molnar"
+                        },
+                        "Serment d'Hippocrate pour data scientist": {
+                            "name": "Serment d'Hippocrate pour data scientist",
+                            "link": "https://hippocrate.tech/)",
+                            "type": "ressource",
+                            "additional text": ""
+                        },
+                        "l'article 10 de la loi Informatique et libertés": {
+                            "name": "l'article 10 de la loi Informatique et libertés",
+                            "link": "https://www.legifrance.gouv.fr/affichTexteArticle.do;?idArticle=LEGIARTI000037090394&cidTexte=LEGITEXT000006068624&dateTexte=20180624",
+                            "type": "ressource",
+                            "additional text": ", cités notamment dans le "
+                        }
+                    },
                     "answer_items": {
                         "3.7.a": {
                             "order_id": "a",
@@ -838,34 +866,6 @@
                             "answer_text": "Nous maîtrisons et mettons en oeuvre des approches avancées pour l'explicabilité et l'interprétabilité des modèles",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "n/a",
-                    "explanation links": "n/a",
-                    "resources": {
-                        "La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle": {
-                            "name": "La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle",
-                            "link": "https://blog.octo.com/la-confiance-des-utilisateurs-dans-les-systemes-impliquant-de-lintelligence-artificielle/",
-                            "type": "ressource",
-                            "additional text": ", Blog Octo Technologies, octobre 2019"
-                        },
-                        "Interpretable Machine Learning, A Guide for Making Black Box Models Explainable": {
-                            "name": "Interpretable Machine Learning, A Guide for Making Black Box Models Explainable",
-                            "link": "https://christophm.github.io/interpretable-ml-book/",
-                            "type": "ressource",
-                            "additional text": ", Christoph Molnar"
-                        },
-                        "Serment d'Hippocrate pour data scientist": {
-                            "name": "Serment d'Hippocrate pour data scientist",
-                            "link": "https://hippocrate.tech/)",
-                            "type": "ressource",
-                            "additional text": ""
-                        },
-                        "l'article 10 de la loi Informatique et libertés": {
-                            "name": "l'article 10 de la loi Informatique et libertés",
-                            "link": "https://www.legifrance.gouv.fr/affichTexteArticle.do;?idArticle=LEGIARTI000037090394&cidTexte=LEGITEXT000006068624&dateTexte=20180624",
-                            "type": "ressource",
-                            "additional text": ", cités notamment dans le "
-                        }
                     }
                 }
             }
@@ -882,30 +882,8 @@
                     "question_text": "Une généalogie de bout-en-bout (G2B) des modèles est alimentée et tenue à jour dans le cadre des projets de data science, tout au long des phase de collecte de données, conception, entraînement, validation et exploitation :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
-                    "answer_items": {
-                        "4.1.a": {
-                            "order_id": "a",
-                            "answer_text": "À ce stade nous n'avons pas mis en oeuvre d'approche de ce type",
-                            "depends_on": ""
-                        },
-                        "4.1.b": {
-                            "order_id": "b",
-                            "answer_text": "Ces informations existent et sont enregistrées afin de ne pas être perdues, mais elles peuvent l'être de manière désordonnée et ne sont pas versionnées",
-                            "depends_on": ""
-                        },
-                        "4.1.c": {
-                            "order_id": "c",
-                            "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle",
-                            "depends_on": ""
-                        },
-                        "4.1.d": {
-                            "order_id": "d",
-                            "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle et versionnées",
-                            "depends_on": ""
-                        }
-                    },
-                    "explanation text": "Ce concept de \"généalogie de bout-en-bout\" d'un modèle peut se décliner sous la forme par exemple d'un document de référence reprenant tous les choix importants ainsi que tout l'historique d'élaboration du modèle, et de processus internes organisant cette activité.",
-                    "explanation links": {},
+                    "explanation_text": "Ce concept de \"généalogie de bout-en-bout\" d'un modèle peut se décliner sous la forme par exemple d'un document de référence reprenant tous les choix importants ainsi que tout l'historique d'élaboration du modèle, et de processus internes organisant cette activité.",
+                    "explanation_links": {},
                     "resources": {
                         "Substra Framework": {
                             "name": "Substra Framework",
@@ -931,6 +909,28 @@
                             "type": "ressource",
                             "additional text": " _an Open-source Version Control System for Machine Learning Projects_, and "
                         }
+                    },
+                    "answer_items": {
+                        "4.1.a": {
+                            "order_id": "a",
+                            "answer_text": "À ce stade nous n'avons pas mis en oeuvre d'approche de ce type",
+                            "depends_on": ""
+                        },
+                        "4.1.b": {
+                            "order_id": "b",
+                            "answer_text": "Ces informations existent et sont enregistrées afin de ne pas être perdues, mais elles peuvent l'être de manière désordonnée et ne sont pas versionnées",
+                            "depends_on": ""
+                        },
+                        "4.1.c": {
+                            "order_id": "c",
+                            "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle",
+                            "depends_on": ""
+                        },
+                        "4.1.d": {
+                            "order_id": "d",
+                            "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle et versionnées",
+                            "depends_on": ""
+                        }
                     }
                 },
                 "element2": {
@@ -940,6 +940,16 @@
                     "question_text": "Dans le cadre des projets de data science, les \"conditions et limites de validité\" d'un modèle conçu, entraîné et validé par l'organisation :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Il s'agit d'expliciter et d'adjoindre au modèle la description du contexte d'utilisation pour lequel il a été conçu et dans lequel sa performance annoncée est significative. Ce concept de \"conditions et limites de validité\" peut se décliner sous la forme d'un document synthétique ou d'une section spécifique dans la \"généalogie de bout-en-bout\".",
+                    "explanation_links": {},
+                    "resources": {
+                        "Model Cards": {
+                            "name": "Model Cards",
+                            "link": "https://modelcards.withgoogle.com/about",
+                            "type": "ressource",
+                            "additional text": " de Google est un framework ouvert et évolutif, et propose 2 exemples : *To explore the possibilities of model cards in the real world, we've designed examples for two features of our Cloud Vision API, Face Detection and Object Detection. They provide simple overviews of both models' ideal forms of input, visualize some of their key limitations, and present basic performance metrics.*"
+                        }
+                    },
                     "answer_items": {
                         "4.2.a": {
                             "order_id": "a",
@@ -961,16 +971,6 @@
                             "answer_text": "les documents présentant ces \"conditions et limites de validité\" accompagnent systématiquement les modèles tout au long de leur cycle de vie",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "Il s'agit d'expliciter et d'adjoindre au modèle la description du contexte d'utilisation pour lequel il a été conçu et dans lequel sa performance annoncée est significative. Ce concept de \"conditions et limites de validité\" peut se décliner sous la forme d'un document synthétique ou d'une section spécifique dans la \"généalogie de bout-en-bout\".",
-                    "explanation links": {},
-                    "resources": {
-                        "Model Cards": {
-                            "name": "Model Cards",
-                            "link": "https://modelcards.withgoogle.com/about",
-                            "type": "ressource",
-                            "additional text": " de Google est un framework ouvert et évolutif, et propose 2 exemples : *To explore the possibilities of model cards in the real world, we've designed examples for two features of our Cloud Vision API, Face Detection and Object Detection. They provide simple overviews of both models' ideal forms of input, visualize some of their key limitations, and present basic performance metrics.*"
-                        }
                     }
                 }
             }
@@ -987,6 +987,9 @@
                     "question_text": "Dans le cas de figure des projets de data science où plusieurs acteurs, y compris internes à l'organisation (équipes, départements, filiales), sont parties prenantes tout au long de la chaîne de valeur et de responsabilités :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Il est important de s'assurer que les organisations en amont et en aval de la chaîne identifient et endossent bien leurs responsabilités sur leurs segments de la chaîne de valeur.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "5.1.a": {
                             "order_id": "a",
@@ -1003,10 +1006,7 @@
                             "answer_text": "Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "Il est important de s'assurer que les organisations en amont et en aval de la chaîne identifient et endossent bien leurs responsabilités sur leurs segments de la chaîne de valeur.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element2": {
                     "order_id": "2",
@@ -1015,6 +1015,9 @@
                     "question_text": "Dans les cas de figure des projets de data science où plusieurs partenaires concourent aux côtés de votre organisation à l'élaboration d'un modèle, et que celui-ci est ou sera l'objet d'une activité économique :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Lorsque plusieurs partenaires collaborent pour l'élaboration d'un modèle, il est important que la répartition de valeur consécutives à une activité économique dans laquelle le modèle joue un rôle soit explicitée et contractualisée. Dans certains cas de figure cette question peut être complexe, par exemple lorsqu'un modèle est entraîné de manière distribuée sur plusieurs jeux de données.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "5.2.a": {
                             "order_id": "a",
@@ -1036,10 +1039,7 @@
                             "answer_text": "Notre organisation s'est dotée d'une politique encadrant de manière responsable le partage de valeur avec les parties prenantes impliquées",
                             "depends_on": "b"
                         }
-                    },
-                    "explanation text": "Lorsque plusieurs partenaires collaborent pour l'élaboration d'un modèle, il est important que la répartition de valeur consécutives à une activité économique dans laquelle le modèle joue un rôle soit explicitée et contractualisée. Dans certains cas de figure cette question peut être complexe, par exemple lorsqu'un modèle est entraîné de manière distribuée sur plusieurs jeux de données.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
@@ -1048,6 +1048,9 @@
                     "question_text": "Dans les travaux de data science, les activités sous-traitées auprès ou en partenariat avec une organisation tierce sont soumises aux mêmes exigences que celles que votre organisation s'applique :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Comme dans les cadres connues du management des SI (ISO 27001) ou du RGPD, il est important de ne pas diluer les responsabilités dans des chaînes de sous-traitance non maîtrisées. Cela doit s'appliquer par exemple aux consultants, freelances qui viennent renforcer une équipe interne sur un projet de data science.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "5.3.a": {
                             "order_id": "a",
@@ -1059,10 +1062,7 @@
                             "answer_text": "Non",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Comme dans les cadres connues du management des SI (ISO 27001) ou du RGPD, il est important de ne pas diluer les responsabilités dans des chaînes de sous-traitance non maîtrisées. Cela doit s'appliquer par exemple aux consultants, freelances qui viennent renforcer une équipe interne sur un projet de data science.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 }
             }
         },
@@ -1078,6 +1078,9 @@
                     "question_text": "Si votre organisation utilise pour son propre compte des modèles prédictifs :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important d'évaluer les conséquences et les réactions en cas d'incident. Par ailleurs il est important qu'une personne responsable soit clairement identifiée de manière à ne laisser aucune partie prenante démunie face à une conséquence inattendue ou inappropriée. Enfin il est important de s'interroger sur les \"conditions et limites de validité\" des modèles que l'on utilise afin de s'assurer que l'usage que l'on prévoit est bien en adéquation.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "6.1.a": {
                             "order_id": "a",
@@ -1119,10 +1122,7 @@
                             "answer_text": "Nous utilisons toujours les modèles pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important d'évaluer les conséquences et les réactions en cas d'incident. Par ailleurs il est important qu'une personne responsable soit clairement identifiée de manière à ne laisser aucune partie prenante démunie face à une conséquence inattendue ou inappropriée. Enfin il est important de s'interroger sur les \"conditions et limites de validité\" des modèles que l'on utilise afin de s'assurer que l'usage que l'on prévoit est bien en adéquation.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element2": {
                     "order_id": "2",
@@ -1131,6 +1131,9 @@
                     "question_text": "Si votre organisation fournit à ses clients ou à des tiers, ou opère pour le compte de tiers des applications basées sur des modèles prédictifs :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important d'évaluer les conséquences et les réactions en cas d'incident. Par ailleurs il est important qu'une personne responsable soit clairement identifiée de manière à ne laisser aucune partie prenante démunie face à une conséquence inattendue ou inappropriée. Enfin il est important de s'interroger sur les \"conditions et limites de validité\" des modèles que l'on utilise afin de s'assurer que l'usage que l'on prévoit est bien en adéquation.",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "6.2.a": {
                             "order_id": "a",
@@ -1167,10 +1170,7 @@
                             "answer_text": "Nous fournissons à nos clients ou opérons pour leur compte des modèles ou applications pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "depends_on": "a"
                         }
-                    },
-                    "explanation text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important d'évaluer les conséquences et les réactions en cas d'incident. Par ailleurs il est important qu'une personne responsable soit clairement identifiée de manière à ne laisser aucune partie prenante démunie face à une conséquence inattendue ou inappropriée. Enfin il est important de s'interroger sur les \"conditions et limites de validité\" des modèles que l'on utilise afin de s'assurer que l'usage que l'on prévoit est bien en adéquation.",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
@@ -1179,6 +1179,16 @@
                     "question_text": "Les systèmes automatiques, en particulier lorsqu'ils s'appuient sur des modèles prédictifs appris, sont utilisés en production généralement pour gagner en efficacité. Il se trouve que par nature, ils génèrent de temps en temps des résultats non souhaitables pour l'organisation et ses parties prenantes (e.g. prédiction erronée), puisqu'ils ne généraliseront jamais une performance de 100%.",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important de préserver la capacité de réaction et la résilience de l'organisation.",
+                    "explanation_links": {},
+                    "resources": {
+                        "Monitoring Machine Learning Models in Production - A comprehensive guide": {
+                            "name": "Monitoring Machine Learning Models in Production - A comprehensive guide",
+                            "link": "https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/",
+                            "type": "ressource",
+                            "additional text": ", ChristopherGS, March 2020"
+                        }
+                    },
                     "answer_items": {
                         "6.3.a": {
                             "order_id": "a",
@@ -1205,16 +1215,6 @@
                             "answer_text": "Nous mettons en place des mécanismes permettant à un opérateur humain, dans certaines conditions définies, d'aller contre une décision d'un modèle s'il identifie que le modèle commet une erreur",
                             "depends_on": "b"
                         }
-                    },
-                    "explanation text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important de préserver la capacité de réaction et la résilience de l'organisation.",
-                    "explanation links": {},
-                    "resources": {
-                        "Monitoring Machine Learning Models in Production - A comprehensive guide": {
-                            "name": "Monitoring Machine Learning Models in Production - A comprehensive guide",
-                            "link": "https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/",
-                            "type": "ressource",
-                            "additional text": ", ChristopherGS, March 2020"
-                        }
                     }
                 },
                 "element4": {
@@ -1224,6 +1224,22 @@
                     "question_text": "Votre organisation utilise pour son propre compte, fournit à ses clients ou opère pour le compte de ses clients des applications basées sur des modèles prédictifs, avec lesquels sont à même d'interagir des utilisateurs. Que met-elle en place pour en informer les utilisateurs ?",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
+                    "explanation_text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations mais également le rapport des utilisateurs aux systèmes et services numériques. Dans la plupart des cas il est important d'informer les utilisateurs qu'ils ne font pas face à des règles de gestion classiques.",
+                    "explanation_links": {},
+                    "resources": {
+                        "Counterfactual Explanations without Opening the Black Box: Automated Decisions and the GDPR": {
+                            "name": "Counterfactual Explanations without Opening the Black Box: Automated Decisions and the GDPR",
+                            "link": "https://arxiv.org/abs/1711.00399",
+                            "type": "ressource",
+                            "additional text": ", S. Wachter, B. Mittelstadt, C. Russell, 2018"
+                        },
+                        "Interpretable Machine Learning - Counterfactual explanations": {
+                            "name": "Interpretable Machine Learning - Counterfactual explanations",
+                            "link": "https://christophm.github.io/interpretable-ml-book/counterfactual.html",
+                            "type": "ressource",
+                            "additional text": ", C. Molnar, 2020"
+                        }
+                    },
                     "answer_items": {
                         "6.4.a": {
                             "order_id": "a",
@@ -1250,22 +1266,6 @@
                             "answer_text": "Le système ou le service propose à l'utilisateur des informations supplémentaires sur les résultats qu'aurait fourni le système ou le service dans des cas de figure légèrement différents",
                             "depends_on": "b"
                         }
-                    },
-                    "explanation text": "Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interroge le fonctionnement des organisations mais également le rapport des utilisateurs aux systèmes et services numériques. Dans la plupart des cas il est important d'informer les utilisateurs qu'ils ne font pas face à des règles de gestion classiques.",
-                    "explanation links": {},
-                    "resources": {
-                        "Counterfactual Explanations without Opening the Black Box: Automated Decisions and the GDPR": {
-                            "name": "Counterfactual Explanations without Opening the Black Box: Automated Decisions and the GDPR",
-                            "link": "https://arxiv.org/abs/1711.00399",
-                            "type": "ressource",
-                            "additional text": ", S. Wachter, B. Mittelstadt, C. Russell, 2018"
-                        },
-                        "Interpretable Machine Learning - Counterfactual explanations": {
-                            "name": "Interpretable Machine Learning - Counterfactual explanations",
-                            "link": "https://christophm.github.io/interpretable-ml-book/counterfactual.html",
-                            "type": "ressource",
-                            "additional text": ", C. Molnar, 2020"
-                        }
                     }
                 }
             }
@@ -1282,6 +1282,16 @@
                     "question_text": "Au sujet de l'impact CO2 de son activité data science, au sein de votre organisation :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Il est important de s'interroger et de conscientiser les coûts environnementaux.",
+                    "explanation_links": {},
+                    "resources": {
+                        "ML Impact Calculator": {
+                            "name": "ML Impact Calculator",
+                            "link": "https://mlco2.github.io/impact/",
+                            "type": "ressource",
+                            "additional text": ""
+                        }
+                    },
                     "answer_items": {
                         "7.1.a": {
                             "order_id": "a",
@@ -1308,16 +1318,6 @@
                             "answer_text": "Nous avons défini des indicateurs, nous les suivons régulièrement, et nous nous sommes fixés des objectifs d'amélioration",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Il est important de s'interroger et de conscientiser les coûts environnementaux.",
-                    "explanation links": {},
-                    "resources": {
-                        "ML Impact Calculator": {
-                            "name": "ML Impact Calculator",
-                            "link": "https://mlco2.github.io/impact/",
-                            "type": "ressource",
-                            "additional text": ""
-                        }
                     }
                 },
                 "element2": {
@@ -1327,6 +1327,9 @@
                     "question_text": "Dans certains cas, la mise en place d'un système automatique basé sur un modèle prédictif peut générer des externalités négatives sur les parties prenantes amont (par exemple annotation de données), et sur les parties prenantes aval (par exemple automatisation de certains postes). Lors de chaque projet d'élaboration ou d'utilisation d'un modèle prédictif, votre organisation :",
                     "question_type": "radio",
                     "answer_hint": "Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet",
+                    "explanation_text": "Il est important de s'interroger et d'échanger avec ses parties prenantes. Cela vaut tant pour l'aval (e.g. automatisation de certains emplois) que pour l'amont (e.g. tâches d'annotations de données parfois d'une très grande violence).",
+                    "explanation_links": {},
+                    "resources": "n/a",
                     "answer_items": {
                         "7.2.a": {
                             "order_id": "a",
@@ -1353,10 +1356,7 @@
                             "answer_text": "Nous menons ce travail de réflexion sur l'impact social à chaque projet, l'impact social est documenté dans la G2B de chaque modèle, et nous entamons systématiquement un dialogue avec les parties prenantes concernées amont et aval",
                             "depends_on": ""
                         }
-                    },
-                    "explanation text": "Il est important de s'interroger et d'échanger avec ses parties prenantes. Cela vaut tant pour l'aval (e.g. automatisation de certains emplois) que pour l'amont (e.g. tâches d'annotations de données parfois d'une très grande violence).",
-                    "explanation links": {},
-                    "resources": "n/a"
+                    }
                 },
                 "element3": {
                     "order_id": "3",
@@ -1365,25 +1365,8 @@
                     "question_text": "Au sein de votre organisation :",
                     "question_type": "checkbox",
                     "answer_hint": "Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes",
-                    "answer_items": {
-                        "7.3.a": {
-                            "order_id": "a",
-                            "answer_text": "À ce stade nous ne nous sommes pas encore penchés sur la dimension éthiqueLorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être",
-                            "depends_on": ""
-                        },
-                        "7.3.b": {
-                            "order_id": "b",
-                            "answer_text": "Les collaborateurs concernés par les activités data science reçoivent une formation à l'éthique",
-                            "depends_on": "a"
-                        },
-                        "7.3.c": {
-                            "order_id": "c",
-                            "answer_text": "Notre organisation s'est dotée d'une politique en matière d'éthique",
-                            "depends_on": "a"
-                        }
-                    },
-                    "explanation text": "Travailler sur de grands volumes de données dont certaines peuvent être sensibles, utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interrogent le fonctionnement des organisations et la responsabilité individuelle de chacun. Il est important que l'organisation s'assure que les enjeux éthiques ne sont pas inconnus de son personnel.",
-                    "explanation links": {},
+                    "explanation_text": "Travailler sur de grands volumes de données dont certaines peuvent être sensibles, utiliser des systèmes automatiques basés sur des modèles dont les règles ont été \"apprises\" (et non définies et formalisées) interrogent le fonctionnement des organisations et la responsabilité individuelle de chacun. Il est important que l'organisation s'assure que les enjeux éthiques ne sont pas inconnus de son personnel.",
+                    "explanation_links": {},
                     "resources": {
                         "Éthique et responsabilité des algorithmes publics": {
                             "name": "Éthique et responsabilité des algorithmes publics",
@@ -1420,6 +1403,23 @@
                             "link": "https://charteia.arborus.org/",
                             "type": "ressource",
                             "additional text": ", Arborus et Orange"
+                        }
+                    },
+                    "answer_items": {
+                        "7.3.a": {
+                            "order_id": "a",
+                            "answer_text": "À ce stade nous ne nous sommes pas encore penchés sur la dimension éthiqueLorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être",
+                            "depends_on": ""
+                        },
+                        "7.3.b": {
+                            "order_id": "b",
+                            "answer_text": "Les collaborateurs concernés par les activités data science reçoivent une formation à l'éthique",
+                            "depends_on": "a"
+                        },
+                        "7.3.c": {
+                            "order_id": "c",
+                            "answer_text": "Notre organisation s'est dotée d'une politique en matière d'éthique",
+                            "depends_on": "a"
                         }
                     }
                 }

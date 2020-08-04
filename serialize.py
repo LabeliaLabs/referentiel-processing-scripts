@@ -90,6 +90,12 @@ def treat_resources(resources):
     return links
 
 
+def treat_conditions_inter_elements(condition_text):
+    regex = re.findall(r'R([0-9\.]+)\s?\<\>\s?(\w)', condition_text)
+    print("Condition", condition_text, regex)
+    return regex[0][0]+"."+regex[0][1]
+
+
 def main():
     # Initialize a dictionary
     dict = {}
@@ -182,14 +188,14 @@ def main():
             dict["sections"][section]["elements"]['element' + match_id[0][1]] = {
                 'order_id': match_id[0][1],
                 'name': 'n/a' if not match_title else match_title.group('title'),
-                'condition': 'n/a' if not match_condition else match_condition.group('condition'), # TODO
+                'condition': 'n/a' if not match_condition else treat_conditions_inter_elements(match_condition.group('condition')),
                 'question_text': match_question_text.group('question_text'),
                 'question_type': 'n/a' if not match_answer_type else match_question_type(match_answer_type.group('answer_type')),
                 'answer_hint': match_answer_hint.group('answer_hint'),
-                'answer_items': {},
-                'explanation text': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[0],
-                'explanation links': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[1],
+                'explanation_text': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[0],
+                'explanation_links': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[1],
                 'resources': 'n/a' if not match_resource else treat_resources(match_resource.group('resource')),
+                'answer_items': {},
             }
 
             depends_on = ""
