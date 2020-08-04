@@ -27,17 +27,23 @@ def treat_explanations(explanation):
     :return: string (explanation text) and dictionary (links
     """
     links = {}
+
     # group 2 is the link's name, group 3 is the url
-    external_links = re.findall(r'\[(.*)\]\((http. *)\)', explanation) # Match with all the external links
-    print("regex external links", external_links)
+    external_links = re.findall(r'\[(.*)\]\((http.*)\)', explanation) # Match with all the external links
+    print("Explanation regex link", external_links)
+
+    # For each link, we remove it to the text (the "http...") and add the link to the links dictionary
+    # It will create an external_link in the platform
     for link in external_links:
+
         # Group 1 is all the explanation before the link, group 2 is the link's name, group 3 is the url
         # group 4 is expl after
-        data_to_replace = re.findall(r'(.*)\[(.*)\]\((http.*)\)(.*\n+.*)', explanation)
-        explanation = explanation.replace(data_to_replace[2], '') # Delete the link int the explanation
-        links[link[1]] = {
-            "name": link[1],
-            "link": link[2],
+        data_to_replace = re.findall(r'(.*)\[(.*)\]\((http.*)\)(.*\n?.*)', explanation)
+        print("DATA REPLACE", data_to_replace)
+        explanation = explanation.replace(data_to_replace[0][2], '') # Delete the link int the explanation
+        links[link[0]] = {
+            "name": link[0],
+            "link": link[1],
             "type": "explication",
             "additional text": "",
         }
@@ -60,53 +66,27 @@ def treat_resources(resources):
         # Group 1 is useless text before the link (but need to check if not a link not caught within)
         # Group 2 is the link's name, group 3 is the url
         # Group 4 is explanation of the resource (author, etc)
-
-        # If the line has multiple links
-        # TODO improve the way these cases are manage -> change in assessment file or FACTORIZATION (UGLY currently)
-
-        if "http" in link[0]:
-            new_reg = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<additional>.*)\.(.*)\[(?P<name2>.*)\]\((?P<link2>http.*)\)\*?(?P<additional2>.*)', link[0])
-            if "http" in new_reg[0][0]:
-                new_reg = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<additional>.*)\[(?P<name2>.*)\]\((?P<link2>http.*)\)\*?(?P<addtional2>.*)\[(?P<name3>.*)\]\((?P<link3>http.*)\)\*?(?P<additional3>.*)', new_reg)
-                links[new_reg[1]] = {
-                    "name": new_reg[1],
-                    "link": new_reg[2],
-                    "type": "ressource",
-                    "additional text": new_reg[3],
-                }
-                links[new_reg[4]] = {
-                    "name": new_reg[4],
-                    "link": new_reg[5],
-                    "type": "ressource",
-                    "additional text": new_reg[6],
-                }
-                links[new_reg[7]] = {
-                    "name": new_reg[7],
-                    "link": new_reg[8],
-                    "type": "ressource",
-                    "additional text": new_reg[9],
-                }
-
-            else:
-                links[new_reg[1]] = {
-                    "name": new_reg[1],
-                    "link": new_reg[2],
-                    "type": "ressource",
-                    "additional text": new_reg[3],
-                }
-                links[new_reg[4]] = {
-                    "name": new_reg[4],
-                    "link": new_reg[5],
-                    "type": "ressource",
-                    "additional text": new_reg[6],
-                }
-
         links[link[1]] = {
             "name": link[1],
             "link": link[2],
             "type": "ressource",
             "additional text": link[3],
         }
+
+        # If the line has multiple links, we check the rests which is, with this regex, the 1st group
+        rest = link[0]
+        while "http" in rest:
+            print("rest", rest)
+            regex = re.findall(r'(.*)\[(.*)\]\((http.*)\)\*?(.*)', rest)
+
+            links[regex[0][1]] = {
+                "name": regex[0][1],
+                "link": regex[0][2],
+                "type": "ressource",
+                "additional text": regex[0][3],
+            }
+            rest = regex[0]
+
     return links
 
 
@@ -150,7 +130,7 @@ def main():
 
             # Capture each component of the element
             # Group 1 is the section id and group 2 is the question id
-            match_id = re.search(r'Q([0-9])\.([0-9])\s:', el[0])
+            match_id = re.findall(r'Q([0-9])\.([0-9])\s:', el[0])
 
             match_title = re.search(r'Q[0-9.]{3}\s:\s\*\*(?P<title>.+)\*\*', el[0])
 
@@ -185,12 +165,13 @@ def main():
 
             # Populate the dictionary in the corresponding section
             # Calculate the value to add
-            section = "section "+match_id[0]
+            print("match ID", match_id)
+            section = "section "+match_id[0][0]
 
+            print("DIC", dict, section)
 
-
-            dict[section]["elements"]['element' + match_id.group('id')] = {
-                'order_id': match_id[1],
+            dict[section]["elements"]['element' + match_id[0][1]] = {
+                'order_id': match_id[0][1],
                 'name': 'n/a' if not match_title else match_title.group('title'),
                 'condition': 'n/a' if not match_condition else match_condition.group('condition'), # TODO
                 'question_text': match_question_text.group('question_text'),
@@ -199,13 +180,13 @@ def main():
                 'answer_items': {},
                 'explanation text': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[0],
                 'explanation links': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[1],
-                'resources': 'n/a' if not match_expl else treat_resources(match_resource.grou('resource')),
+                'resources': 'n/a' if not match_resource else treat_resources(match_resource.group('resource')),
             }
 
             depends_on = ""
             for item in match_answer_items:
 
-                dict[section]["elements"]['element' + match_id.group('id')]['answer_items'][item[0]] = {
+                dict[section]["elements"]['element' +match_id[0][1]]['answer_items'][item[0]] = {
                     'order_id': item[0][-1],
                     'answer_text': item[1]+item[3],
                     'depends_on': depends_on,
@@ -215,21 +196,21 @@ def main():
                     depends_on = item[0][-1]
 
 
-    mylist = []
-    for key in dict.keys():
-        mylist.append(
-            [dict[key]['id'],
-             dict[key]['title'],
-             dict[key]['condition'],
-             dict[key]['question_text'],
-             dict[key]['answer_type'],
-             dict[key]['answer_hint'],
-             dict[key]['expl'],
-             ])
-    mydf = pd.DataFrame(mylist, columns=['id', 'title', 'condition', 'question_text', 'answer_type', 'answer_hint', 'expl'])
-    pd.set_option('max_columns', 10)
-    pd.set_option('max_colwidth', 10)
-    print(mydf) # DEBUG
+    # mylist = []
+    # for key in dict.keys():
+    #     mylist.append(
+    #         [dict[key]['id'],
+    #          dict[key]['title'],
+    #          dict[key]['condition'],
+    #          dict[key]['question_text'],
+    #          dict[key]['answer_type'],
+    #          dict[key]['answer_hint'],
+    #          dict[key]['expl'],
+    #          ])
+    # mydf = pd.DataFrame(mylist, columns=['id', 'title', 'condition', 'question_text', 'answer_type', 'answer_hint', 'expl'])
+    # pd.set_option('max_columns', 10)
+    # pd.set_option('max_colwidth', 10)
+    # print(mydf) # DEBUG
 
     # Generate the .json file
     with open('assessment.json', 'w', encoding="utf-8") as fp:
