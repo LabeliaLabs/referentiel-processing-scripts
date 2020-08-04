@@ -44,28 +44,70 @@ def treat_explanations(explanation):
     return explanation, links
 
 
-def treat_explanations(explanation):
+def treat_resources(resources):
     """
-    Manage the explanation strings whether it contains external links or not
-    :param explanation: string
-    :return: string (explanation text) and dictionary (links
+    Manage the resources strings whether it contains external links or not
+    :param resources: string
+    :return: string (resources text) and dictionary (links
     """
     links = {}
     # group 2 is the link's name, group 3 is the url
-    external_links = re.findall(r'\[(.*)\]\((http. *)\)', explanation) # Match with all the external links
+    # Match with the external links but do not work when there are several for one line so tricks
+    external_links = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<addtional>.*)', resources)
+
     print("regex external links", external_links)
     for link in external_links:
-        # Group 1 is all the explanation before the link, group 2 is the link's name, group 3 is the url
-        # group 4 is expl after
-        data_to_replace = re.findall(r'(.*)\[(.*)\]\((http.*)\)(.*\n+.*)', explanation)
-        explanation = explanation.replace(data_to_replace[2], '') # Delete the link int the explanation
+        # Group 1 is useless text before the link (but need to check if not a link not caught within)
+        # Group 2 is the link's name, group 3 is the url
+        # Group 4 is explanation of the resource (author, etc)
+
+        # If the line has multiple links
+        # TODO improve the way these cases are manage -> change in assessment file or FACTORIZATION (UGLY currently)
+
+        if "http" in link[0]:
+            new_reg = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<additional>.*)\.(.*)\[(?P<name2>.*)\]\((?P<link2>http.*)\)\*?(?P<additional2>.*)', link[0])
+            if "http" in new_reg[0][0]:
+                new_reg = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<additional>.*)\[(?P<name2>.*)\]\((?P<link2>http.*)\)\*?(?P<addtional2>.*)\[(?P<name3>.*)\]\((?P<link3>http.*)\)\*?(?P<additional3>.*)', new_reg)
+                links[new_reg[1]] = {
+                    "name": new_reg[1],
+                    "link": new_reg[2],
+                    "type": "ressource",
+                    "additional text": new_reg[3],
+                }
+                links[new_reg[4]] = {
+                    "name": new_reg[4],
+                    "link": new_reg[5],
+                    "type": "ressource",
+                    "additional text": new_reg[6],
+                }
+                links[new_reg[7]] = {
+                    "name": new_reg[7],
+                    "link": new_reg[8],
+                    "type": "ressource",
+                    "additional text": new_reg[9],
+                }
+
+            else:
+                links[new_reg[1]] = {
+                    "name": new_reg[1],
+                    "link": new_reg[2],
+                    "type": "ressource",
+                    "additional text": new_reg[3],
+                }
+                links[new_reg[4]] = {
+                    "name": new_reg[4],
+                    "link": new_reg[5],
+                    "type": "ressource",
+                    "additional text": new_reg[6],
+                }
+
         links[link[1]] = {
             "name": link[1],
             "link": link[2],
-            "type": "explication",
-            "additional text": "",
+            "type": "ressource",
+            "additional text": link[3],
         }
-    return explanation, links
+    return links
 
 
 def main():
@@ -157,15 +199,21 @@ def main():
                 'answer_items': {},
                 'explanation text': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[0],
                 'explanation links': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[1],
-                'resources': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[0],
-                'explanation links': 'n/a' if not match_expl else treat_explanations(match_expl.group('expl'))[1],
+                'resources': 'n/a' if not match_expl else treat_resources(match_resource.grou('resource')),
             }
 
+            depends_on = ""
             for item in match_answer_items:
-                dict['element' + match_id.group('id')]['answer_items'][item[0]] = {
-                    'item_text': item[1],
-                    'item_type': item[3],
+
+                dict[section]["elements"]['element' + match_id.group('id')]['answer_items'][item[0]] = {
+                    'order_id': item[0][-1],
+                    'answer_text': item[1]+item[3],
+                    'depends_on': depends_on,
                 }
+                # If this choice sets conditions on the others, so we change depends_on value to its order_id
+                if item[3]:
+                    depends_on = item[0][-1]
+
 
     mylist = []
     for key in dict.keys():
