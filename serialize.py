@@ -118,6 +118,9 @@ def main():
         print("Please, enter the version of the assessment, (like '1.4'): ")
         version = input()
         dict["version"] = "version: "+version
+        print("Please, enter the name of the assessment: ")
+        name = input()
+        dict["name"] = name
         dict["sections"] = {}
 
         for section_data in match_each_sections:
