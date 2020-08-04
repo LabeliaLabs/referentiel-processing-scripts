@@ -114,12 +114,18 @@ def main():
         match_each_sections = re.findall(r'([\#]{3,})\s([Section]+)\s([0-9]+)([\-\s]+)(.+)\n+(.*\n?.*)', raw)
         print(match_each_sections)
 
+        # Initialize the dict (version and sections dict)
+        print("Please, enter the version of the assessment, (like '1.4'): ")
+        version = input()
+        dict["version"] = "version: "+version
+        dict["sections"] = {}
+
         for section_data in match_each_sections:
-            dict["section "+section_data[2]] = {
-                "order_id": section_data[2],
-                "name": section_data[4],
-                "description": section_data[5],
-                "elements": {}
+            dict["sections"]["section "+section_data[2]] = {
+                            "order_id": section_data[2],
+                            "name": section_data[4],
+                            "description": section_data[5],
+                            "elements": {}
             }
 
         # Capture all assessment elements
@@ -170,7 +176,7 @@ def main():
 
             print("DIC", dict, section)
 
-            dict[section]["elements"]['element' + match_id[0][1]] = {
+            dict["sections"][section]["elements"]['element' + match_id[0][1]] = {
                 'order_id': match_id[0][1],
                 'name': 'n/a' if not match_title else match_title.group('title'),
                 'condition': 'n/a' if not match_condition else match_condition.group('condition'), # TODO
@@ -186,7 +192,7 @@ def main():
             depends_on = ""
             for item in match_answer_items:
 
-                dict[section]["elements"]['element' +match_id[0][1]]['answer_items'][item[0]] = {
+                dict["sections"][section]["elements"]['element' +match_id[0][1]]['answer_items'][item[0]] = {
                     'order_id': item[0][-1],
                     'answer_text': item[1]+item[3],
                     'depends_on': depends_on,
