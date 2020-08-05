@@ -30,7 +30,6 @@ def treat_explanations(explanation):
 
     # group 2 is the link's name, group 3 is the url
     external_links = re.findall(r'\[(.*)\]\((http.*)\)', explanation) # Match with all the external links
-    print("Explanation regex link", external_links)
 
     # For each link, we remove it to the text (the "http...") and add the link to the links dictionary
     # It will create an external_link in the platform
@@ -39,7 +38,6 @@ def treat_explanations(explanation):
         # Group 1 is all the explanation before the link, group 2 is the link's name, group 3 is the url
         # group 4 is expl after
         data_to_replace = re.findall(r'(.*)\[(.*)\]\((http.*)\)(.*\n?.*)', explanation)
-        print("DATA REPLACE", data_to_replace)
         explanation = explanation.replace(data_to_replace[0][2], '') # Delete the link int the explanation
         links[link[0]] = {
             "name": link[0],
@@ -61,7 +59,6 @@ def treat_resources(resources):
     # Match with the external links but do not work when there are several for one line so tricks
     external_links = re.findall(r'(.*)\[(?P<name>.*)\]\((?P<link>http.*)\)\*?(?P<addtional>.*)', resources)
 
-    print("regex external links", external_links)
     for link in external_links:
         # Group 1 is useless text before the link (but need to check if not a link not caught within)
         # Group 2 is the link's name, group 3 is the url
@@ -91,8 +88,9 @@ def treat_resources(resources):
 
 
 def treat_conditions_inter_elements(condition_text):
+    """ If there is a condition which respect the format ie 'R1.5 <> a' return the 1st regex group ie section_id.element_id
+    and also the 2nd group which is the choice_id of the element which sets the condition"""
     regex = re.findall(r'R([0-9\.]+)\s?\<\>\s?(\w)', condition_text)
-    print("Condition", condition_text, regex)
     return regex[0][0]+"."+regex[0][1]
 
 
@@ -104,7 +102,7 @@ def main():
     # Current directory, where the assessment and the script should be both present
     directory = os.path.dirname(sys.argv[0])
     filepath = directory+"/"+glob.glob("assessment.md")[0]
-    print("filepath", filepath)
+
 
     if not os.path.isfile(filepath):
         print("File path {} does not exist. Exiting...".format(filepath))
@@ -180,10 +178,8 @@ def main():
 
             # Populate the dictionary in the corresponding section
             # Calculate the value to add
-            print("match ID", match_id)
             section = "section "+match_id[0][0]
 
-            print("DIC", dict, section)
 
             dict["sections"][section]["elements"]['element' + match_id[0][1]] = {
                 'order_id': match_id[0][1],
