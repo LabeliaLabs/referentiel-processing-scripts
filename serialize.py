@@ -73,7 +73,6 @@ def treat_resources(resources):
         # If the line has multiple links, we check the rests which is, with this regex, the 1st group
         rest = link[0]
         while "http" in rest:
-            print("rest", rest)
             regex = re.findall(r'(.*)\[(.*)\]\((http.*)\)\*?(.*)', rest)
 
             links[regex[0][1]] = {
