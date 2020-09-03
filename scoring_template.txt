@@ -1,5 +1,5 @@
 Assessment version : [1.0]
-Scoring version : [v1.0]
+Scoring version : [1.0]
 
 # section 1 - Protéger les données personnelles ou confidentielles
 
