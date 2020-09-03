@@ -10,7 +10,7 @@ import os
 import re
 import json
 import glob
-import pandas as pd
+from datetime import datetime
 
 
 def match_question_type(regex_string):
@@ -45,10 +45,12 @@ def main():
         # Initialize the dict (version and sections dict)
         print("Please, enter the version of the assessment, (like '1.4'): ")
         version = input()
-        dict["version"] = "version: " + version
+        dict["version"] = version
         print("Please, enter the name of the assessment: ")
         name = input()
         dict["name"] = name
+        now = datetime.now()
+        dict["timestamp"] = now.strftime("%d-%b-%Y (%H:%M:%S.%f)")
         dict["sections"] = {}
 
         for section_data in match_each_sections:
@@ -75,7 +77,7 @@ def main():
             match_answer_hint = re.search(r'_\((?P<answer_hint>.+)\)_\n\n-\s\[', el[0])  # Not used
 
             # Group answer_item_id is section_id.element_id.choice_id (5.2.b)
-            match_answer_items = re.findall(r'-\s\[\s]\s(?P<answer_item_id>\d.\d.\D)\s(?P<answer_item_text>[^\|\n]+)(\s\|\s_\((?P<answer_item_type>.+)\)_)?\n', el[0])
+            match_answer_items = re.findall(r'-\s\[\s]\s(?P<answer_item_id>\d{1,2}.\d{1,2}.\D)\s(?P<answer_item_text>[^\|\n]+)(\s\|\s_\((?P<answer_item_type>.+)\)_)?\n', el[0])
 
             match_explanation = re.search(r'(Expl[0-9.]+)\s:<\/summary>\n\n(?P<expl>(.|\n)+?)\n\n<', el[0])
             match_resources = re.search(r'(Ressources[0-9.]+)\s:<\/summary>\n\n(?P<resource>(.|\n)+?)<', el[0])
@@ -131,7 +133,8 @@ def main():
                     depends_on = item[0][-1]
 
     # Generate the .json file of the assessment
-    with open('assessment.json', 'w', encoding="utf-8") as fp:
+    json_filename = f'assessment-{dict["version"]}.json'
+    with open(json_filename, 'w', encoding="utf-8") as fp:
         json.dump(dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)
 
     # Create a neat, easy-to-read and easy-to-write-in scoring template
@@ -139,6 +142,10 @@ def main():
     txt_lines = []
     sections_dict = dict["sections"]
     nb_sections = len(sections_dict)
+
+    txt_lines.append(f'Assessment version : [{dict["version"]}]\n')
+    txt_lines.append("Scoring version : [1.0]\n")
+    txt_lines.append("\n")
 
     for i in range(1, nb_sections+1):
 
@@ -164,7 +171,8 @@ def main():
 
         txt_lines.append("\n")
 
-    with open('scoring_template.txt', 'w', encoding="utf-8") as f:
+    template_filename = "scoring_template.txt"
+    with open(template_filename, 'w', encoding="utf-8") as f:
         f.writelines(txt_lines)
 
 
