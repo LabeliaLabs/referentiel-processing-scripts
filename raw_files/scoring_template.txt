@@ -1,4 +1,4 @@
-Assessment version : [v0.5-alpha]
+Assessment version : [0.5-alpha]
 Scoring version : [1.0]
 
 # section 1 - Protéger les données personnelles ou confidentielles
@@ -82,7 +82,7 @@ Scoring version : [1.0]
 0.50 [3.1.d] Prévoit systématiquement l'élaboration de deux testsets ou plus pour gagner en résilience
 
 ## Q3.2 - Projets d'apprentissage distribué préservant la confidentialité
-0.00 [3.2.a] Nous ne participons pas à des projets de _privacy-preserving distributed learning_
+-nc- [3.2.a] Nous ne participons pas à des projets de _privacy-preserving distributed learning_
 1.00 [3.2.b] Nous maîtrisons et mettons en oeuvre des approches permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires
 0.00 [3.2.c] À ce stade nous ne maîtrisons pas les méthodes permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires
 
@@ -96,7 +96,7 @@ Scoring version : [1.0]
 0.50 [3.4.c] Les pratiques ci-dessus que nous mettons en oeuvre sont dûment documentées intégrées à la généalogie de bout-en-bout des modèles concernés, y compris les métriques de performance choisies
 
 ## Q3.5 - Suivi de la performance dans le temps
-0.00 [3.5.a] Les modèles que nous élaborons ne sont pas utilisés dans des systèmes en production
+-nc- [3.5.a] Les modèles que nous élaborons ne sont pas utilisés dans des systèmes en production
 0.50 [3.5.b] La performance est systématiquement ré-évaluée lorsque le modèle est mis à jour
 0.50 [3.5.c] La performance est systématiquement ré-évaluée lorsque le contexte d'utilisation du modèle évolue, ce qui peut créer un risque sur la performance du modèle du fait de l'évolution de l'espace des données d'entrée
 0.50 [3.5.d] La distribution des données d'entrée est monitorée, et la performance est ré-évaluée régulièrement sur des données de test actualisées
@@ -140,18 +140,18 @@ Scoring version : [1.0]
 # section 5 - Garantir la chaîne de responsabilité des modèles
 
 ## Q5.1 - Chaîne de valeur et de responsabilités
-0.00 [5.1.a] Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable
+-nc- [5.1.a] Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable
 1.50 [5.1.b] Nous procédons systématiquement à l'identification des risques et responsabilités de chacune des parties prenantes internes ou externes avec lesquelles nous collaborons
 1.50 [5.1.c] Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)
 
 ## Q5.2 - Répartition de la création de valeur
-0.00 [5.2.a] Notre organisation exerce ses activités de data science de manière autonome, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. Elle n'est donc pas concernée
+-nc- [5.2.a] Notre organisation exerce ses activités de data science de manière autonome, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. Elle n'est donc pas concernée
 0.00 [5.2.b] À ce stade nous n'avons pas structuré cet aspect des projets de data science multi-partenaires
 1.00 [5.2.c] Dans ces cas de figure nous contractualisons le volet économique de la relation avec les parties prenantes impliquées en amont du projet
 1.00 [5.2.d] Notre organisation s'est dotée d'une politique encadrant de manière responsable le partage de valeur avec les parties prenantes impliquées
 
 ## Q5.3 - Sous-traitance de tout ou partie des activités data science
-0.00 [5.3.a] Non concerné, nous ne sous-traitons pas ces activités
+-nc- [5.3.a] Non concerné, nous ne sous-traitons pas ces activités
 2.00 [5.3.b] Oui, nos réponses à cette évaluation tiennent compte des pratiques de nos sous-traitants
 0.00 [5.3.c] Non, nos réponses à cette évaluation ne s'appliquent pas à nos sous-traitants et sur certains points il est possible qu'ils soient moins avancés que nous
 
@@ -159,7 +159,7 @@ Scoring version : [1.0]
 # section 6 - Utiliser des modèles prédictifs appris
 
 ## Q6.1 - Utilisation de modèles prédictifs pour son propre compte
-0.00 [6.1.a] Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte
+-nc- [6.1.a] Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte
 1.00 [6.1.b] **Un registre des modèles prédictifs** identifie tous les modèles utilisés par l'organisation, nous le maintenons à jour
 1.00 [6.1.c] Pour chaque modèle nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement
 1.00 [6.1.d] Pour chaque modèle, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels, incidents, défaillances, biais
@@ -169,7 +169,7 @@ Scoring version : [1.0]
 1.00 [6.1.h] Nous utilisons toujours les modèles pour des **usages en adéquation avec leurs conditions et limites d'utilisation**
 
 ## Q6.2 - Développement de modèles prédictifs pour le compte de tiers
-0.00 [6.2.a] Notre organisation ne fournit pas à ses clients ou des tiers, et n'opère pas pour le compte de tiers d'application basée sur des modèles prédictifs élaboré par apprentissage automatique
+-nc- [6.2.a] Notre organisation ne fournit pas à ses clients ou des tiers, et n'opère pas pour le compte de tiers d'application basée sur des modèles prédictifs élaboré par apprentissage automatique
 1.00 [6.2.b] **Un registre des modèles prédictifs** identifie tous les modèles ou applications utilisés par ses clients et/ou par l'organisation pour le compte de tiers, nous le maintenons à jour
 1.00 [6.2.c] Pour chaque modèle ou application pour un client ou un tiers nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement
 1.00 [6.2.d] Pour chaque modèle ou application pour un client ou un tiers, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels, incidents, défaillances, biais
@@ -179,21 +179,21 @@ Scoring version : [1.0]
 1.00 [6.2.h] Nous fournissons à nos clients ou opérons pour leur compte des modèles ou applications pour des **usages en adéquation avec leurs conditions et limites d'utilisation**
 
 ## Q6.3 - Gestion des prédictions problématiques, processus de contournement, _human agency_
-0.00 [6.3.a] Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs
+-nc- [6.3.a] Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs
 1.00 [6.3.b] Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait *ex ante*, en sollicitant un opérateur humain dans un certain nombre de cas où l'intervalle de confiance pour la décision automatique n'est pas satisfaisant
 1.00 [6.3.c] Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait selon une modalité de gestion d'incident, c'est-à-dire de correction *ex post* du résultat non souhaitable
 1.00 [6.3.d] Nous mettons en place des mécanismes permettant à un opérateur humain, dans certaines conditions définies, d'aller contre une décision d'un modèle s'il identifie que le modèle commet une erreur
 3.00 [6.3.e] Nous appliquons systématiquement le principe de *human agency*, les sorties des modèles prédictifs que nous mettons en oeuvre sont utilisées par des opérateurs humains, et ne servent pas de déterminants à des décisions automatiques
 
 ## Q6.4 - Transparence vis-à-vis des parties prenantes interagissant avec un modèle prédictif appris
-0.00 [6.4.a] Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs
+-nc- [6.4.a] Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs
 0.00 [6.4.b] Les utilisateurs ne sont pas informés qu'ils interagissent avec un modèle prédictif appris
 0.50 [6.4.c] Une notice d'information est mise à disposition dans les conditions générales d'utilisation du système ou un document équivalent, en libre accès
 1.00 [6.4.d] Le système ou le service est explicite vis-à-vis de l'utilisateur quant au fait qu'un modèle prédictif appris est utilisé
 1.00 [6.4.e] Le système ou le service propose à l'utilisateur des informations supplémentaires sur les résultats qu'aurait fourni le système ou le service dans des cas de figure légèrement différents
 
 ## Q6.5 - Audits par des tierces parties indépendantes et *verifiable claims*
-0.00 [6.5.a] Nous ne communiquons pas et n'utilisons pas les résultats ou la performance de nos systèmes d'IA comme argument vis-à-vis de nos parties prenantes, nous ne sommes pas concernés par cet élément d'évaluation
+-nc- [6.5.a] Nous ne communiquons pas et n'utilisons pas les résultats ou la performance de nos systèmes d'IA comme argument vis-à-vis de nos parties prenantes, nous ne sommes pas concernés par cet élément d'évaluation
 0.00 [6.5.b] Nous communiquons sur nos résultats et nous appuyons sur ceux-ci pour notre développement sans faire auditer auparavant nos travaux par une tierce partie indépendante, sans mettre à disposition d'éléments de preuve
 2.00 [6.5.c] Nous faisons auditer nos travaux par une tierce partie indépendante, ou nous mettons à disposition des éléments de preuve, avant de communiquer sur nos résultats et de nous en prévaloir vis-à-vis de nos parties prenantes
 
@@ -219,5 +219,3 @@ Scoring version : [1.0]
 1.00 [7.3.b] Les collaborateurs concernés par les activités data science reçoivent une formation à l'éthique
 1.00 [7.3.c] Notre organisation s'est dotée d'une politique en matière d'éthique
 1.00 [7.3.d] Sur les projets le justifiant, nous mettons en place un comité d'éthique indépendant ou nous sollicitons l'évaluation d'un organisme validant l'éthique des projets
-
-
