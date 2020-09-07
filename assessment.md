@@ -1,6 +1,6 @@
 # Data science responsable et de confiance - Référentiel d'évaluation
 
-Le [référentiel d'évaluation](#référentiel-dévaluation-de-la-maturité-dune-organisation) ci-dessous est en cours d'élaboration. Il procède de l'identification des [risques](#risques) que l'on cherche à prévenir dans la pratique responsable et de confiance de la data science. Il est structuré en plusieurs [thèmes](#thèmes-et-canevas-du-référentiel-dévaluation) complémentaires.
+Le [référentiel d'évaluation](#référentiel-dévaluation-de-la-maturité-dune-organisation) ci-dessous est en cours d'élaboration. Il procède de l'identification des [risques](#risques) que l'on cherche à prévenir dans la pratique responsable et de confiance de la data science.
 
 ## Référentiel d'évaluation de la maturité d'une organisation
 
@@ -20,7 +20,7 @@ L'évaluation est composée des 7 sections suivantes :
 
 L'utilisation de données personnelles ou confidentielles fait porter le risque d'exposition de celles-ci, ce qui peut avoir des conséquences très préjudiciables pour les producteurs, gestionnaires, ou sujets de ces données. En particulier dans les projets de data science, elles doivent donc être protégées et les risques qu'elles fuitent ou soient exposées doivent être minimisés.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-2---prévenir-les-biais-malencontreux)_]
 
 ---
@@ -41,7 +41,17 @@ _(Sélectionner une seule réponse, correspondant le mieux au niveau de maturit�
 <details>
 <summary>Expl1.1 :</summary>
 
-Mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains secteurs), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules](https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules).
+Il est crucial de mettre en place des processus pour connaître et suivre l'évolution des réglementations applicables (très spécifiques dans certains domaines, par exemple dans le secteur bancaire), ainsi que pour documenter les approches et choix retenus pour être en conformité à chaque projet de data science. Exemple(s) intéressant(s) : [Welfare surveillance system violates human rights, Dutch court rules](https://www.theguardian.com/technology/2020/feb/05/welfare-surveillance-system-violates-human-rights-dutch-court-rules).
+
+</details>
+
+<details>
+<summary>Ressources1.1 :</summary>
+
+- (Official report) [Big data, artificial intelligence, machine learning and data protection](https://ico.org.uk/media/for-organisations/documents/2013559/big-data-ai-ml-and-data-protection.pdf), EU Information Commissioner's Office, 2017
+- (Web article) [Artificial Intelligence and the GDPR: how do they interact?](https://www.avocats-mathias.com/technologies-avancees/artificial-intelligence-gdpr), Mathias Avocats, Novembre 2017
+- (Web article) [How to develop Artificial Intelligence that is GDPR-friendly](https://techgdpr.com/blog/develop-artificial-intelligence-ai-gdpr-friendly/), Tech GDRP blog, Février 2019
+- (Video) [What is the impact of GDPR on AI and Machine Learning?](https://www.youtube.com/watch?v=RLEtyfmsfs4&app=desktop), SwissAI Machine Learning Meetup, Septembre 2018
 
 </details>
 
@@ -166,10 +176,10 @@ L'état de l'art de la sécurité du ML est en constante évolution. S'il est im
 - (Web article) *[Top Five ML risks](https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md)*, OWASP
 - (Web article) *[The secret-sharer: evaluating and testing unintended memorization in neural networks](https://blog.acolyer.org/2019/09/23/the-secret-sharer/)*, A. Colyer, 2019
 - (Academic paper) *[Membership Inference Attacks against Machine Learning Models](https://arxiv.org/abs/1610.05820)*, R. Shokri, M. Stronati, C. Song, V. Shmatikov, 2017
-- (Tool) *[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter): a tool to quantify the privacy risks of machine learning models with respect to inference attacks*
+- (Software & Tools) *[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter): a tool to quantify the privacy risks of machine learning models with respect to inference attacks*
 - (Web article) *[Demystifying the membership inference attack](https://medium.com/disaitek/demystifying-the-membership-inference-attack-e33e510a0c39)*, Disaitek, 2019
 - (Academic paper) *[Inverting Gradients - How easy is it to break privacy in federated learning?](https://arxiv.org/abs/2003.14053)*, J. Geiping, H. Bauermeister, H. Dröge, M. Moeller, 2020
-- (Software) Outils pour la *differential privacy* : Google *[differential privacy library](https://github.com/google/differential-privacy)*, et le wrapper Python [PyDP](https://github.com/OpenMined/PyDP) d'OpenMined
+- (Software & Tools) Outils pour la *differential privacy* : Google [differential privacy library](https://github.com/google/differential-privacy) et le wrapper Python [PyDP](https://github.com/OpenMined/PyDP) d'OpenMined, Facebook AI's [Opacus](https://github.com/pytorch/opacus) pour PyTorch
 - (Web article) La *distillation* d'un modèle, en plus de la compression qu'elle apporte, peut être utilisée comme une mesure de protection du modèle et des données d'entraînement utilisées, voir par exemple *[Knowledge Distillation : Simplified](https://towardsdatascience.com/knowledge-distillation-simplified-dd4973dbc764)*, Towards Data Science, 2019
 - (Academic paper) *[Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)*, G. Hinton, O. Vinyals, J. Dean, 2015
 
@@ -188,7 +198,7 @@ _(Sélectionner tous les éléments de réponse correspondant à des pratiques d
 - [ ] 1.8.a Une veille technique est mise en oeuvre
 - [ ] 1.8.b Les collaborateurs reçoivent régulièrement des informations / formations qui leur permettent de monter en compétences
 - [ ] 1.8.c Dans certains projets, nous mettons en oeuvre des _PETs_ permettant de réduire les risques liés aux modèles que nous élaborons
-- [ ] 1.8.d Sur chaque projet, les vulnérabilités qui s'y appliquent et les _PETs_ mises en oeuvre sont documentées dans la généalogie de bout-en-bout de chaque modèle
+- [ ] 1.8.d Sur chaque projet, les vulnérabilités qui s'y appliquent et les *PETs* mises en oeuvre sont documentées dans la généalogie de bout-en-bout de chaque modèle
 
 <details>
 <summary>Expl1.8 :</summary>
@@ -205,11 +215,11 @@ Selon les niveaux de risque et de sensibilité des projets, certaines approches 
 - (Web article) *[Top Five ML risks](https://github.com/OWASP/Top-5-Machine-Learning-Risks/blob/master/Top%205%20Machine%20Learning%20Risks.md)*, OWASP
 - (Web article) *[The secret-sharer: evaluating and testing unintended memorization in neural networks](https://blog.acolyer.org/2019/09/23/the-secret-sharer/)*, A. Colyer, 2019
 - (Academic paper) *[Membership Inference Attacks against Machine Learning Models](https://arxiv.org/abs/1610.05820)*, R. Shokri, M. Stronati, C. Song, V. Shmatikov, 2017
-- (Tool) *[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter): a tool to quantify the privacy risks of machine learning models with respect to inference attacks*
+- (Software & Tools) *[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter): a tool to quantify the privacy risks of machine learning models with respect to inference attacks*
 - (Web article) *[Demystifying the membership inference attack](https://medium.com/disaitek/demystifying-the-membership-inference-attack-e33e510a0c39)*, Disaitek, 2019
 - (Academic paper) *[Inverting Gradients - How easy is it to break privacy in federated learning?](https://arxiv.org/abs/2003.14053)*, J. Geiping, H. Bauermeister, H. Dröge, M. Moeller, 2020
-- (Software) Outils pour la *differential privacy* : Google *[differential privacy library](https://github.com/google/differential-privacy)*, et le wrapper Python [PyDP](https://github.com/OpenMined/PyDP) d'OpenMined
-- (Web article) La *distillation* d'un modèle, en plus de la compression qu'elle apporte, peut être utilisée comme une mesure de protection du modèle et des données d'entraînement utilisées, voir par exemple *[Knowledge Distillation : Simplified](https://towardsdatascience.com/knowledge-distillation-simplified-dd4973dbc764)*, Towards Data Science, 2019
+- (Software & Tools) Outils pour la *differential privacy* : Google *[differential privacy library](https://github.com/google/differential-privacy)*, et le wrapper Python [PyDP](https://github.com/OpenMined/PyDP) d'OpenMined
+- (Web article) La *distillation* d'un modèle, en plus de la compression qu'elle apporte, peut être utilisée comme une mesure de protection du modèle et des données d'entraînement utilisées, voir par exemple *[Knowledge Distillation: Simplified](https://towardsdatascience.com/knowledge-distillation-simplified-dd4973dbc764)*, Towards Data Science, 2019
 - (Academic paper) *[Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)*, G. Hinton, O. Vinyals, J. Dean, 2015
 
 </details>
@@ -243,7 +253,7 @@ Il existe dans certains secteurs des obligations de signalement des incidents de
 L'utilisation de modèles prédictifs élaborés à partir de données historiques peut se révéler contre-productive lorsque les données historiques sont contaminées par des phénomènes problématiques (e.g. qualité de certains points de données, données non comparables, phénomène social non souhaitable du fait de l'époque...). Il apparaît indispensable de s'interroger sur ce risque et d'étudier la nature des données utilisées, les conditions dans lesquelles elles ont été produites et assembées, et ce qu'elles représentent.
 Dans certains cas, une spécification de l'équité recherchée entre populations doit également être définie. L'équité d'un modèle peut [être définie de plusieurs manières qui peuvent être incompatibles entre elles](https://papers.nips.cc/paper/6995-counterfactual-fairness), et l'interprétation de scores de performances doit donc se faire dans le cadre de l'une de ces définitions.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-3---evaluer-la-performance-de-manière-rigoureuse)_]
 
 ---
@@ -316,8 +326,9 @@ Complément sur l'utilisation de données synthétiques et d'approches de _data 
 <details>
 <summary>Ressources2.3 :</summary>
 
+- (Web article) [Awful AI](https://github.com/daviddao/awful-ai), un registre des services ou projets d'IA inquiétants, David Dao
 - (Web article) *[Measuring fairness](https://pair.withgoogle.com/explorables/measuring-fairness)* explorable, [PAIR](https://pair.withgoogle.com/)
-- (Software) *[AI Fairness 360](https://developer.ibm.com/technologies/artificial-intelligence/projects/ai-fairness-360/): an open source software toolkit that can help detect and remove bias in machine learning models*, IBM
+- (Software & Tools) *[AI Fairness 360](https://developer.ibm.com/technologies/artificial-intelligence/projects/ai-fairness-360/): an open source software toolkit that can help detect and remove bias in machine learning models*, IBM
 - (Academic paper) *Fairness metrics* : *[counterfactual fairness](https://papers.nips.cc/paper/6995-counterfactual-fairness)*
 - (Academic paper) *Fairness metrics* : *[adversarial debiaising](https://arxiv.org/pdf/1801.07593.pdf)*
 
@@ -330,7 +341,7 @@ Complément sur l'utilisation de données synthétiques et d'approches de _data 
 
 Le score de performance d'un modèle prédictif est déterminant pour son adoption dans des produits, systèmes ou processus. L'évaluation de la performance se doit donc d'être rigoureuse. Par ailleurs un modèle prédictif peut-être utilisé comme un système automatique, dont les règles de fonctionnement ne sont pas écrites _in extenso_ et ne se prêtent pas ou mal à être explicitées, débattues, ajustées. Des efforts sont donc nécessaires sur l'interprétation et l'explication des choix réalisés à l'aide de ces systèmes.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-4---etablir-et-maintenir-une-généalogie-des-modèles)_]
 
 ---
@@ -339,7 +350,7 @@ Q3.1 : **Séparation des jeux de données de test**
 Au sein des projets de data science et lors de l'élaboration de jeux de données de test, il est capital d'assurer la non-contamination par des données d'entraînement. Votre organisation :
 
 R3.1 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
 - [ ] 3.1.a Fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées
@@ -356,7 +367,7 @@ R3.2 :
 _(Type : réponse unique)_  
 _(Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet)_
 
-- [ ] 3.2.a Nous ne participons pas à des projets de _privacy-preserving distributed learning_ | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 3.2.a Nous ne participons pas à des projets de _privacy-preserving distributed learning_ | _(Concerné / Non concerné)_
 - [ ] 3.2.b Nous maîtrisons et mettons en oeuvre des approches permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires
 - [ ] 3.2.c À ce stade nous ne maîtrisons pas les méthodes permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires
 
@@ -412,10 +423,10 @@ Q3.5 : **Suivi de la performance dans le temps**
 Dans les cas de figure où des modèles prédictifs élaborés par votre organisation sont utilisés dans des systèmes en production :
 
 R3.5 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 3.5.a Les modèles que nous élaborons ne sont pas utilisés actuellement | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 3.5.a Les modèles que nous élaborons ne sont pas utilisés dans des systèmes en production | _(Concerné / Non concerné)_
 - [ ] 3.5.b La performance est systématiquement ré-évaluée lorsque le modèle est mis à jour
 - [ ] 3.5.c La performance est systématiquement ré-évaluée lorsque le contexte d'utilisation du modèle évolue, ce qui peut créer un risque sur la performance du modèle du fait de l'évolution de l'espace des données d'entrée
 - [ ] 3.5.d La distribution des données d'entrée est monitorée, et la performance est ré-évaluée régulièrement sur des données de test actualisées
@@ -425,6 +436,7 @@ _(Sélectionner tous les éléments de réponse correspondant à des pratiques d
 <summary>Expl3.5 :</summary>
 
 Même sur un modèle stable il existe un risque que les données d'entrée ne soient plus dans le domaine au bout d'un certain temps (population & distribution), exemple : une variable qui ne serait plus renseignée à la même fréquence qu'avant par les utilisateurs dans un SI. Il est donc nécessaire de contrôler régulièrement la performance d'un modèle utilisé dans son contexte d'utilisation.
+Suivre l'évolution de la performance des modèles dans le temps est également particulièrement important dans les cas de figure d'apprentissage continu, présentant un risque de dégénérescence des modèles.
 
 </details>
 
@@ -432,7 +444,7 @@ Même sur un modèle stable il existe un risque que les données d'entrée ne so
 <summary>Ressources3.5 :</summary>
 
 - (Technical guide) *[Continuous delivery for machine learning](https://martinfowler.com/articles/cd4ml.html)*, D. Sato, A. Wider, C. Windheuser, Septembre 2019
-- (Technical guide) *[Monitoring Machine Learning Models in Production - A comprehensive guide](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/)*, ChristopherGS, Mars 2020
+- (Technical guide) *[Monitoring Machine Learning Models in Production - A comprehensive guide](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/)*, Christopher Samiullah, Mars 2020
 - (Web article) *[Google’s medical AI was super accurate in a lab. Real life was a different story](https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/)*, MIT Technology Review
 
 </details>
@@ -443,7 +455,7 @@ Q3.6 : **Seuils de décision et plages d'indécision**
 Lors de l'élaboration d'un modèle de classification, pour la définition des seuils de décision, votre organisation :
 
 R3.6 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
 - [ ] 3.6.a Fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées
@@ -464,7 +476,7 @@ Q3.7 : **Explicabilité et interprétabilité**
 Au sein des projets de data science qui visent à élaborer des modèles prédictifs :
 
 R3.7 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
 - [ ] 3.7.a Notre organisation n'est pour l'instant pas familière avec les méthodes et outils d'explicabilité et d'interprétabilité des modèles
@@ -476,7 +488,7 @@ _(Sélectionner tous les éléments de réponse correspondant à des pratiques d
 <details>
 <summary>Ressources3.7 :</summary>
 
-- (Web article) *[La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle](https://blog.octo.com/la-confiance-des-utilisateurs-dans-les-systemes-impliquant-de-lintelligence-artificielle/)*, Blog Octo Technologies, octobre 2019
+- (Web article) *[La confiance des utilisateurs dans les systèmes impliquant de l’Intelligence Artificielle](https://blog.octo.com/la-confiance-des-utilisateurs-dans-les-systemes-impliquant-de-lintelligence-artificielle/)*, Blog Octo Technologies, Octobre 2019
 - (Technical guide) *[Interpretable Machine Learning, A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/)*, Christoph Molnar
 - (Web article) Dans certains cas la réglementation impose de pouvoir expliquer aux personnes concernées comment fonctionne un algorithme (voir par exemple [l'article 22 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3#Article22), [l'article 10 de la loi Informatique et libertés](https://www.legifrance.gouv.fr/affichTexteArticle.do;?idArticle=LEGIARTI000037090394&cidTexte=LEGITEXT000006068624&dateTexte=20180624), cités notamment dans le [Serment d'Hippocrate pour data scientist](https://hippocrate.tech/))
 
@@ -489,7 +501,7 @@ _(Sélectionner tous les éléments de réponse correspondant à des pratiques d
 
 Un modèle prédictif est un objet informatique complexe qui peut évoluer au fil des apprentissages. Tracer les étapes de son élaboration et de son évolution permet d'en constituer une forme de **généalogie**, pré-requis pour **reproduire ou auditer** un modèle.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-5---garantir-la-chaîne-de-responsabilité-des-modèles)_]
 
 ---
@@ -509,17 +521,17 @@ _(Sélectionner une seule réponse, correspondant le mieux au niveau de maturit�
 <details>
 <summary>Expl4.1 :</summary>
 
-Ce concept de "généalogie de bout-en-bout" d'un modèle prédictif appris peut se décliner sous la forme par exemple d'un document de référence reprenant tous les choix importants ainsi que tout l'historique d'élaboration du modèle (données utilisées, pré-traitements réalisés, type d'apprentissage et architecture du modèle, seuils de décision, métriques de tests, compromis réalisés et leurs modalités (par exemple entre performance et privacy ou coût computationnel), etc.), et de processus internes organisant cette activité.
+Ce concept de "généalogie de bout-en-bout" d'un modèle prédictif appris peut se décliner sous la forme par exemple d'un document de référence reprenant tous les choix importants ainsi que tout l'historique d'élaboration du modèle (données utilisées, pré-traitements réalisés, type d'apprentissage et architecture du modèle, seuils de décision, métriques de tests...), etc.), et de processus internes organisant cette activité. En particulier, il est intéressant d'y faire figurer les choix de compromis (*trade-offs*) qui ont été faits et pourquoi (e.g. trade-offs précision-spécificité, performance-privacy, performance-coût computationnel, etc.).
 
 </details>
 
 <details>
 <summary>Ressources4.1 :</summary>
 
-- (Software) [Substra Framework](http://doc.substra.ai/): *an open source framework offering distributed orchestration of machine learning tasks among partners while guaranteeing secure and trustless traceability of all operations*
-- (Software) [MLflow](https://mlflow.org/): *an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry*
-- (Software) [DVC](https://dvc.org/): *an Open-source Version Control System for Machine Learning Projects*
-- (Tool) [DAGsHub](https://dagshub.com/docs/): *a platform for data version control and collaboration, based on DVC*
+- (Software & Tools) [Substra Framework](http://doc.substra.ai/): *an open source framework offering distributed orchestration of machine learning tasks among partners while guaranteeing secure and trustless traceability of all operations*
+- (Software & Tools) [MLflow](https://mlflow.org/): *an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry*
+- (Software & Tools) [DVC](https://dvc.org/): *an Open-source Version Control System for Machine Learning Projects*
+- (Software & Tools) [DAGsHub](https://dagshub.com/docs/): *a platform for data version control and collaboration, based on DVC*
 
 </details>
 
@@ -529,13 +541,13 @@ Q4.2 : **Conditions et limites d'utilisation d'un modèle**
 Dans le cadre des projets de data science, les "conditions et limites de validité" d'un modèle conçu, entraîné et validé par l'organisation :
 
 R4.2 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 4.2.a Ne sont pas documentées | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 4.2.a Ne sont pas documentées
 - [ ] 4.2.b Sont explicitées et documentées
 - [ ] 4.2.c Sont versionnées
-- [ ] 4.2.d Contiennent une description des risques que présenterait une utilisation en dehors des "condition    s et limités de validité"
+- [ ] 4.2.d Contiennent une description des risques que présenterait une utilisation en dehors des "conditions et limites de validité"
 - [ ] 4.2.e Les documents présentant ces "conditions et limites de validité" accompagnent systématiquement les modèles tout au long de leur cycle de vie
 
 <details>
@@ -553,13 +565,43 @@ Il s'agit d'expliciter et d'adjoindre au modèle la description du contexte d'ut
 </details>
 
 ---
+
+Q4.3 : **Analyse et partage d'incidents**  
+Dans le cadre des projets de data science, lorsqu'un comportement inattendu d'un modèle est observé :
+
+R4.3 :  
+_(Type : réponses multiples possibles)_  
+_(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
+
+- [ ] 4.3.a À ce stade nous ne faisons pas d'analyse des incidents ou comportements inattendus observés
+- [ ] 4.3.b Nous analysons les incidents ou comportements inattendus rencontrés et les publions lorsque cela est pertinent (e.g. article, blog)
+- [ ] 4.3.c Nous nous impliquons dans des clubs, cercles, ou associations professionnelles dans le domaine de la data science, et y faisons des retours d'expérience des incidents comportements inattendus que nous observons
+
+<details>
+<summary>Expl4.3 :</summary>
+
+La compréhension voire la maîtrise du comportement d'un modèle prédictif appris sont des défis complexes. De nombreuses recherches sont en cours pour développer des méthodes et des outils dans ce domaine, mais beaucoup reste à faire. Le partage par les praticiens des incidents et comportements inattendus qu'ils rencontrent contribue faire progresser la communauté.
+
+</details>
+
+<details>
+<summary>Ressources4.3 :</summary>
+
+- (Software & Tools) [AI Incident Registry](http://aiid.partnershiponai.org/), Partnership on AI
+- (Web article) [Specification gaming examples in AI](https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml), Victoria Krakovna
+- (Web article) [Learning from Tay's introduction](https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/) : analyse d'incident relative au chatbot Tay, Microsoft, 2016
+- (Academic paper) [Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims](https://arxiv.org/pdf/2004.07213.pdf), §2.4 p.19, Avril 2020
+
+</details>
+
+---
 ---
 
 ### Section 5 - Garantir la chaîne de responsabilité des modèles
 
 Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été "apprises" (et non définies et formalisées) interroge le fonctionnement des organisations. Il apparaît indispensable de garantir une chaîne de responsabilité claire, de personnes physiques ou morales, pour chaque modèle.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-6---utiliser-des-modèles-prédictifs-appris)_]
 
 ---
@@ -568,10 +610,10 @@ Q5.1 : **Chaîne de valeur et de responsabilités**
 Dans le cas de figure des projets de data science où plusieurs acteurs, y compris internes à l'organisation (équipes, départements, filiales), sont parties prenantes tout au long de la chaîne de valeur et de responsabilités :
 
 R5.1 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 5.1.a Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 5.1.a Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable | _(Concerné / Non concerné)_
 - [ ] 5.1.b Nous procédons systématiquement à l'identification des risques et responsabilités de chacune des parties prenantes internes ou externes avec lesquelles nous collaborons
 - [ ] 5.1.c Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)
 
@@ -588,11 +630,11 @@ Q5.2 : **Répartition de la création de valeur**
 Dans les cas de figure des projets de data science où plusieurs partenaires concourent aux côtés de votre organisation à l'élaboration d'un modèle, et que celui-ci est ou sera l'objet d'une activité économique :
 
 R5.2 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 5.2.a Notre organisation exerce ses activités de data science de manière autonome, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. Elle n'est donc pas concernée  | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
-- [ ] 5.2.b À ce stade nous n'avons pas structuré cet aspect des projets de data science multi-partenaires | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 5.2.a Notre organisation exerce ses activités de data science de manière autonome, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. Elle n'est donc pas concernée | _(Concerné / Non concerné)_
+- [ ] 5.2.b À ce stade nous n'avons pas structuré cet aspect des projets de data science multi-partenaires
 - [ ] 5.2.c Dans ces cas de figure nous contractualisons le volet économique de la relation avec les parties prenantes impliquées en amont du projet
 - [ ] 5.2.d Notre organisation s'est dotée d'une politique encadrant de manière responsable le partage de valeur avec les parties prenantes impliquées
 
@@ -604,7 +646,7 @@ Lorsque plusieurs partenaires collaborent pour l'élaboration d'un modèle, il e
 </details>
 
 <details>
-<summary>Ressource5.2 :</summary>
+<summary>Ressources5.2 :</summary>
 
 - (Code repository) [Exploration of dataset contributivity to a model in collaborative ML projects](https://github.com/SubstraFoundation/distributed-learning-contributivity), un projet open source animé par Substra Foundation
 
@@ -616,10 +658,10 @@ Q5.3 : **Sous-traitance de tout ou partie des activités data science**
 Les activités data science sous-traitées à une ou des organisation(s) tierce(s) sont soumises aux mêmes exigences que celles que votre organisation s'applique à elle-même :
 
 R5.3 :  
-_(Type : combiné)_  
+_(Type : réponse unique)_  
 _(Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet)_
 
-- [ ] 5.3.a Non concerné, nous ne sous-traitons pas ces activités | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 5.3.a Non concerné, nous ne sous-traitons pas ces activités | _(Concerné / Non concerné)_
 - [ ] 5.3.b Oui, nos réponses à cette évaluation tiennent compte des pratiques de nos sous-traitants
 - [ ] 5.3.c Non, nos réponses à cette évaluation ne s'appliquent pas à nos sous-traitants et sur certains points il est possible qu'ils soient moins avancés que nous
 
@@ -631,12 +673,13 @@ Comme dans les cadres connues du management des SI (ISO 27001) ou du RGPD, il es
 </details>
 
 ---
+---
 
 ### Section 6 - Utiliser des modèles prédictifs appris
 
 Utiliser des systèmes automatiques basés sur des modèles dont les règles ont été "apprises" (et non définies et formalisées) interroge le fonctionnement des organisations. Il est important de préserver la capacité de réaction et la résilience de l'organisation utilisatrice, notamment pour traiter les cas de figure où les modèles prédictifs auront été à l'origine d'un résultat non souhaitable pour l'organisation et ses parties prenantes.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]  
 [_[⇩ prochaine section](#section-7---anticiper-suivre-et-minimiser-les-externalités-de-lactivité-data-science)_]
 
 ---
@@ -645,16 +688,16 @@ Q6.1 : **Utilisation de modèles prédictifs pour son propre compte**
 Si votre organisation utilise pour son propre compte des modèles prédictifs :
 
 R6.1 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 6.1.a Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 6.1.a Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte | _(Concerné / Non concerné)_
 - [ ] 6.1.b **Un registre des modèles prédictifs** identifie tous les modèles utilisés par l'organisation, nous le maintenons à jour
 - [ ] 6.1.c Pour chaque modèle nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement
 - [ ] 6.1.d Pour chaque modèle, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels, incidents, défaillances, biais
 - [ ] 6.1.e Des outils de monitoring sont mis en place afin d'assurer une surveillance continue des systèmes de ML et peuvent déclencher des alertes directement auprès de l'équipe responsable
 - [ ] 6.1.f Pour chaque modèle, nous définissons et testons une procédure de suspension du modèle et un mode de fonctionnement dégradé sans le modèle, pour parer au cas de figure où le modèle serait sujet à une défaillance ou un comportement anormal
-- [ ] 6.1.g Pour chaque modèle, nous étudions sa généalogie de bout-en-bout et ses conditions et limites d'utilisation pour comprendre le modèle avant de l'utiliser
+- [ ] 6.1.g Pour chaque modèle, nous étudions sa généalogie de bout-en-bout (toutes les étapes et tous les choix qui ont conduit à son élaboration et son évaluation), ainsi que ses conditions et limites d'utilisation, pour comprendre le modèle avant de l'utiliser
 - [ ] 6.1.h Nous utilisons toujours les modèles pour des **usages en adéquation avec leurs conditions et limites d'utilisation**
 
 <details>
@@ -666,14 +709,14 @@ Utiliser des systèmes automatiques basés sur des modèles dont les règles ont
 
 ---
 
-Q6.2 : **Utilisation de modèles prédictifs pour le compte de tiers**  
+Q6.2 : **Développement de modèles prédictifs pour le compte de tiers**  
 Si votre organisation fournit à ses clients ou à des tiers, ou opère pour le compte de tiers des applications basées sur des modèles prédictifs :
 
 R6.2 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 6.2.a Notre organisation ne fournit pas à ses clients ou des tiers, et n'opère pas pour le compte de tiers d'application basée sur des modèles prédictifs élaboré par apprentissage automatique | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 6.2.a Notre organisation ne fournit pas à ses clients ou des tiers, et n'opère pas pour le compte de tiers d'application basée sur des modèles prédictifs élaboré par apprentissage automatique | _(Concerné / Non concerné)_
 - [ ] 6.2.b **Un registre des modèles prédictifs** identifie tous les modèles ou applications utilisés par ses clients et/ou par l'organisation pour le compte de tiers, nous le maintenons à jour
 - [ ] 6.2.c Pour chaque modèle ou application pour un client ou un tiers nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement
 - [ ] 6.2.d Pour chaque modèle ou application pour un client ou un tiers, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels, incidents, défaillances, biais
@@ -695,14 +738,14 @@ Q6.3 : **Gestion des prédictions problématiques, processus de contournement, _
 Les systèmes automatiques, en particulier lorsqu'ils s'appuient sur des modèles prédictifs appris, sont utilisés en production généralement pour gagner en efficacité. Il se trouve que par nature, ils génèrent de temps en temps des résultats non souhaitables pour l'organisation et ses parties prenantes (e.g. prédiction erronée), puisqu'ils ne généraliseront jamais une performance de 100%.
 
 R6.3 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 6.3.a Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
-- [ ] 6.3.b Nous appliquons systématiquement le principe de *human agency*, les sorties des modèles prédictifs que nous mettons en oeuvre sont utilisées par des opérateurs humains, et ne servent pas de déterminants à des décisions automatiques | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
-- [ ] 6.3.c Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait _ex ante_, en sollicitant un opérateur humain dans un certain nombre de cas où l'intervalle de confiance pour la décision automatique n'est pas satisfaisant
-- [ ] 6.3.d Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait selon une modalité de gestion d'incident, c'est-à-dire de correction _ex post_ du résultat non souhaitable
-- [ ] 6.3.e Nous mettons en place des mécanismes permettant à un opérateur humain, dans certaines conditions définies, d'aller contre une décision d'un modèle s'il identifie que le modèle commet une erreur
+- [ ] 6.3.a Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs | _(Concerné / Non concerné)_
+- [ ] 6.3.b Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait *ex ante*, en sollicitant un opérateur humain dans un certain nombre de cas où l'intervalle de confiance pour la décision automatique n'est pas satisfaisant
+- [ ] 6.3.c Nous intégrons dans les systèmes automatiques s'appuyant sur des modèles prédictifs appris les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Cela est fait selon une modalité de gestion d'incident, c'est-à-dire de correction *ex post* du résultat non souhaitable
+- [ ] 6.3.d Nous mettons en place des mécanismes permettant à un opérateur humain, dans certaines conditions définies, d'aller contre une décision d'un modèle s'il identifie que le modèle commet une erreur
+- [ ] 6.3.e Nous appliquons systématiquement le principe de *human agency*, les sorties des modèles prédictifs que nous mettons en oeuvre sont utilisées par des opérateurs humains, et ne servent pas de déterminants à des décisions automatiques
 
 <details>
 <summary>Expl6.3 :</summary>
@@ -714,7 +757,7 @@ Utiliser des systèmes automatiques basés sur des modèles dont les règles ont
 <details>
 <summary>Ressources6.3 :</summary>
 
-- (Technical guide) *[Monitoring Machine Learning Models in Production - A comprehensive guide](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/)*, ChristopherGS, March 2020
+- (Technical guide) *[Monitoring Machine Learning Models in Production - A comprehensive guide](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/)*, Christopher Samiullah, March 2020
 
 </details>
 
@@ -724,15 +767,14 @@ Q6.4 : **Transparence vis-à-vis des parties prenantes interagissant avec un mod
 Votre organisation utilise pour son propre compte, fournit à ses clients ou opère pour le compte de ses clients des applications basées sur des modèles prédictifs, avec lesquels sont à même d'interagir des utilisateurs. Que met-elle en place pour en informer les utilisateurs ?
 
 R6.4 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 6.4.a Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
-- [ ] 6.4.b Les utilisateurs ne sont pas informés qu'ils interagissent avec un modèle prédictif appris | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 6.4.a Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs | _(Concerné / Non concerné)_
+- [ ] 6.4.b Les utilisateurs ne sont pas informés qu'ils interagissent avec un modèle prédictif appris
 - [ ] 6.4.c Une notice d'information est mise à disposition dans les conditions générales d'utilisation du système ou un document équivalent, en libre accès
-- [ ] 6.4.d L'utilisation du système ou du service est explicite vis-à-vis de l'utilisateur quant au fait qu'un modèle prédictif appris est utilisé
+- [ ] 6.4.d Le système ou le service est explicite vis-à-vis de l'utilisateur quant au fait qu'un modèle prédictif appris est utilisé
 - [ ] 6.4.e Le système ou le service propose à l'utilisateur des informations supplémentaires sur les résultats qu'aurait fourni le système ou le service dans des cas de figure légèrement différents
-- [ ] 6.4.f Lorsque le système ou le service est conçu pour s'adapter au comportement de l'utilisateur et l'influencer (par exemple pour maximiser son temps d'utilisation ou les sommes qu'il dépense), et présente des risques non négligeables de manipulation ou d'addiction, l'utilisateur en est clairement informé
 
 <details>
 <summary>Expl6.4 :</summary>
@@ -751,11 +793,39 @@ Utiliser des systèmes automatiques basés sur des modèles dont les règles ont
 
 ---
 
+Q6.5 : **Audits par des tierces parties indépendantes et *verifiable claims***  
+Lorsque votre organisation communique sur les résultats ou la performance d'un système d'IA, et s'appuie sur de telles communications pour son développement et vis-à-vis de ses parties prenantes :
+
+R6.5 :  
+_(Type : réponse unique)_  
+_(Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet)_
+
+- [ ] 6.5.a Nous ne communiquons pas et n'utilisons pas les résultats ou la performance de nos systèmes d'IA comme argument vis-à-vis de nos parties prenantes, nous ne sommes pas concernés par cet élément d'évaluation | _(Concerné / Non concerné)_
+- [ ] 6.5.b Nous communiquons sur nos résultats et nous appuyons sur ceux-ci pour notre développement sans faire auditer auparavant nos travaux par une tierce partie indépendante, sans mettre à disposition d'éléments de preuve
+- [ ] 6.5.c Nous faisons auditer nos travaux par une tierce partie indépendante, ou nous mettons à disposition des éléments de preuve, avant de communiquer sur nos résultats et de nous en prévaloir vis-à-vis de nos parties prenantes
+
+<details>
+<summary>Expl6.5 :</summary>
+
+L'élaboration d'un modèle prédictif, et la détermination d'une mesure de performance de référence, signifiante et fiable, sont des défis complexes. Il est donc souvent délicat pour une organisation d'affirmer l'obtention d'excellents résultats et de s'en prévaloir avec certitude. Et lorsque cela est toutefois possible, il peut être plus délicat encore de mettre à disposition publiquement des éléments de preuve sans avoir à révéler d'information précieuse composant la propriété intellectuelle de l'organisation et la valeur même des travaux réalisés. Dans ces cas de figure, il est recommandé de faire procéder à un audit par une tierce partie indépendante (e.g. sécurité, privacy, fairness, fiabilité...), afin de sécuriser les résultats dont l'organisation souhaite se prévaloir.
+
+</details>
+
+<details>
+<summary>Ressources6.5 :</summary>
+
+- (Academic paper) [Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims](https://arxiv.org/pdf/2004.07213.pdf), §2 p.8-20, Avril 2020
+
+</details>
+
+---
+---
+
 ### Section 7 - Anticiper, suivre et minimiser les externalités de l'activité data science
 
 La mise en place d'un système automatique basé sur un modèle prédictif peut générer des externalités négatives sociales et environnementales. En prendre conscience est indispensable, ainsi qu'anticiper, chercher à suivre et minimiser les différents impacts négatifs.
 
-[_[⇧ retour à la liste des sections](#restructuration-en-un-référentiel-dévaluation-de-la-maturité-dune-organisation)_]
+[_[⇧ retour à la liste des sections](#référentiel-dévaluation-de-la-maturité-dune-organisation)_]
 
 ---
 
@@ -782,7 +852,7 @@ Il est important de s'interroger et de conscientiser les coûts environnementaux
 <details>
 <summary>Ressources7.1 :</summary>
 
-- (Tool) *[ML Impact Calculator](https://mlco2.github.io/impact/)*
+- (Software & Tools) *[ML Impact Calculator](https://mlco2.github.io/impact/)*
 
 </details>
 
@@ -814,10 +884,10 @@ Q7.3 : **Ethique et non-malfaisance**
 Au sein de votre organisation :
 
 R7.3 :  
-_(Type : combiné)_  
+_(Type : réponses multiples possibles)_  
 _(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
 
-- [ ] 7.3.a À ce stade nous ne nous sommes pas encore penchés sur la dimension éthique | _(Lorsque cette réponse est sélectionnée, les autres ne peuvent pas l'être)_
+- [ ] 7.3.a À ce stade nous ne nous sommes pas encore penchés sur la dimension éthique
 - [ ] 7.3.b Les collaborateurs concernés par les activités data science reçoivent une formation à l'éthique
 - [ ] 7.3.c Notre organisation s'est dotée d'une politique en matière d'éthique
 - [ ] 7.3.d Sur les projets le justifiant, nous mettons en place un comité d'éthique indépendant ou nous sollicitons l'évaluation d'un organisme validant l'éthique des projets
@@ -825,7 +895,8 @@ _(Sélectionner tous les éléments de réponse correspondant à des pratiques d
 <details>
 <summary>Expl7.3 :</summary>
 
-Travailler sur de grands volumes de données dont certaines peuvent être sensibles, utiliser des systèmes automatiques basés sur des modèles dont les règles ont été "apprises" (et non définies et formalisées) interrogent le fonctionnement des organisations et la responsabilité individuelle de chacun. Il est important que l'organisation s'assure que les enjeux éthiques ne sont pas inconnus de son personnel.
+Travailler sur de grands volumes de données dont certaines peuvent être sensibles, utiliser des systèmes automatiques basés sur des modèles dont les règles ont été "apprises" (et non définies et formalisées) interrogent le fonctionnement des organisations et la responsabilité individuelle de chacun, impose d'avoir une réflexion sur l'usage qui en est fait. Il est donc important que l'organisation s'assure que les enjeux éthiques ne sont pas inconnus de son personnel.
+Un exemple qui revient : certains systèmes ou services d'IA conçus pour s'adapter au comportement des utilisateurs peuvent influencer ceux-ci (par exemple en cherchant à maximiser leurs temps d'utilisation ou les sommes qu'ils dépensent) et présenter des risques non négligeables de manipulation ou d'addiction.
 
 </details>
 

@@ -119,14 +119,15 @@ def main():
 
             depends_on = ""
             for item in match_answer_items:
-
+                is_concerned_switch = 1 if item[3] else 0
                 dict["sections"][section]["elements"][evaluation_item]['answer_items'][item[0]] = {
                     'order_id': item[0][-1],
-                    'answer_text': item[1] + ("" if not item[3] else " | " + item[3]),
+                    'answer_text': item[1],
+                    'is_concerned_switch': is_concerned_switch,
                     'depends_on': depends_on,
                 }
-                # If this choice sets conditions on the others, so we change depends_on value to its order_id
-                if item[3]:
+                # If this answer item sets conditions on the others, so we change depends_on value to its order_id
+                if is_concerned_switch:
                     depends_on = item[0][-1]
 
     # Generate the .json file
