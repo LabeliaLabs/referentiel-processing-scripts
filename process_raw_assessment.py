@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Parses the DSRC assessment .md file and generates:
-1) a structured .json file, meant to be directly uploaded in the web platform
+Parses the DSRC assessment `.md` file and generates:
+1) a structured `.json` file, meant to be directly uploaded in the web platform
 2) a neat template for easily adding score points per answer item
 """
 

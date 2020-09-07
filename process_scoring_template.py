@@ -23,7 +23,7 @@ def main():
     filepath = directory + glob.glob("scoring_template.txt")[0]
 
     if not os.path.isfile(filepath):
-        print("File path {} does not exist. Exiting...".format(filepath))
+        print(f"File path {filepath} does not exist. Exiting...")
         sys.exit()
 
     with open(filepath, "r", encoding="utf-8") as fp:
