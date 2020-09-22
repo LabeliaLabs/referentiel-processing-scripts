@@ -20,7 +20,7 @@ def main():
     # Open and read the text file
     # Current directory, where the assessment and the script should be both present
     directory = os.path.dirname(sys.argv[0])
-    filepath = directory + glob.glob("scoring_template.txt")[0]
+    filepath = directory + glob.glob("raw_files/scoring_template.txt")[0]
 
     if not os.path.isfile(filepath):
         print(f"File path {filepath} does not exist. Exiting...")
@@ -37,15 +37,16 @@ def main():
 
         # Add the current date into the json name file
         now = datetime.now()
-        str_now = now.strftime("%d-%b-%Y")
+        str_now = now.strftime("%Y%m%d%H%M%S")
 
         # Capture all answer items and their number of points and add the items ids as keys and the weights as values
-        all_answer_items = re.findall(r'(?P<nb_points>\d{1,2}.?\d{0,2})\s\[(?P<item_id>\d{1,2}.\d{1,2}.\D)\]', raw)
+        all_answer_items = re.findall(r'(?P<nb_points>\d{1,2}.?\d{0,2}|-nc-)\s\[(?P<item_id>\d{1,2}.\d{1,2}.\D)\]', raw)
         for item in all_answer_items:
-            dict[item[1]] = str(float(item[0]))  # we need the values as string
+            nb_points = 0 if item[0] == '-nc-' else item[0]
+            dict[item[1]] = str(nb_points)  # We need the values as string for the import in the platform
 
     # Generate the .json file of the assessment
-    json_filename = 'assessment-'+assessment_version+'_scoring-'+scoring_version+'_'+str_now+'.json'
+    json_filename = f'processed_files/assessment-{assessment_version}_scoring-{scoring_version}_{str_now}.json'
     with open(json_filename, 'w', encoding="utf-8") as fp:
         json.dump(dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)
 

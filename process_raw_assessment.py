@@ -29,7 +29,7 @@ def main():
     # Open and read the text file
     # Current directory, where the assessment and the script should be both present
     directory = os.path.dirname(sys.argv[0])
-    filepath = directory + glob.glob("assessment.md")[0]
+    filepath = directory + glob.glob("raw_files/assessment.md")[0]
 
     if not os.path.isfile(filepath):
         print("File path {} does not exist. Exiting...".format(filepath))
@@ -133,7 +133,7 @@ def main():
                     depends_on = item[0][-1]
 
     # Generate the .json file of the assessment
-    json_filename = f'assessment-{dict["version"]}.json'
+    json_filename = f'processed_files/assessment-{dict["version"]}.json'
     with open(json_filename, 'w', encoding="utf-8") as fp:
         json.dump(dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)
 
@@ -165,13 +165,14 @@ def main():
 
             items_dict = elements_dict[element_idx]["answer_items"]
             for k, v in items_dict.items():
-                txt_lines.append(f'0.00 [{k}] {v["answer_text"]}\n')
+                placeholder = '-nc-' if v["is_concerned_switch"] == 1 else '0.00'
+                txt_lines.append(f'{placeholder} [{k}] {v["answer_text"]}\n')
 
             txt_lines.append("\n")
 
         txt_lines.append("\n")
 
-    template_filename = "scoring_template.txt"
+    template_filename = "raw_files/scoring_template.txt"
     with open(template_filename, 'w', encoding="utf-8") as f:
         f.writelines(txt_lines)
 
