@@ -26,10 +26,14 @@ def main():
     # Initialize a dictionary
     dict = {}
 
+    # Ask user for the filename of the scoring template to process
+    print("Please, enter the filename for the raw assessment you wish to process:")
+    filename = input()
+
     # Open and read the text file
     # Current directory, where the assessment and the script should be both present
     directory = os.path.dirname(sys.argv[0])
-    filepath = directory + glob.glob("raw_files/assessment.md")[0]
+    filepath = directory + glob.glob("raw_files/" + filename)[0]
 
     if not os.path.isfile(filepath):
         print("File path {} does not exist. Exiting...".format(filepath))
@@ -144,7 +148,7 @@ def main():
     nb_sections = len(sections_dict)
 
     txt_lines.append(f'Assessment version : [{dict["version"]}]\n')
-    txt_lines.append("Scoring version : [1.0]\n")
+    txt_lines.append("Scoring version : [1]\n")
     txt_lines.append("\n")
 
     for i in range(1, nb_sections+1):
@@ -172,7 +176,7 @@ def main():
 
         txt_lines.append("\n")
 
-    template_filename = "raw_files/scoring_template.txt"
+    template_filename = f'raw_files/scoring_template-{dict["version"]}.txt'
     with open(template_filename, 'w', encoding="utf-8") as f:
         f.writelines(txt_lines)
 

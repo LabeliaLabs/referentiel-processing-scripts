@@ -17,10 +17,14 @@ def main():
     # Initialize a dictionary
     dict = {}
 
+    # Ask user for the filename of the scoring template to process
+    print("Please, enter the filename for the scoring template you wish to process:")
+    filename = input()
+
     # Open and read the text file
     # Current directory, where the assessment and the script should be both present
     directory = os.path.dirname(sys.argv[0])
-    filepath = directory + glob.glob("raw_files/scoring_template.txt")[0]
+    filepath = directory + glob.glob("raw_files/" + filename)[0]
 
     if not os.path.isfile(filepath):
         print(f"File path {filepath} does not exist. Exiting...")
