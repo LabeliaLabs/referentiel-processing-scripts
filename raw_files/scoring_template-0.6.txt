@@ -1,4 +1,4 @@
-Assessment version : [0.91]
+Assessment version : [0.6]
 Scoring version : [1]
 
 # section 1 - Protéger les données à caractère personnel ou confidentielles
