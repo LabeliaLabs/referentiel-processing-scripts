@@ -26,7 +26,7 @@ def main():
     # Initialize a dictionary
     dict = {}
 
-    # Ask user for the filename of the scoring template to process
+    # Ask user for the filename of the raw assessment to process
     print("Please, enter the filename for the raw assessment you wish to process:")
     filename = input()
 
@@ -136,8 +136,11 @@ def main():
     with open(json_filename, 'w', encoding="utf-8") as fp:
         json.dump(dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)
 
-    # Create a neat, easy-to-read and easy-to-write-in scoring template
+# -----------------------------------------------------------------
+# Create a neat, easy-to-read and easy-to-write-in scoring template
+# -----------------------------------------------------------------
 
+    # Initialize key elements
     txt_lines = []
     sections_dict = dict["sections"]
     nb_sections = len(sections_dict)
@@ -146,30 +149,65 @@ def main():
     txt_lines.append("Scoring version : [1]\n")
     txt_lines.append("\n")
 
-    for i in range(1, nb_sections+1):
+    # Open useful files to get older elements to pre-fill the template
+    directory = os.path.dirname(sys.argv[0])
+    
+    print("Please, enter the filename for the previous scoring you wish to use to pre-fill your scoring template for this new assessment version (note: it is assumed it is located in /processed_files relatively to your working directory):")
+    prev_scores_filename = input()
+    prev_scores_filepath = directory + glob.glob("processed_files/" + prev_scores_filename)[0]
 
-        section_idx = "section " + str(i)
+    upgrade_table_filename = f'assessment-{dict["version"]}_upgrade_table.json'
+    upgrade_table_filepath = directory + glob.glob("processed_files/" + upgrade_table_filename)[0]
 
-        txt_lines.append(f'# {section_idx} - {sections_dict[section_idx]["name"]}\n')
-        txt_lines.append("\n")
+    if not os.path.isfile(prev_scores_filepath):
+        print("Previous scores filepath {} does not exist. Exiting...".format(prev_scores_filepath))
+        sys.exit()
+    if not os.path.isfile(upgrade_table_filepath):
+        print("Upgrade table filepath {} does not exist. Exiting...".format(upgrade_table_filepath))
+        sys.exit()
 
-        elements_dict = sections_dict[section_idx]["elements"]
-        nb_elements = len(elements_dict)
+    print("Please, enter the version number of the assessment from which you wish to get the scoring to pre-fill your scoring template for this new assessment version:")
+    prev_scores_assessment_version = input()
+    txt_lines.append(f"Pre-filled score values have been fetched from {prev_scores_filename}\n")
+    txt_lines.append(f"(only for answer items set to 1 in {upgrade_table_filename} vs. version {prev_scores_assessment_version})\n")
+    txt_lines.append(f"(answer items not set to 1 are pre-filled with '....' so you can identify them quickly)\n")
+    txt_lines.append("\n")
 
-        for j in range(1, nb_elements+1):
+    with open(prev_scores_filepath, "r", encoding="utf-8") as prev_scoring_file, open(upgrade_table_filepath, "r", encoding="utf-8") as upgrade_table_file:
+        prev_scores = json.load(prev_scoring_file)
+        upgrade_table = json.load(upgrade_table_file)
 
-            element_idx = "element " + str(j)
+        # Start filling in the template
+        for i in range(1, nb_sections+1):
 
-            txt_lines.append(f'## Q{i}.{j} - {elements_dict[element_idx]["name"]}\n')
+            section_idx = "section " + str(i)
 
-            items_dict = elements_dict[element_idx]["answer_items"]
-            for k, v in items_dict.items():
-                placeholder = '-nc-' if v["is_concerned_switch"] == 1 else '0.00'
-                txt_lines.append(f'{placeholder} [{k}] {v["answer_text"]}\n')
-
+            txt_lines.append(f'# {section_idx} - {sections_dict[section_idx]["name"]}\n')
             txt_lines.append("\n")
 
-        txt_lines.append("\n")
+            elements_dict = sections_dict[section_idx]["elements"]
+            nb_elements = len(elements_dict)
+
+            for j in range(1, nb_elements+1):
+
+                element_idx = "element " + str(j)
+
+                txt_lines.append(f'## Q{i}.{j} - {elements_dict[element_idx]["name"]}\n')
+
+                items_dict = elements_dict[element_idx]["answer_items"]
+                for k, v in items_dict.items():
+
+                    # Fetch score value of previous version to facilitate completion
+                    pre_fill = '....'
+                    if upgrade_table["diff_per_version"][prev_scores_assessment_version]["answer_items"][k] == 1:
+                        pre_fill = prev_scores[k]
+                    if v["is_concerned_switch"] == 1:
+                        pre_fill = '-nc-'
+                    txt_lines.append(f'{pre_fill} [{k}] {v["answer_text"]}\n')
+
+                txt_lines.append("\n")
+
+            txt_lines.append("\n")
 
     template_filename = f'raw_files/scoring_template-{dict["version"]}.txt'
     with open(template_filename, 'w', encoding="utf-8") as f:
