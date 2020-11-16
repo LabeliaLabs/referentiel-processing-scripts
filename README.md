@@ -14,6 +14,8 @@ This library provides several scripts enabling to:
   
 ## Instructions
 
+### Standard use - Complete processing
+
 1. Fetch the remote version of the repository with `git fetch origin` and `git pull origin master` if needed, and checkout to a new branch (for example `git checkout -b process-new-assessment-version`)
 
 1. Prepare the new assessment you would like to process and place in folder `/input_files`:
@@ -52,3 +54,24 @@ This library provides several scripts enabling to:
    git commit -m "Process version XX of the assessment"
    git push origin process-new-assessment
    ```
+
+### Processing only a new scoring template
+
+If you only need to update the scoring template for an assessment already processed, proceed as follow:
+
+1. Update the scoring template and be very careful to increment the scoring version (second line of the scoring template)
+
+1. Then execute partially `main.py` as follow:
+
+   1. Run the preliminary cell and the instantiation of the `Assessment` object:
+       ```
+       new_assessment = assessment.Assessment(...)
+       ```
+   1. Then run the second cell:
+       ```
+       new_assessment.process_scoring_template_to_json()
+       new_assessment.enrich_assessment_with_scoring_recap()
+       new_assessment.enrich_assessment_with_non_concerned_recap()
+       ```
+
+1. You should be good to go. Don't forget to commit your new scoring and updated structured assessment, and push them to the remote.

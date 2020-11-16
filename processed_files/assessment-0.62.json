@@ -1,7 +1,7 @@
 {
     "version": "0.62",
     "name": "DSRC Assessment",
-    "timestamp": "16-Nov-2020 (12:27:42.051723)",
+    "timestamp": "16-Nov-2020 (18:05:17.215595)",
     "sections": {
         "section 1": {
             "order_id": "1",
@@ -154,7 +154,7 @@
                             "order_id": "a",
                             "answer_text": "Oui",
                             "is_concerned_switch": 0,
-                            "score_value": 0.5
+                            "score_value": 1.5
                         },
                         "1.4.b": {
                             "order_id": "b",
@@ -163,7 +163,7 @@
                             "score_value": 0.0
                         }
                     },
-                    "element_max_score": 0.5
+                    "element_max_score": 1.5
                 },
                 "element 5": {
                     "order_id": "5",
@@ -185,13 +185,13 @@
                             "order_id": "b",
                             "answer_text": "Nous avons besoin d'en utiliser dans certains projets et le principe de minimisation est alors systématiquement appliqué",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 2.0
                         },
                         "1.5.c": {
                             "order_id": "c",
                             "answer_text": "Le principe de minimisation est connu des collaborateurs, qui l'appliquent en général",
                             "is_concerned_switch": 0,
-                            "score_value": 0.5
+                            "score_value": 1.0
                         },
                         "1.5.d": {
                             "order_id": "d",
@@ -200,7 +200,7 @@
                             "score_value": 0.0
                         }
                     },
-                    "element_max_score": 1.0
+                    "element_max_score": 2.0
                 },
                 "element 6": {
                     "order_id": "6",
@@ -216,22 +216,22 @@
                             "order_id": "a",
                             "answer_text": "Nous élaborons une analyse d'impact relative à la protection des données (AIPD ; en anglais *Privacy Impact Assessment*)",
                             "is_concerned_switch": 0,
-                            "score_value": 0.25
+                            "score_value": 0.34
                         },
                         "1.6.b": {
                             "order_id": "b",
                             "answer_text": "Nous mettons en oeuvre des mesures de protections (concernant notamment le transfert, le stockage, et l'accès aux données concernées)",
                             "is_concerned_switch": 0,
-                            "score_value": 0.25
+                            "score_value": 0.33
                         },
                         "1.6.c": {
                             "order_id": "c",
                             "answer_text": "Nous contractualisons les relations avec les fournisseurs et les clients et les responsabilités qui en découlent",
                             "is_concerned_switch": 0,
-                            "score_value": 0.25
+                            "score_value": 0.33
                         }
                     },
-                    "element_max_score": 0.75
+                    "element_max_score": 1.0
                 },
                 "element 7": {
                     "order_id": "7",
@@ -300,16 +300,16 @@
                             "order_id": "c",
                             "answer_text": "Confirmé",
                             "is_concerned_switch": 0,
-                            "score_value": 0.67
+                            "score_value": 1.0
                         },
                         "1.7.d": {
                             "order_id": "d",
                             "answer_text": "Expert",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 1.5
                         }
                     },
-                    "element_max_score": 1.0
+                    "element_max_score": 1.5
                 },
                 "element 8": {
                     "order_id": "8",
@@ -366,13 +366,13 @@
                             "order_id": "a",
                             "answer_text": "Nous faisons une veille technique sur les principales attaques et mesures pour s'en prémunir",
                             "is_concerned_switch": 0,
-                            "score_value": 0.33
+                            "score_value": 0.5
                         },
                         "1.8.b": {
                             "order_id": "b",
                             "answer_text": "Les collaborateurs reçoivent régulièrement des informations et formations qui leur permettent de développer leurs compétences dans ce domaine",
                             "is_concerned_switch": 0,
-                            "score_value": 0.33
+                            "score_value": 0.5
                         },
                         "1.8.c": {
                             "order_id": "c",
@@ -384,10 +384,10 @@
                             "order_id": "d",
                             "answer_text": "Sur chaque projet, les vulnérabilités qui s'y appliquent et les techniques mises en oeuvre sont documentées (par exemple dans la généalogie de bout-en-bout de chaque modèle, voir Section 4 et élément 4.1 pour plus d'information sur ce concept)",
                             "is_concerned_switch": 0,
-                            "score_value": 0.33
+                            "score_value": 0.5
                         }
                     },
-                    "element_max_score": 1.9900000000000002
+                    "element_max_score": 2.5
                 },
                 "element 9": {
                     "order_id": "9",
@@ -403,7 +403,7 @@
                             "order_id": "a",
                             "answer_text": "Nous avons une procédure décrivant la marche à suivre",
                             "is_concerned_switch": 0,
-                            "score_value": 0.33
+                            "score_value": 0.34
                         },
                         "1.9.b": {
                             "order_id": "b",
@@ -418,10 +418,10 @@
                             "score_value": 0.33
                         }
                     },
-                    "element_max_score": 0.99
+                    "element_max_score": 1.0
                 }
             },
-            "section_max_score": 8.73
+            "section_max_score": 12.0
         },
         "section 2": {
             "order_id": "2",
@@ -457,10 +457,10 @@
                             "order_id": "b",
                             "answer_text": "Dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 1.5
                         }
                     },
-                    "element_max_score": 1.0
+                    "element_max_score": 1.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -564,7 +564,7 @@
                     "element_max_score": 3.5
                 }
             },
-            "section_max_score": 4.5
+            "section_max_score": 5.0
         },
         "section 3": {
             "order_id": "3",
@@ -597,7 +597,7 @@
                             "order_id": "c",
                             "answer_text": "Utilise un outil de versionnage et de traçabilité des jeux de données d'entraînement et de test utilisés, permettant ainsi de vérifier ou auditer ultérieurement la non-contamination des données de tests",
                             "is_concerned_switch": 0,
-                            "score_value": 0.5
+                            "score_value": 1.0
                         },
                         "3.1.d": {
                             "order_id": "d",
@@ -606,7 +606,7 @@
                             "score_value": 0.5
                         }
                     },
-                    "element_max_score": 1.5
+                    "element_max_score": 2.0
                 },
                 "element 2": {
                     "order_id": "2",
@@ -633,7 +633,7 @@
                             "order_id": "b",
                             "answer_text": "Nous maîtrisons et mettons en oeuvre des approches permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 1.5
                         },
                         "3.2.c": {
                             "order_id": "c",
@@ -642,7 +642,7 @@
                             "score_value": 0.0
                         }
                     },
-                    "element_max_score": 1.0
+                    "element_max_score": 1.5
                 },
                 "element 3": {
                     "order_id": "3",
@@ -706,7 +706,7 @@
                             "order_id": "b",
                             "answer_text": "La mise en oeuvre de mesures ou tests de robustesse (*robustness metrics*) est considérée et évaluée pour chaque projet d'élaboration d'un modèle, et appliquée par défaut dans les cas de figure où les données d'entrées peuvent être soumises à des perturbations fines (e.g. images, sons)",
                             "is_concerned_switch": 0,
-                            "score_value": 0.5
+                            "score_value": 1.0
                         },
                         "3.4.c": {
                             "order_id": "c",
@@ -715,7 +715,7 @@
                             "score_value": 0.5
                         }
                     },
-                    "element_max_score": 1.5
+                    "element_max_score": 2.0
                 },
                 "element 5": {
                     "order_id": "5",
@@ -798,7 +798,7 @@
                             "order_id": "b",
                             "answer_text": "Dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "is_concerned_switch": 0,
-                            "score_value": 0.33
+                            "score_value": 0.5
                         },
                         "3.6.c": {
                             "order_id": "c",
@@ -813,7 +813,7 @@
                             "score_value": 0.33
                         }
                     },
-                    "element_max_score": 1.33
+                    "element_max_score": 1.5
                 },
                 "element 7": {
                     "order_id": "7",
@@ -852,7 +852,7 @@
                     "element_max_score": 2.0
                 }
             },
-            "section_max_score": 10.33
+            "section_max_score": 12.0
         },
         "section 4": {
             "order_id": "4",
@@ -902,16 +902,16 @@
                             "order_id": "c",
                             "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle",
                             "is_concerned_switch": 0,
-                            "score_value": 3.0
+                            "score_value": 2.0
                         },
                         "4.1.d": {
                             "order_id": "d",
                             "answer_text": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle et versionnées",
                             "is_concerned_switch": 0,
-                            "score_value": 4.0
+                            "score_value": 2.5
                         }
                     },
-                    "element_max_score": 4.0
+                    "element_max_score": 2.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -948,7 +948,7 @@
                             "order_id": "c",
                             "answer_text": "Sont versionnées",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "4.2.d": {
                             "order_id": "d",
@@ -960,10 +960,10 @@
                             "order_id": "e",
                             "answer_text": "Les documents présentant ces \"conditions et limites de validité\" accompagnent systématiquement les modèles tout au long de leur cycle de vie",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         }
                     },
-                    "element_max_score": 4.0
+                    "element_max_score": 3.0
                 },
                 "element 3": {
                     "order_id": "3",
@@ -1039,10 +1039,10 @@
                             "order_id": "c",
                             "answer_text": "Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)",
                             "is_concerned_switch": 0,
-                            "score_value": 1.5
+                            "score_value": 1.0
                         }
                     },
-                    "element_max_score": 3.0
+                    "element_max_score": 2.5
                 },
                 "element 5": {
                     "order_id": "5",
@@ -1064,7 +1064,7 @@
                             "order_id": "b",
                             "answer_text": "Oui, nos réponses à cette évaluation tiennent compte des pratiques de nos sous-traitants",
                             "is_concerned_switch": 0,
-                            "score_value": 2.0
+                            "score_value": 1.5
                         },
                         "4.5.c": {
                             "order_id": "c",
@@ -1073,7 +1073,7 @@
                             "score_value": 0.0
                         }
                     },
-                    "element_max_score": 2.0
+                    "element_max_score": 1.5
                 },
                 "element 6": {
                     "order_id": "6",
@@ -1118,7 +1118,7 @@
                     "element_max_score": 2.0
                 }
             },
-            "section_max_score": 15.5
+            "section_max_score": 12.0
         },
         "section 5": {
             "order_id": "5",
@@ -1151,7 +1151,7 @@
                             "order_id": "c",
                             "answer_text": "Pour chaque modèle nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "5.1.d": {
                             "order_id": "d",
@@ -1175,16 +1175,16 @@
                             "order_id": "g",
                             "answer_text": "Pour chaque modèle, nous étudions sa généalogie de bout-en-bout (toutes les étapes et tous les choix qui ont conduit à son élaboration et son évaluation), ainsi que ses conditions et limites d'utilisation, pour comprendre le modèle avant de l'utiliser",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "5.1.h": {
                             "order_id": "h",
                             "answer_text": "Nous utilisons toujours les modèles pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         }
                     },
-                    "element_max_score": 7.0
+                    "element_max_score": 5.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -1212,7 +1212,7 @@
                             "order_id": "c",
                             "answer_text": "Pour chaque modèle ou application pour un client ou un tiers nous disposons d'un **responsable point de contact** défini, identifiable et joignable simplement",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "5.2.d": {
                             "order_id": "d",
@@ -1236,16 +1236,16 @@
                             "order_id": "g",
                             "answer_text": "Pour chaque modèle ou application pour un client ou un tiers, nous étudions sa généalogie de bout-en-bout et ses conditions et limites d'utilisation pour comprendre le modèle avant de l'utiliser",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "5.2.h": {
                             "order_id": "h",
                             "answer_text": "Nous fournissons à nos clients ou opérons pour leur compte des modèles ou applications pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         }
                     },
-                    "element_max_score": 7.0
+                    "element_max_score": 5.5
                 },
                 "element 3": {
                     "order_id": "3",
@@ -1400,7 +1400,7 @@
                             "order_id": "d",
                             "answer_text": "Le système ou le service est explicite vis-à-vis de l'utilisateur quant au fait qu'un modèle prédictif est utilisé",
                             "is_concerned_switch": 0,
-                            "score_value": 1.0
+                            "score_value": 0.5
                         },
                         "5.5.e": {
                             "order_id": "e",
@@ -1409,10 +1409,10 @@
                             "score_value": 1.0
                         }
                     },
-                    "element_max_score": 2.5
+                    "element_max_score": 2.0
                 }
             },
-            "section_max_score": 20.5
+            "section_max_score": 17.0
         },
         "section 6": {
             "order_id": "6",
@@ -1581,35 +1581,35 @@
         }
     },
     "enriched_with_scoring": {
-        "scoring_version": "1",
-        "total_max_score": 66.56,
+        "scoring_version": "2",
+        "total_max_score": 65.0,
         "recap_per_section": {
-            "section 1": 8.73,
-            "section 2": 4.5,
-            "section 3": 10.33,
-            "section 4": 15.5,
-            "section 5": 20.5,
+            "section 1": 12.0,
+            "section 2": 5.0,
+            "section 3": 12.0,
+            "section 4": 12.0,
+            "section 5": 17.0,
             "section 6": 7.0
         }
     },
     "non_concerned_recap": {
         "non_concerned_in_element": {
-            "3.2": 0.5,
+            "3.2": 0.75,
             "3.5": 1.0,
             "3.7": 1.0,
-            "4.4": 1.5,
-            "4.5": 1.0,
+            "4.4": 1.25,
+            "4.5": 0.75,
             "4.6": 1.0,
-            "5.1": 3.5,
-            "5.2": 3.5,
+            "5.1": 2.75,
+            "5.2": 2.75,
             "5.3": 1.0,
-            "5.5": 1.25
+            "5.5": 1.0
         },
         "conditional_elements": {
-            "1.6": 0.375,
-            "1.7": 0.5,
-            "1.8": 0.995,
-            "1.9": 0.495,
+            "1.6": 0.5,
+            "1.7": 0.75,
+            "1.8": 1.25,
+            "1.9": 0.5,
             "2.3": 1.75
         }
     }
