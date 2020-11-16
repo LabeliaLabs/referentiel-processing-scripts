@@ -70,8 +70,6 @@ class Assessment:
         self.scoring_version = None
         self.scoring_json_version_filename = None
         self.scoring_json_version_filepath = None
-        self.assessment_enriched_filename = f"assessment-{self.version}_enriched.json"
-        self.assessment_enriched_filepath = f"processed_files/{self.assessment_enriched_filename}"
 
     def dictionarize_raw_assessment(self):
 
@@ -317,22 +315,21 @@ class Assessment:
 
             self.dict["enriched_with_scoring"]["total_max_score"] = total_max_score
 
-        with open(self.assessment_enriched_filepath, 'w', encoding="utf-8") as fp:
+        with open(self.assessment_json_version_filepath, 'w', encoding="utf-8") as fp:
             json.dump(self.dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)
 
     def enrich_assessment_with_non_concerned_recap(self):
 
         temp_non_concerned = {}
         temp_conditional = {}
-        temp_dict = {"non_concerned_in_element": {},
-                     "conditional_elements": {},
-                     }
 
+        # Loop over sections
         sections_dict = self.dict["sections"]
         nb_sections = len(sections_dict)
         for i in range(1, nb_sections + 1):
             section_idx = "section " + str(i)
 
+            # Loop over elements
             elements_dict = sections_dict[section_idx]["elements"]
             nb_elements = len(elements_dict)
             for j in range(1, nb_elements + 1):
@@ -340,6 +337,7 @@ class Assessment:
                 element_has_nc = False
                 element_is_conditional = True if elements_dict[element_idx]["condition"] != "n/a" else False
 
+                # Loop over answer items
                 items_dict = elements_dict[element_idx]["answer_items"]
                 for k, v in items_dict.items():
                     if v["is_concerned_switch"] == 1:
@@ -354,5 +352,5 @@ class Assessment:
                                             "conditional_elements": temp_conditional,
                                             }
 
-        with open(self.assessment_enriched_filepath, 'w', encoding="utf-8") as fp:
+        with open(self.assessment_json_version_filepath, 'w', encoding="utf-8") as fp:
             json.dump(self.dict, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=False)

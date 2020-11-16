@@ -5,11 +5,15 @@ Editable script to process the raw .md versions of the assessment
 
 import assessment
 
+# ---------------------------------------------------------------------------------
+#%% Preliminary cell - Configure here the information for the processing to perform
+# ---------------------------------------------------------------------------------
+
 ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.61.md'
 ASSESSMENT_VERSION = '0.61'
 ASSESSMENT_NAME = 'DSRC Assessment'
 OLD_VERSION_TO_CHECK = '0.6'
-OLD_SCORING_FILENAME = 'assessment-0.6_scoring-1_20201027161214.json'
+OLD_SCORING_FILENAME = 'assessment-0.6_scoring-1.json'
 
 # --------------------------------------------------------------------------------------
 #%% First cell - Instantiate assessment, process it to .json and create scoring template
