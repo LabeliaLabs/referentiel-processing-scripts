@@ -16,26 +16,29 @@ This library provides several scripts enabling to:
 
 1. Fetch the remote version of the repository with `git fetch origin` and `git pull origin master` if needed, and checkout to a new branch (for example `git checkout -b process-new-assessment-version`)
 
-1. Place the raw assessment in folder `/raw_files`. It is expected to be a `.md` file (although any text file format should probably work)
+1. Prepare the new assessment you would like to process and place in folder `/input_files`:
+   - the raw assessment. It is expected to be a `.md` file (although any text file format should probably work)
+   - its upgrade table. It is expected to be a `.json` file following a strict structure (see already existing ones)
 
-1. Place the upgrade table in folder `/input_files`. It is expected to be a `.json` file following a strict structure (see already existing ones)
-
-1. Determine a previous version of the assessment (for parameter `OLD_VERSION_TO_CHECK`) and of its associated scoring (for parameter `OLD_SCORING_FILENAME`) you wish to use to pre-fill your scoring template for the new assessment you want to process.
+1. Determine a previous version of the assessment and of its associated scoring you wish to use to pre-fill your scoring template for the new assessment you want to process.
 
 1. Check and complete or amend the parameters of the processing in `main.py`
-```python
-ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.61.md'
-ASSESSMENT_VERSION = '0.61'
-ASSESSMENT_NAME = 'DSRC Assessment'
-OLD_VERSION_TO_CHECK = '0.6'
-OLD_SCORING_FILENAME = 'assessment-0.6_scoring-1.json'
-```
+    ```python
+    ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.61.md'
+    ASSESSMENT_VERSION = '0.61'
+    ASSESSMENT_NAME = 'DSRC Assessment'
+    OLD_VERSION_TO_CHECK = '0.6'  # previous version of the assessment
+    OLD_SCORING_FILENAME = 'assessment-0.6_scoring-1.json'  # scoring reference of the previous version 
+    ```
+   Then execute the corresponding cell of `main.py`.
 
-1. Execute the preliminary cell and the first cell of `main.py`. It will create:
+1. Execute the first cell of `main.py`. It will create:
    - the `.json` version of the assessment in folder `/processed_files`
-   - the `.txt` scoring template
+   - the `.txt` scoring template in folder `/intermediary_files`
    
-1. Fill-in the scoring template. If you configured previous versions correctly your template should be pre-filled, and only answer items which are new in the assessment are pre-filled with `....` so that you can identify them quickly.
+1. Fill-in the scoring template. If you configured previous versions correctly your template should be pre-filled, and only answer items which are new in the assessment are prefixed with `....` so that you can identify them quickly.
+
+    Note: **Make sure you save your file**. 
 
 1. Execute the second cell of `main.py`. It will:
    - create the `.json` version of the scoring

@@ -36,7 +36,7 @@ class Assessment:
 
         # Initialize basic descriptors
         self.filename = filename
-        self.raw_assessment_filepath = f"raw_files/{self.filename}"
+        self.raw_assessment_filepath = f"input_files/{self.filename}"
         if not os.path.isfile(self.raw_assessment_filepath):
             print(f"File path {self.raw_assessment_filepath} does not exist. Exiting...")
             sys.exit()
@@ -66,7 +66,7 @@ class Assessment:
         self.assessment_json_version_filename = f"assessment-{self.version}.json"
         self.assessment_json_version_filepath = f"processed_files/{self.assessment_json_version_filename}"
         self.scoring_template_filename = f"scoring_template-{self.version}.txt"
-        self.scoring_template_filepath = f"raw_files/{self.scoring_template_filename}"
+        self.scoring_template_filepath = f"intermediary_files/{self.scoring_template_filename}"
         self.scoring_version = None
         self.scoring_json_version_filename = None
         self.scoring_json_version_filepath = None
@@ -226,7 +226,7 @@ class Assessment:
         # Initialize a dictionary
         temp_dict = {}
 
-        # Check if there is indeed the scoring template with the standardized name, in the /raw_files folder
+        # Check if there is indeed the scoring template with the standardized name, in the /intermediary_files folder
         if not os.path.isfile(self.scoring_template_filepath):
             print(f"File path {self.scoring_template_filepath} does not exist. Exiting...")
             sys.exit()
