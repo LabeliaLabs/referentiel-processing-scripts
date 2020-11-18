@@ -9,11 +9,11 @@ import assessment
 #%% Preliminary cell - Configure here the information for the processing to perform
 # ---------------------------------------------------------------------------------
 
-ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.62.md'
-ASSESSMENT_VERSION = '0.62'
+ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.63.md'
+ASSESSMENT_VERSION = '0.63'
 ASSESSMENT_NAME = 'DSRC Assessment'
-OLD_VERSION_TO_CHECK = '0.61'
-OLD_SCORING_FILENAME = 'assessment-0.61_scoring-1.json'
+OLD_VERSION_TO_CHECK = '0.62'
+OLD_SCORING_FILENAME = 'assessment-0.62_scoring-2.json'
 
 # --------------------------------------------------------------------------------------
 #%% First cell - Instantiate assessment, process it to .json and create scoring template
