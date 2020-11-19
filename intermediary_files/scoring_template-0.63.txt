@@ -113,6 +113,7 @@ risques et bonnes pratiques sur le sujet
 0.50 [3.5.c] La performance est systématiquement ré-évaluée lorsque le contexte d'utilisation du modèle évolue, ce qui peut créer un risque sur la performance du modèle du fait de l'évolution de l'espace des données d'entrée
 0.50 [3.5.d] La distribution des données d'entrée est monitorée, et la performance est ré-évaluée régulièrement sur des données de test actualisées
 0.50 [3.5.e] Des contrôles aléatoires sont réalisés sur des prédictions afin d'en contrôler la cohérence
+0.00 [3.5.f] Nous ne mettons pas systématiquement en place de mesure de ce type
 
 ## Q3.6 - Seuils de décision et plages d'indécision
 0.00 [3.6.a] Fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées
@@ -150,6 +151,7 @@ risques et bonnes pratiques sur le sujet
 -nc- [4.4.a] Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable
 1.50 [4.4.b] Nous procédons systématiquement à l'identification des risques et responsabilités de chacune des parties prenantes internes ou externes avec lesquelles nous collaborons
 1.00 [4.4.c] Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)
+0.00 [4.4.d] Nous ne mettons pas systématiquement en place de mesure de ce type
 
 ## Q4.5 - Sous-traitance de tout ou partie des activités data science
 -nc- [4.5.a] Non concerné, nous ne sous-traitons pas ces activités
