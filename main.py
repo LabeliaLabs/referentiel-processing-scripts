@@ -12,6 +12,7 @@ import assessment
 ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.63.md'
 ASSESSMENT_VERSION = '0.63'
 ASSESSMENT_NAME = 'DSRC Assessment'
+ASSESSMENT_LANGUAGE = 'fr'
 OLD_VERSION_TO_CHECK = '0.62'
 OLD_SCORING_FILENAME = 'assessment-0.62_scoring-2.json'
 
@@ -23,6 +24,7 @@ OLD_SCORING_FILENAME = 'assessment-0.62_scoring-2.json'
 new_assessment = assessment.Assessment(ASSESSMENT_MD_VERSION_FILENAME,
                                        ASSESSMENT_VERSION,
                                        ASSESSMENT_NAME,
+                                       ASSESSMENT_LANGUAGE,
                                        OLD_VERSION_TO_CHECK,
                                        OLD_SCORING_FILENAME,
                                        )
