@@ -24,11 +24,12 @@ This library provides several scripts enabling to:
 
 1. Determine a previous version of the assessment and of its associated scoring you wish to use to pre-fill your scoring template for the new assessment you want to process.
 
-1. Check and complete or amend the parameters of the processing in `main.py`
+1. Check and complete or amend the parameters of the processing in `main.py`. Note that currently, only two languages are accepted, English and French. So please, write `"fr"` for French or `"en"` for English.
     ```python
     ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.61.md'
     ASSESSMENT_VERSION = '0.61'
     ASSESSMENT_NAME = 'DSRC Assessment'
+    ASSESSMENT_LANGUAGE = 'fr'
     OLD_VERSION_TO_CHECK = '0.6'  # previous version of the assessment
     OLD_SCORING_FILENAME = 'assessment-0.6_scoring-1.json'  # scoring reference of the previous version 
     ```

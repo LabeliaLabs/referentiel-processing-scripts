@@ -27,6 +27,7 @@ class Assessment:
             filename=None,
             version=None,
             name=None,
+            language=None,
             prev_scores_assessment_version=None,
             prev_scores_filename=None,
     ):
@@ -42,6 +43,7 @@ class Assessment:
             sys.exit()
         self.version = version
         self.name = name
+        self.language = language
 
         # Initialize upgrade table related infos
         self.upgrade_table_filename = f"assessment-{self.version}_upgrade_table.json"
@@ -63,7 +65,7 @@ class Assessment:
         self.dictionarize_raw_assessment()
 
         # Attributes related to processing
-        self.assessment_json_version_filename = f"assessment-{self.version}.json"
+        self.assessment_json_version_filename = f"assessment-{self.version}-{self.language}.json"
         self.assessment_json_version_filepath = f"processed_files/{self.assessment_json_version_filename}"
         self.scoring_template_filename = f"scoring_template-{self.version}.txt"
         self.scoring_template_filepath = f"intermediary_files/{self.scoring_template_filename}"
@@ -75,6 +77,7 @@ class Assessment:
 
         self.dict["version"] = self.version
         self.dict["name"] = self.name
+        self.dict["language"] = self.language
         now = datetime.now()
         self.dict["timestamp"] = now.strftime("%d-%b-%Y (%H:%M:%S.%f)")
         self.dict["sections"] = {}
@@ -111,7 +114,7 @@ class Assessment:
                 match_answer_items = re.findall(
                     r"-\s\[\s]\s(?P<answer_item_id>\d{1,2}.\d{1,2}.\D)\s(?P<answer_item_text>[^\|\n]+)(\s\|\s_\((?P<answer_item_type>.+)\)_)?\n", el[0])
                 match_explanation = re.search(r"(Expl[0-9.]+)\s:<\/summary>\n\n(?P<expl>(.|\n)+?)\n\n<", el[0])
-                match_resources = re.search(r"(Ressources[0-9.]+)\s:<\/summary>\n\n(?P<resource>(.|\n)+?)<", el[0])
+                match_resources = re.search(r"(Ress?ources[0-9.]+)\s:<\/summary>\n\n(?P<resource>(.|\n)+?)<", el[0])
                 match_resource_items = []
                 if match_resources:
                     match_resource_items = re.findall(r"-\s\((?P<type>.+?)\)\s(?P<text>.+)\n", match_resources.group('resource'))
