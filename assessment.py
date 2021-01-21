@@ -87,14 +87,16 @@ class Assessment:
 
             # Capture all sections of the assessment
             match_each_sections = re.findall(
-                r"[\#]{3,}\s[Section]+\s(?P<section_id>[0-9]+)[\-\s]+(?P<title>.+)\n\n(?P<description>(.|\n)+?)\n\n\[", raw)
+                r"[\#]{3,}\s[Section]+\s(?P<section_id>[0-9]+)[\-\s]+(?P<title>.+)"
+                r"\n\n[*\[]{3}(?P<keyword>.*)[*\]]{3}\n\n(?P<description>(.|\n)+?)\n\n\[", raw)
             # print(match_each_sections)  # DEBUG
 
             for section_data in match_each_sections:
                 self.dict["sections"]["section " + section_data[0]] = {
                     "order_id": section_data[0],
                     "name": section_data[1],
-                    "description": section_data[2],
+                    "keyword": section_data[2],
+                    "description": section_data[3],
                     "elements": {}
                 }
 
