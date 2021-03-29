@@ -9,10 +9,11 @@ import assessment
 #%% Preliminary cell - Configure here the information for the processing to perform
 # ---------------------------------------------------------------------------------
 
-ASSESSMENT_MD_VERSION_FILENAME = 'assessment-0.63.md'
+ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-0.63-fr.md'
+ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.63-en.md'
 ASSESSMENT_VERSION = '0.63'
-ASSESSMENT_NAME = 'DSRC Assessment'
-ASSESSMENT_LANGUAGE = 'fr'
+ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'
+ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'
 OLD_VERSION_TO_CHECK = '0.62'
 OLD_SCORING_FILENAME = 'assessment-0.62_scoring-2.json'
 
@@ -21,10 +22,11 @@ OLD_SCORING_FILENAME = 'assessment-0.62_scoring-2.json'
 # --------------------------------------------------------------------------------------
 
 # Instantiate a new assessment object
-new_assessment = assessment.Assessment(ASSESSMENT_MD_VERSION_FILENAME,
+new_assessment = assessment.Assessment(ASSESSMENT_MD_VERSION_FILENAME_FR,
+                                       ASSESSMENT_MD_VERSION_FILENAME_EN,
                                        ASSESSMENT_VERSION,
-                                       ASSESSMENT_NAME,
-                                       ASSESSMENT_LANGUAGE,
+                                       ASSESSMENT_NAME_FR,
+                                       ASSESSMENT_NAME_EN,
                                        OLD_VERSION_TO_CHECK,
                                        OLD_SCORING_FILENAME,
                                        )
