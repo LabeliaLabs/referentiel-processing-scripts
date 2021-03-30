@@ -133,7 +133,8 @@ class Assessment:
         r_element_condition = r"_\(Condition\s:\sR[0-9.]{3,5}\s\<\>\s(?P<item_id>[0-9a-z.]{5,8})\)_"
         r_element_question_text = r"(?P<question_text>.*(\s?:|\s?\?|\.))\n\nR[0-9.]{3}"
         r_element_type = r"_\((?P<answer_type>Type.+)\)_"
-        r_element_answer_hint = r"_\((?P<answer_hint>.+)\)_\n\n-\s\["
+        r_element_answer_hint = r"_\((?P<answer_hint>(Sélectionner|Select).+)\)_"
+        r_element_risk_domain = r"_\((Domaine|Specific)(?P<risk_domain>.+)\)_\n\n-\s\["
         r_element_answer_items = r"-\s\[\s]\s(?P<answer_item_id>\d{1,2}.\d{1,2}.\D)\s" \
                                  r"(?P<answer_item_text>[^\|\n]+)(\s\|\s_\((?P<answer_item_type>.+)\)_)?\n"
         r_element_explanation = r"(Expl[0-9.]+)\s:<\/summary>\n\n(?P<expl>(.|\n)+?)\n\n<"
@@ -167,6 +168,7 @@ class Assessment:
             match_question_text_fr = re.search(r_element_question_text, el_fr[0])
             match_answer_type_fr = re.search(r_element_type, el_fr[0])
             match_answer_hint_fr = re.search(r_element_answer_hint, el_fr[0])  # Not used
+            match_risk_domain_fr = re.search(match_each_fr_element, el_fr[0])
             match_answer_items_fr = re.findall(r_element_answer_items, el_fr[0])
             match_explanation_fr = re.search(r_element_explanation, el_fr[0])
             match_resources_fr = re.search(r_element_resources, el_fr[0])
@@ -174,10 +176,11 @@ class Assessment:
             if match_resources_fr:
                 match_resource_items_fr = re.findall(r_resource_items, match_resources_fr.group('resource'))
 
-            # English part, catch only texts with translation (name, question_text and explanation)
+            # English part, catch only texts with translation (name, question_text, risk_domain and explanation)
             # and the items and the resources
             match_title_en = re.search(r_element_title, el_en[0])
             match_question_text_en = re.search(r_element_question_text, el_en[0])
+            match_risk_domain_en = re.search(r_element_risk_domain, el_en[0])
             match_answer_items_en = re.findall(r_element_answer_items, el_en[0])
             match_explanation_en = re.search(r_element_explanation, el_en[0])
             match_resources_en = re.search(r_element_resources, el_en[0])
@@ -209,6 +212,8 @@ class Assessment:
                 'question_text_en': 'n/a' if not match_question_text_en else match_question_text_en.group('question_text'),
                 'question_type': 'n/a' if not match_answer_type_fr else match_question_type(match_answer_type_fr.group('answer_type')),
                 'answer_hint': 'n/a' if not match_answer_hint_fr else match_answer_hint_fr.group('answer_hint'),
+                'risk_domain_fr': 'n/a' if not match_risk_domain_fr else match_risk_domain_fr.group('risk_domain'),
+                'risk_domain_en': 'n/a' if not match_risk_domain_en else match_risk_domain_en.group('risk_domain'),
                 'explanation_text_fr': 'n/a' if not match_explanation_fr else match_explanation_fr.group('expl'),
                 'explanation_text_en': 'n/a' if not match_explanation_en else match_explanation_en.group('expl'),
                 'resources': {},
