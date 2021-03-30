@@ -134,7 +134,8 @@ class Assessment:
         r_element_question_text = r"(?P<question_text>.*(\s?:|\s?\?|\.))\n\nR[0-9.]{3}"
         r_element_type = r"_\((?P<answer_type>Type.+)\)_"
         r_element_answer_hint = r"_\((?P<answer_hint>(Sélectionner|Select).+)\)_"
-        r_element_risk_domain = r"_\((Domaine|Specific)(?P<risk_domain>.+)\)_\n\n-\s\["
+        r_element_risk_domain = r"_\((Domaine de risque spécifique : |Specific risk domain: )(" \
+                                r"?P<risk_domain>.+)\)_\n\n-\s\["
         r_element_answer_items = r"-\s\[\s]\s(?P<answer_item_id>\d{1,2}.\d{1,2}.\D)\s" \
                                  r"(?P<answer_item_text>[^\|\n]+)(\s\|\s_\((?P<answer_item_type>.+)\)_)?\n"
         r_element_explanation = r"(Expl[0-9.]+)\s:<\/summary>\n\n(?P<expl>(.|\n)+?)\n\n<"
@@ -168,7 +169,7 @@ class Assessment:
             match_question_text_fr = re.search(r_element_question_text, el_fr[0])
             match_answer_type_fr = re.search(r_element_type, el_fr[0])
             match_answer_hint_fr = re.search(r_element_answer_hint, el_fr[0])  # Not used
-            match_risk_domain_fr = re.search(match_each_fr_element, el_fr[0])
+            match_risk_domain_fr = re.search(r_element_risk_domain, el_fr[0])
             match_answer_items_fr = re.findall(r_element_answer_items, el_fr[0])
             match_explanation_fr = re.search(r_element_explanation, el_fr[0])
             match_resources_fr = re.search(r_element_resources, el_fr[0])
