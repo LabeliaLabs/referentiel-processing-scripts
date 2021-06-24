@@ -14,7 +14,7 @@ ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.65-en.md'
 ASSESSMENT_VERSION = '0.65'
 ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'
 ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'
-OLD_VERSION_TO_CHECK = '0.65'
+OLD_VERSION_TO_CHECK = '0.64'
 OLD_SCORING_FILENAME = 'assessment-0.64_scoring-1.json'
 
 # --------------------------------------------------------------------------------------
