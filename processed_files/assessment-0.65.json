@@ -58,33 +58,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Pas encore identifiées",
                             "answer_text_en": "Not yet identified",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "Partiellement identifiées ou en cours d'identification",
                             "answer_text_en": "Partially identified or in the process of identification",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "1.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Identifiées",
                             "answer_text_en": "Identified",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.1.d": {
                             "order_id": "d",
                             "answer_text_fr": "Identifiées et maîtrisées par les collaborateurs",
                             "answer_text_en": "Identified and known by our collaborators",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.75
                         },
                         "1.1.e": {
                             "order_id": "e",
                             "answer_text_fr": "Identifiées, documentées et maîtrisées par les collaborateurs",
                             "answer_text_en": "Identified, documented and known by our collaborators",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 },
                 "element 2": {
                     "order_id": "2",
@@ -105,27 +111,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Informelle, basée sur la responsabilité et la compétence de chacun",
                             "answer_text_en": "Informal, based on individual responsibility and competence",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "Formalisée et accessible à tous les collaborateurs",
                             "answer_text_en": "Formalized and accessible to all collaborators",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.2.c": {
                             "order_id": "c",
                             "answer_text_fr": "Formalisée et maîtrisée par les collaborateurs",
                             "answer_text_en": "Formalized and known by collaborators",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.67
                         },
                         "1.2.d": {
                             "order_id": "d",
                             "answer_text_fr": "Formalisée, maîtrisée par les collaborateurs, documentée pour chaque traitement de données personnelles ou confidentielles",
                             "answer_text_en": "Formalized, known by employees, documented for each processing of personal or confidential data",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 },
                 "element 3": {
                     "order_id": "3",
@@ -146,21 +157,25 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous ne faisons pas vraiment de veille réglementaire",
                             "answer_text_en": "We do not really monitor the regulatory environment",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous faisons une veille informelle, chaque collaborateur remonte les informations sur un moyen de communication dédiée",
                             "answer_text_en": "We keep an informal watch, each employee sends back information via internal communication channels",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "1.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous avons une veille formalisée, les responsables sont identifiés, le processus est documenté",
                             "answer_text_en": "We have a formal surveillance, with identified collaborators in charge and a documented process",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         }
-                    }
+                    },
+                    "element_max_score": 0.5
                 },
                 "element 4": {
                     "order_id": "4",
@@ -181,27 +196,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Oui",
                             "answer_text_en": "Yes",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         },
                         "1.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "Non",
                             "answer_text_en": "No",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Pas encore, nous préparons actuellement l'audit ou la certification de la conformité de notre organisation aux exigences relatives aux données personnelles et confidentielles",
                             "answer_text_en": "We are currently preparing an upcoming audit or certification of our organisation's compliance with personal and confidential data requirements",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Pas au niveau de l'organisation, mais c'est en revanche le cas pour un projet au moins",
                             "answer_text_en": "Not at the organization level, but it is the case for at least one project",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 5": {
                     "order_id": "5",
@@ -222,33 +242,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous faisons en sorte de n'utiliser aucune données personnelles ou confidentielles. Nous ne sommes pas concernés par cet univers de risque",
                             "answer_text_en": "We take care not to use any personal or confidential data. We are not concerned by this risk area",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.5.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous avons besoin d'en utiliser dans certains projets et le principe de minimisation est alors systématiquement appliqué",
                             "answer_text_en": "We need to use personal or confidential data in certain projects and the data minimisation principle is then systematically applied",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         },
                         "1.5.c": {
                             "order_id": "c",
                             "answer_text_fr": "Le principe de minimisation est connu des collaborateurs, qui l'appliquent en général",
                             "answer_text_en": "Employees are aware of the data minimisation principle and generally apply it",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "1.5.d": {
                             "order_id": "d",
                             "answer_text_fr": "Le réflexe \"qui peut le plus peut le moins\" vis-à-vis des données existe encore ici et là au sein de notre organisation. Dans certains projets, nous conservons des jeux de données beaucoup plus riches en données personnelles et confidentielles que ce qui est strictement utile au projet",
                             "answer_text_en": "The \"who can do the most can do the least\" reflex with regard to data still exists here and there within our organisation. In some projects, we keep datasets that are much richer in personal and confidential data than what is strictly useful to the project",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.5.e": {
                             "order_id": "e",
                             "answer_text_fr": "Le principe de minimisation est connu des collaborateurs, mais son application n'est pas la norme. En revanche, nous apportons une attention particulière à mettre en oeuvre des mesures de limitation des risques pour les données à caractère personnel (par exemple : pseudonymiser certaines features par des identifiants avec une table de correspondance séparée, éclater les données en plusieurs bases ou tables réparties)",
                             "answer_text_en": "Employees are aware of the data minimisation principle, but it is not applied as a general standard. However, we give a particular attention to implementing personal data-related risk mitigation measures (i.e. pseudonymising some features by identifiers with a separate correspondence table, split datasets in multiple tables kept apart)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 6": {
                     "order_id": "6",
@@ -269,27 +295,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous élaborons une analyse d'impact relative à la protection des données (AIPD ; en anglais *Privacy Impact Assessment*)",
                             "answer_text_en": "We elaborate a Privacy Impact Assessment (PIA)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.34
                         },
                         "1.6.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous mettons en oeuvre des mesures de protections (concernant notamment le transfert, le stockage, et l'accès aux données concernées)",
                             "answer_text_en": "We implement data protection measures (in particular concerning the transfer, storage and access to the data concerned)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.6.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous contractualisons les relations avec les fournisseurs et les clients et les responsabilités qui en découlent",
                             "answer_text_en": "We contractualise relations with suppliers and customers and the responsibilities that arise from them",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.6.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous n'avons pas encore mis en place d'approche organisée sur ces sujets",
                             "answer_text_en": "We have not yet set up an organised approach to these subjects",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 },
                 "element 7": {
                     "order_id": "7",
@@ -386,27 +417,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Complètement débutant",
                             "answer_text_en": "Complete beginner",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "1.7.b": {
                             "order_id": "b",
                             "answer_text_fr": "Basique",
                             "answer_text_en": "Basic",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.7.c": {
                             "order_id": "c",
                             "answer_text_fr": "Confirmé",
                             "answer_text_en": "Confirmed",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "1.7.d": {
                             "order_id": "d",
                             "answer_text_fr": "Expert",
                             "answer_text_en": "Expert",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 8": {
                     "order_id": "8",
@@ -493,33 +529,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous faisons une veille technique sur les principales attaques et mesures pour s'en prémunir",
                             "answer_text_en": "We keep a technical watch on the main attacks and measures to mitigate them",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.8.b": {
                             "order_id": "b",
                             "answer_text_fr": "Les collaborateurs reçoivent régulièrement des informations et formations qui leur permettent de développer leurs compétences dans ce domaine",
                             "answer_text_en": "Employees receive regular information and training to help them develop their skills in this area",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.8.c": {
                             "order_id": "c",
                             "answer_text_fr": "Dans certains projets, nous mettons en oeuvre des techniques spécifiques permettant de réduire les risques liés aux modèles que nous élaborons (par exemple : confidentialité différentielle, distillation...)",
                             "answer_text_en": "In some projects, we implement specific techniques to reduce the risks associated with the models we develop (for example: differential privacy, distillation, etc.)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "1.8.d": {
                             "order_id": "d",
                             "answer_text_fr": "Sur chaque projet, les vulnérabilités qui s'y appliquent et les techniques mises en oeuvre sont documentées (par exemple dans la généalogie de bout-en-bout de chaque modèle, voir Section 4 et élément 4.1 pour plus d'information sur ce concept)",
                             "answer_text_en": "On each project, the vulnerabilities that apply to it and the techniques implemented are documented (e.g. in the end-to-end genealogy of each model, see Section 4 and Element 4.1 for more information on this concept)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.8.e": {
                             "order_id": "e",
                             "answer_text_fr": "Nous n'avons pas encore mis en place d'approche organisée sur ces sujets",
                             "answer_text_en": "We have not yet set up an organised approach to these subjects",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.5
                 },
                 "element 9": {
                     "order_id": "9",
@@ -540,29 +582,35 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous avons une procédure décrivant la marche à suivre",
                             "answer_text_en": "We have a process describing the course of action in such cases",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.34
                         },
                         "1.9.b": {
                             "order_id": "b",
                             "answer_text_fr": "Notre procédure inclut une communication aux parties prenantes en question",
                             "answer_text_en": "Our process includes communication to the stakeholders in question",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.9.c": {
                             "order_id": "c",
                             "answer_text_fr": "Notre procédure référence les autorités auxquelles nous devons faire un signalement",
                             "answer_text_en": "Our process references the authorities to whom we must report",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         },
                         "1.9.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous n'avons pas encore mis en place de procédure pour couvrir ce cas de figure",
                             "answer_text_en": "We have not yet put in place a procedure for such cases",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 }
-            }
+            },
+            "section_max_score": 12.0
         },
         "section 2": {
             "order_id": "2",
@@ -608,21 +656,25 @@
                             "order_id": "a",
                             "answer_text_fr": "Fonctionne de manière informelle à ce sujet et s'en remet à la pratique de chaque collaborateur impliqué",
                             "answer_text_en": "Operates informally on this subject and relies on the practices of each collaborator involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "2.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "Ne dispose pas d'une approche documentée sur le sujet, mais les collaborateurs impliqués sont formés aux risques et bonnes pratiques sur le sujet",
                             "answer_text_en": "Does not have a documented approach to the subject, but the collaborators involved are trained on the risks and best practices on the subject",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.75
                         },
                         "2.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "answer_text_en": "Has a documented approach that is systematically implemented",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -643,15 +695,18 @@
                             "order_id": "a",
                             "answer_text_fr": "Concerné",
                             "answer_text_en": "Concerned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "2.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "Non concerné",
                             "answer_text_en": "Not concerned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 0
                 },
                 "element 3": {
                     "order_id": "3",
@@ -718,39 +773,46 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous portons une attention particulière à l'identification d'attributs protégés et à leurs proxys éventuels (par exemple étude une à une des variables utilisées en entrées du modèle pour recenser les corrélations qu’elles pourraient avoir avec des données sensibles)",
                             "answer_text_en": "We pay particular attention to the identification of protected attributes and their possible proxies (e.g. studying one by one the variables used as model inputs to identify the correlations they might have with sensitive data)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "2.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous procédons à des évaluations sur des données de test comprenant différentes sous-populations afin d'identifier les éventuels biais problématiques",
                             "answer_text_en": "We carry out evaluations on test data from different sub-populations in order to identify possible problematic biases",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "2.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous sélectionnons et mettons en oeuvre une ou plusieurs mesure(s) de justice et d'équité (_fairness metric_)",
                             "answer_text_en": "We select and implement one or more justice and equity measure(s) (_fairness metrics_)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "2.3.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous mettons en oeuvre des approches de type _data augmentation_ ou _re-weighting_ dans le but de réduire les éventuels biais des jeux de données",
                             "answer_text_en": "We use _data augmentation_ or _re-weighting_ approaches to reduce possible biases in the data sets",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "2.3.e": {
                             "order_id": "e",
                             "answer_text_fr": "Les pratiques ci-dessus que nous mettons en oeuvre sont dûment documentées et intégrées à la généalogie de bout-en-bout des modèles concernés",
                             "answer_text_en": "The above practices that we implement are duly documented and integrated into the end-to-end genealogy of the models concerned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "2.3.f": {
                             "order_id": "f",
                             "answer_text_fr": "Nous n'avons pas encore mis en place de mesures de ce type",
                             "answer_text_en": "We have not yet put in place any such measures",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 3.5
                 },
                 "element 4": {
                     "order_id": "4",
@@ -787,29 +849,35 @@
                             "order_id": "a",
                             "answer_text_fr": "Complètement débutant",
                             "answer_text_en": "Complete beginner",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "2.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "Basique",
                             "answer_text_en": "Basic",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "2.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Confirmé",
                             "answer_text_en": "Confirmed",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "2.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Expert",
                             "answer_text_en": "Expert",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 }
-            }
+            },
+            "section_max_score": 6.5
         },
         "section 3": {
             "order_id": "3",
@@ -839,27 +907,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées",
                             "answer_text_en": "Operates informally on this subject and relies on the competence and responsibility of the collaborators involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "3.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "Dispose d'une approche documentée et systématiquement mise en oeuvre d'isolation des jeux de données de test",
                             "answer_text_en": "Has a documented and systematically implemented approach to isolating test datasets",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Utilise un outil de versionnage et de traçabilité des jeux de données d'entraînement et de test utilisés, permettant ainsi de vérifier ou auditer ultérieurement la non-contamination des données de tests",
                             "answer_text_en": "Uses a tool for versioning and tracing the training and test datasets used, thus enabling the non-contamination of test data to be checked or audited at a later stage",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "3.1.d": {
                             "order_id": "d",
                             "answer_text_fr": "Prévoit systématiquement l'élaboration de deux jeux de données de test ou plus pour gagner en résilience",
                             "answer_text_en": "Systematically plans two or more sets of test data to increase resilience",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 2": {
                     "order_id": "2",
@@ -886,21 +959,25 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous ne participons pas à des projets d'apprentissage distribué *privacy-preserving*",
                             "answer_text_en": "We do not participate in *privacy-preserving* distributed learning projects",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "3.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous maîtrisons et mettons en oeuvre des approches permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires",
                             "answer_text_en": "We master and implement approaches to develop test datasets in such a way that there is no cross-contamination between training and test data from different partners",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         },
                         "3.2.c": {
                             "order_id": "c",
                             "answer_text_fr": "À ce stade nous ne maîtrisons pas les méthodes permettant d'élaborer des jeux de données de test de manière à ce qu'il n'y ait pas de contamination croisée entre données d'entraînement et de test provenant des différents partenaires",
                             "answer_text_en": "At this stage we do not master the methods for developing test datasets in such a way that there is no cross-contamination between training and test data from the different partners",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 3": {
                     "order_id": "3",
@@ -921,21 +998,25 @@
                             "order_id": "a",
                             "answer_text_fr": "Fonctionne de manière informelle à ce sujet et s'en remet à la pratique de chaque collaborateur impliqué",
                             "answer_text_en": "Operates informally on this subject and relies on the practice of each collaborator member involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "3.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Ne dispose pas d'une approche documentée sur le sujet, mais les collaborateurs impliqués sont formés aux risques et bonnes pratiques sur le sujet",
                             "answer_text_en": "Does not have a documented approach to the subject, but the collaborators involved are trained on the risks and best practices on the subject",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "answer_text_en": "Has a documented approach that is systematically implemented",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 },
                 "element 4": {
                     "order_id": "4",
@@ -982,27 +1063,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Lors de l'élaboration d'un modèle, nous choisissons la ou les métrique(s) de performance en amont de l'apprentissage automatique, parmi les métriques les plus standards possibles",
                             "answer_text_en": "When developing a model, we choose the performance metric(s) prior to actually training the model, from among the most standard metrics possible",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "La mise en oeuvre de mesures ou tests de robustesse (*robustness metrics*) est considérée et évaluée pour chaque projet d'élaboration d'un modèle, et appliquée par défaut dans les cas de figure où les données d'entrées peuvent être soumises à des perturbations fines (e.g. images, sons)",
                             "answer_text_en": "The implementation of robustness metrics is considered and evaluated for each modelling project, and applied by default in cases where the input data may be subject to fine-grain alterations (e.g. images, sounds)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "3.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Les pratiques ci-dessus que nous mettons en oeuvre sont documentées et intégrées à la généalogie de bout-en-bout des modèles concernés, y compris les métriques de performance choisies",
                             "answer_text_en": "The above practices that we implement are documented and integrated into the end-to-end genealogy of the models concerned, including the performance metrics chosen",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous n'avons pas encore mis en place de mesure de ce type",
                             "answer_text_en": "We have not yet introduced any such measures",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 5": {
                     "order_id": "5",
@@ -1044,39 +1130,46 @@
                             "order_id": "a",
                             "answer_text_fr": "Les modèles que nous élaborons ne sont pas utilisés dans des systèmes en production",
                             "answer_text_en": "The models we develop are not used in production systems",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "3.5.b": {
                             "order_id": "b",
                             "answer_text_fr": "La performance est systématiquement ré-évaluée lorsque le modèle est mis à jour",
                             "answer_text_en": "Performance is systematically re-evaluated when the model is updated",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.5.c": {
                             "order_id": "c",
                             "answer_text_fr": "La performance est systématiquement ré-évaluée lorsque le contexte d'utilisation du modèle évolue, ce qui peut créer un risque sur la performance du modèle du fait de l'évolution de l'espace des données d'entrée",
                             "answer_text_en": "Performance is systematically re-evaluated when the context in which the model is used evolves, which may create a risk on the performance of the model due to the evolution of the input data space",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.5.d": {
                             "order_id": "d",
                             "answer_text_fr": "La distribution des données d'entrée est monitorée, et la performance est ré-évaluée régulièrement sur des données de test actualisées",
                             "answer_text_en": "The distribution of input data is monitored, and performance is regularly re-evaluated on the basis of updated test data",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.5.e": {
                             "order_id": "e",
                             "answer_text_fr": "Des contrôles aléatoires sont réalisés sur des prédictions afin d'en contrôler la cohérence",
                             "answer_text_en": "Random checks are carried out on predictions to check their consistency",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.5.f": {
                             "order_id": "f",
                             "answer_text_fr": "Nous ne mettons pas systématiquement en place de mesure de ce type",
                             "answer_text_en": "We do not systematically set up this type of measure",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 6": {
                     "order_id": "6",
@@ -1103,27 +1196,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Fonctionne de manière informelle à ce sujet et s'appuie sur la compétence et la responsabilité des collaborateurs impliquées",
                             "answer_text_en": "Operates informally on this subject and relies on the competence and responsibility of the collaborators involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "3.6.b": {
                             "order_id": "b",
                             "answer_text_fr": "Dispose d'une approche documentée et systématiquement mise en oeuvre",
                             "answer_text_en": "Has a documented approach that is systematically implemented",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "3.6.c": {
                             "order_id": "c",
                             "answer_text_fr": "Prend en compte la possibilité de maintenir des plages d'indécision dans certains cas de figure",
                             "answer_text_en": "Takes into account the possibility of maintaining ranges of indecision in certain cases",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.67
                         },
                         "3.6.d": {
                             "order_id": "d",
                             "answer_text_fr": "Les choix réalisés pour chaque modèle et mis en oeuvre sont documentés et intégrés à la généalogie de bout-en-bout des modèles concernés",
                             "answer_text_en": "The choices made for each model and implemented are documented and integrated into the end-to-end genealogy of the models concerned.",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.33
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 7": {
                     "order_id": "7",
@@ -1150,23 +1248,28 @@
                             "order_id": "a",
                             "answer_text_fr": "Nous ne communiquons pas et n'utilisons pas les résultats ou la performance de nos systèmes d'IA comme argument vis-à-vis de nos parties prenantes, nous ne sommes pas concernés par cet élément d'évaluation",
                             "answer_text_en": "We do not communicate or use the results or performance of our AI systems as an argument to our stakeholders, we are not concerned by this assessment element",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "3.7.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous communiquons sur nos résultats et nous appuyons sur ceux-ci pour notre développement sans faire auditer auparavant nos travaux par une tierce partie indépendante, sans mettre à disposition d'éléments de preuve",
                             "answer_text_en": "We communicate on our results and rely on them for our development without first having our work audited by an independent third party, without making evidence available",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "3.7.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous faisons auditer nos travaux par une tierce partie indépendante, ou nous mettons à disposition des éléments de preuve, avant de communiquer sur nos résultats et de nous en prévaloir vis-à-vis de nos parties prenantes",
                             "answer_text_en": "We have our work audited by an independent third party, or we make evidence available, before communicating our results and using them to communicate and rely on with our stakeholders",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 }
-            }
+            },
+            "section_max_score": 12.0
         },
         "section 4": {
             "order_id": "4",
@@ -1222,27 +1325,32 @@
                             "order_id": "a",
                             "answer_text_fr": "À ce stade nous n'avons pas mis en oeuvre d'approche de ce type",
                             "answer_text_en": "At this stage we have not implemented any such approach",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "4.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "Ces informations existent et sont enregistrées afin de ne pas être perdues, mais elles peuvent l'être de manière désordonnée et ne sont pas versionnées",
                             "answer_text_en": "This information exists and is recorded so as not to be lost, but it may be scattered and it is not versioned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "4.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle",
                             "answer_text_en": "They are compiled in a single document which systematically accompanies the model",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         },
                         "4.1.d": {
                             "order_id": "d",
                             "answer_text_fr": "Elles sont rassemblées en un unique document qui accompagne systématiquement le modèle et versionnées",
                             "answer_text_en": "They are gathered in a single document that systematically accompanies the model and is versioned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.5
                         }
-                    }
+                    },
+                    "element_max_score": 2.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -1284,33 +1392,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Ne sont pas documentées",
                             "answer_text_en": "Are not documented",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "4.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "Sont explicitées et documentées",
                             "answer_text_en": "Are explicited and documented",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "4.2.c": {
                             "order_id": "c",
                             "answer_text_fr": "Sont versionnées",
                             "answer_text_en": "Are versioned",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "4.2.d": {
                             "order_id": "d",
                             "answer_text_fr": "Contiennent une description des risques que présenterait une utilisation en dehors des \"conditions et limites de validité\"",
                             "answer_text_en": "Contain a description of the risks involved in using the model outside its \"conditions and limits of validity\"",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "4.2.e": {
                             "order_id": "e",
                             "answer_text_fr": "Les documents présentant ces \"conditions et limites de validité\" accompagnent systématiquement les modèles tout au long de leur cycle de vie",
                             "answer_text_en": "The documents presenting these \"conditions and limits of validity\" systematically accompany the models throughout their life cycle",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         }
-                    }
+                    },
+                    "element_max_score": 3.0
                 },
                 "element 3": {
                     "order_id": "3",
@@ -1352,27 +1466,32 @@
                             "order_id": "a",
                             "answer_text_fr": "À ce stade nous ne faisons pas d'analyse des incidents ou comportements inattendus observés",
                             "answer_text_en": "At this stage we do not analyse the incidents or unexpected behaviour observed",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "4.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous analysons les incidents ou comportements inattendus rencontrés, mais ne les publions pas",
                             "answer_text_en": "We analyse incidents or unexpected behaviour encountered, but don't publish or share it",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "4.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous analysons les incidents ou comportements inattendus rencontrés et les publions lorsque cela est pertinent (e.g. article, blog)",
                             "answer_text_en": "We analyse incidents or unexpected behaviour encountered and publish them when relevant (e.g. article, blog)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "4.3.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous nous impliquons dans des clubs, cercles, ou associations professionnelles dans le domaine de la data science, et y faisons des retours d'expérience des incidents comportements inattendus que nous observons",
                             "answer_text_en": "We get involved in clubs, networks or professional associations in the field of data science, and give feedback on incidents of unexpected behaviour that we observe",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         }
-                    }
+                    },
+                    "element_max_score": 1.0
                 },
                 "element 4": {
                     "order_id": "4",
@@ -1393,27 +1512,32 @@
                             "order_id": "a",
                             "answer_text_fr": "Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable",
                             "answer_text_en": "Within our organisation, data science projects are carried out end-to-end by autonomous teams, including the elaboration of datasets and the exploitation of models for its own account. Consequently, for each project, an autonomous team is solely responsible",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "4.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous procédons systématiquement à l'identification des risques et responsabilités de chacune des parties prenantes internes ou externes avec lesquelles nous collaborons",
                             "answer_text_en": "We systematically identify the risks and responsibilities of each of the internal and external stakeholders with whom we work",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         },
                         "4.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous contractualisons systématiquement avec les acteurs amont (e.g. fournisseurs de données) et aval (e.g. clients, partenaires utilisateurs de modèles)",
                             "answer_text_en": "We systematically enter into contracts with upstream (e.g. data suppliers) and downstream (e.g. customers, model-using partners) players",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "4.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous ne mettons pas systématiquement en place de mesure de ce type",
                             "answer_text_en": "We do not systematically implement this type of measure",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.5
                 },
                 "element 5": {
                     "order_id": "5",
@@ -1434,21 +1558,25 @@
                             "order_id": "a",
                             "answer_text_fr": "Non concerné, nous ne sous-traitons pas ces activités",
                             "answer_text_en": "Not concerned, we do not subcontract these activities",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "4.5.b": {
                             "order_id": "b",
                             "answer_text_fr": "Oui, nos réponses à cette évaluation tiennent compte des pratiques de nos sous-traitants",
                             "answer_text_en": "Yes, our responses to this evaluation take into account the practices of our subcontractors",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         },
                         "4.5.c": {
                             "order_id": "c",
                             "answer_text_fr": "Non, nos réponses à cette évaluation ne s'appliquent pas à nos sous-traitants et sur certains points il est possible qu'ils soient moins avancés que nous",
                             "answer_text_en": "No, our answers to this evaluation do not apply to our subcontractors and on certain points they may be less advanced than us",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 1.5
                 },
                 "element 6": {
                     "order_id": "6",
@@ -1475,29 +1603,35 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation exerce ses activités de data science de manière autonome, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. Elle n'est donc pas concernée",
                             "answer_text_en": "Our organisation carries out its data science activities autonomously, including the development of datasets and the exploitation of models for its own account. It is therefore not concerned",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "4.6.b": {
                             "order_id": "b",
                             "answer_text_fr": "À ce stade nous n'avons pas structuré cet aspect des projets de data science multi-partenaires",
                             "answer_text_en": "At this stage we have not structured this aspect of multi-partner data science projects",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "4.6.c": {
                             "order_id": "c",
                             "answer_text_fr": "Dans ces cas de figure nous contractualisons le volet économique de la relation avec les parties prenantes impliquées en amont du projet",
                             "answer_text_en": "In these cases, we contract the economic aspect of the relationship with the stakeholders involved upstream of the project",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "4.6.d": {
                             "order_id": "d",
                             "answer_text_fr": "Notre organisation s'est dotée d'une politique encadrant de manière responsable le partage de valeur avec les parties prenantes impliquées",
                             "answer_text_en": "Our organisation has a policy that responsibly frames the sharing of value with the stakeholders involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 }
-            }
+            },
+            "section_max_score": 12.5
         },
         "section 5": {
             "order_id": "5",
@@ -1527,57 +1661,67 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte",
                             "answer_text_en": "Our organisation does not use ML models on its own behalf",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "5.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "**Un registre des modèles prédictifs** identifie tous les modèles utilisés par l'organisation, nous le maintenons à jour",
                             "answer_text_en": "**A predictive models register** identifies all the models used by the organisation and is kept up-to-date",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Pour chaque modèle nous disposons d'un **responsable point de contact** défini, identifiable et contactable simplement",
                             "answer_text_en": "For each model there is an **owner** defined, identifiable and easily contactable",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.1.d": {
                             "order_id": "d",
                             "answer_text_fr": "Pour chaque modèle, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels incidents, défaillances ou biais",
                             "answer_text_en": "For each model, we systematically carry out a **risk assessment** following any incidents, failures or biases",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.1.e": {
                             "order_id": "e",
                             "answer_text_fr": "Des outils de monitoring sont mis en place afin d'assurer une surveillance continue des systèmes basés sur des modèles prédictifs et peuvent déclencher des alertes directement auprès de l'équipe responsable",
                             "answer_text_en": "Monitoring tools are put in place to ensure continuous monitoring of systems based on predictive models and can trigger alerts directly to the team in charge",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.1.f": {
                             "order_id": "f",
                             "answer_text_fr": "Pour chaque modèle, nous définissons et testons une procédure de suspension du modèle et un mode de fonctionnement dégradé sans le modèle, pour parer au cas de figure où le modèle serait sujet à une défaillance ou un comportement anormal",
                             "answer_text_en": "For each model, we define and test a procedure for suspending the model and a degraded operating mode without the model, in order to prepare for the case where the model is subject to failure or unexpected behaviour",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.1.g": {
                             "order_id": "g",
                             "answer_text_fr": "Pour chaque modèle, nous étudions sa généalogie de bout-en-bout (toutes les étapes et tous les choix qui ont conduit à son élaboration et son évaluation), ainsi que ses conditions et limites d'utilisation, pour comprendre le modèle avant de l'utiliser",
                             "answer_text_en": "For each model, we study its entire genealogy (all the steps and choices that led to its development and evaluation), as well as its conditions and limits of validity, in order to understand the model before using it",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.1.h": {
                             "order_id": "h",
                             "answer_text_fr": "Nous utilisons toujours les modèles pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "answer_text_en": "We always use the models for **uses in accordance with their conditions and limits of validity**",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.1.i": {
                             "order_id": "i",
                             "answer_text_fr": "Nous n'avons pas encore mis en place de mesure de ce type",
                             "answer_text_en": "We have not yet put in place such measures",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 5.5
                 },
                 "element 2": {
                     "order_id": "2",
@@ -1598,57 +1742,67 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation ne fournit pas à ses clients ou des tiers, et n'opère pas pour le compte de tiers d'application basée sur des modèles prédictifs élaborés par apprentissage automatique",
                             "answer_text_en": "Our organisation does not provide its customers or third parties, nor does it operates on behalf of third parties, with applications based on ML models",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "5.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "**Un registre des modèles prédictifs** identifie tous les modèles ou applications utilisés par ses clients et/ou par l'organisation pour le compte de tiers, nous le maintenons à jour",
                             "answer_text_en": "**A predictive models register** identifies all models or applications used by its customers and/or by the organisation on behalf of third parties, and is kept up-to-date",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.2.c": {
                             "order_id": "c",
                             "answer_text_fr": "Pour chaque modèle ou application pour un client ou un tiers nous disposons d'un **responsable point de contact** défini, identifiable et joignable simplement",
                             "answer_text_en": "For each model or application for a customer or a third party we have a defined, identifiable and easily reachable **owner**",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.2.d": {
                             "order_id": "d",
                             "answer_text_fr": "Pour chaque modèle ou application pour un client ou un tiers, nous réalisons systématiquement une **évaluation des risques** consécutifs à d'éventuels, incidents, défaillances, biais",
                             "answer_text_en": "For each model or application for a customer or a third party, we systematically carry out a **risk assessment** resulting from possible incidents, failures, biases, etc., in order to identify the risks involved",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.2.e": {
                             "order_id": "e",
                             "answer_text_fr": "Des outils de monitoring sont mis en place afin d'assurer une surveillance continue des systèmes de ML et peuvent déclencher des alertes directement auprès de l'équipe responsable",
                             "answer_text_en": "Monitoring tools are in place to ensure continuous monitoring of ML systems and can trigger alerts directly to the responsible team",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.2.f": {
                             "order_id": "f",
                             "answer_text_fr": "Pour chaque modèle ou application pour un client ou un tiers, nous définissons et testons une procédure de suspension du modèle et un mode de fonctionnement dégradé sans le modèle, pour parer au cas de figure où le modèle serait sujet à une défaillance ou un comportement anormal",
                             "answer_text_en": "For each model or application for a customer or a third party, we define and test a procedure for suspending the model and a degraded operating mode without the model, in order to prepare for the case where the model is subject to failure or unexpected behaviour",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.2.g": {
                             "order_id": "g",
                             "answer_text_fr": "Pour chaque modèle ou application pour un client ou un tiers, nous étudions sa généalogie de bout-en-bout et ses conditions et limites d'utilisation pour comprendre le modèle avant de l'utiliser",
                             "answer_text_en": "For each model or application for a client or third party, we study its entire genealogy and its conditions and limits of validity to understand the model before using it",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.2.h": {
                             "order_id": "h",
                             "answer_text_fr": "Nous fournissons à nos clients ou opérons pour leur compte des modèles ou applications pour des **usages en adéquation avec leurs conditions et limites d'utilisation**",
                             "answer_text_en": "We supply our customers or operate on their behalf with models or applications for **uses in accordance with their conditions and limits of validity**",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.2.i": {
                             "order_id": "i",
                             "answer_text_fr": "Nous n'avons pas encore mis en place de mesure de ce type",
                             "answer_text_en": "We have not yet put in place such measures",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         }
-                    }
+                    },
+                    "element_max_score": 5.5
                 },
                 "element 3": {
                     "order_id": "3",
@@ -1675,33 +1829,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation n'utilise pas de modèles prédictifs élaboré par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs",
                             "answer_text_en": "Our organisation does not use predictive models developed by machine learning on its own behalf or on behalf of its clients, and does not provide its clients with applications based on predictive models",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "5.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous implémentons des modèles prédictifs élaborés par apprentissage automatique dans des systèmes automatiques intégrés, sans mécanismes permettant de pallier à ou d'éviter des résultats non souhaitables dûs aux prédictions des modèles",
                             "answer_text_en": "We implement ML models in integrated automatic systems, without mechanisms to overcome or avoid undesirable results due to model predictions",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "5.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous intégrons, dans les systèmes automatiques s'appuyant sur des modèles prédictifs, les fonctionnalités permettant de gérer ces cas de résultats non souhaitables. Pour ces cas de figure, nous mettons en place des mécanismes permettant à un opérateur humain d'aller contre une décision automatique pour gérer de tels résultats non souhaitables ou incidents",
                             "answer_text_en": "We integrate, in automatic systems based on predictive models, the functionalities to manage these cases of undesirable results. For such cases, we set up mechanisms allowing a human operator to go against an automatic decision to manage such undesirable results or incidents",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.3.d": {
                             "order_id": "d",
                             "answer_text_fr": "En complément des mécanismes de gestion d'incident, dans les systèmes automatiques s'appuyant sur des modèles prédictifs, lorsque l'intervalle de confiance pour la décision automatique n'est pas satisfaisant un opérateur humain est sollicité",
                             "answer_text_en": "In addition to incident management mechanisms, in automatic systems based on predictive models, when the confidence interval for the automatic decision is not satisfactory a human operator is called upon",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.3.e": {
                             "order_id": "e",
                             "answer_text_fr": "Nous appliquons systématiquement le principe de *human agency*, les sorties des modèles prédictifs que nous mettons en oeuvre sont utilisées par des opérateurs humains, et ne servent pas de déterminants à des décisions automatiques",
                             "answer_text_en": "We systematically apply the principle of \"human agency\", the outputs of the predictive models that we implement are used by human operators, and do not serve as determinants for automatic decisions",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 4": {
                     "order_id": "4",
@@ -1758,33 +1918,39 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation n'est pour l'instant pas familière avec les méthodes et outils d'explicabilité et d'interprétabilité des modèles",
                             "answer_text_en": "Our organisation is not yet familiar with the methods and tools for explaining and interpreting predictive models",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "5.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous nous intéressons au sujet de l'explicabilité et l'interprétabilité des modèles et dialoguons avec nos parties prenantes sur ce sujet",
                             "answer_text_en": "We are interested in the explicability and interpretability of predictive models and are in dialogue with our stakeholders on this subject",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "5.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous faisons en sorte que les modèles que nous élaborons fournissent lorsque cela est pertinent a minima un niveau de confiance avec chaque prédiction réalisée",
                             "answer_text_en": "We ensure that the models we develop provide, when relevant, at least a level of confidence together with each prediction made",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "5.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous déterminons le meilleur compromis entre la performance et l'interprétabilité pour chaque modèle que nous élaborons, ce qui nous amène parfois à opter pour un modèle plus simple à expliquer aux personnes concernées (un modèle performant permettra de diminuer les risques d’erreur tandis qu’un modèle interprétable permettra de mieux justifier les résultats du modèle)",
                             "answer_text_en": "We determine the best compromises between performance and interpretability for each model we develop, which sometimes leads us to opt for a model that is simpler to explain to the stakeholders",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.4.e": {
                             "order_id": "e",
                             "answer_text_fr": "Nous maîtrisons et mettons en oeuvre des approches avancées pour l'explicabilité et l'interprétabilité des modèles",
                             "answer_text_en": "We master and implement advanced approaches for the explicability and interpretability of models",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 5": {
                     "order_id": "5",
@@ -1826,41 +1992,49 @@
                             "order_id": "a",
                             "answer_text_fr": "Notre organisation n'utilise pas de modèles prédictifs élaborés par apprentissage automatique pour son propre compte ou celui de ses clients, et ne fournit pas à ses clients d'application basée sur des modèles prédictifs",
                             "answer_text_en": "Our organisation does not use predictive models on its own behalf or on behalf of its clients, and does not provide its clients with applications based on predictive models",
-                            "is_concerned_switch": 1
+                            "is_concerned_switch": 1,
+                            "score_value": 0.0
                         },
                         "5.5.b": {
                             "order_id": "b",
                             "answer_text_fr": "Les utilisateurs ne sont pas informés qu'ils interagissent avec un modèle prédictif élaboré par apprentissage automatique",
                             "answer_text_en": "Users are not informed that they are interacting with a predictive model developed with machine learning methods",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "5.5.c": {
                             "order_id": "c",
                             "answer_text_fr": "Une notice d'information est mise à disposition dans les conditions générales d'utilisation du système ou un document équivalent, en libre accès",
                             "answer_text_en": "An information notice is made available in the terms and conditions of the system or an equivalent document, freely accessible",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.5.d": {
                             "order_id": "d",
                             "answer_text_fr": "Le système ou le service est explicite vis-à-vis de l'utilisateur quant au fait qu'un modèle prédictif est utilisé",
                             "answer_text_en": "The system or service is explicit to the user that a predictive model is being used",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "5.5.e": {
                             "order_id": "e",
                             "answer_text_fr": "Le système ou le service propose à l'utilisateur des informations supplémentaires sur les résultats qu'il aurait fourni dans des cas de figure légèrement différents (par exemple des \"explications contrefactuelles\" comme le plus petit changement dans les données d'entrée qui aurait permis d'arriver à une sortie donnée)",
                             "answer_text_en": "The system or service provides the user with additional information on the results it would have provided in slightly different scenarios (e.g. \"counterfactual explanations\" such as the smallest change in input data that would have resulted in a given different output)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "5.5.f": {
                             "order_id": "f",
                             "answer_text_fr": "Nous sommes pionniers dans l'utilisation de registres publics pour les modèles d'IA, qui nous permettent de fournir de la transparence à nos parties prenantes et également de capter des retours utilisateurs",
                             "answer_text_en": "We are pionneers in using public AI registers, enabling us to provide transparency to our stakeholders and to capture user feedbacks",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 3.0
                 }
-            }
+            },
+            "section_max_score": 18.0
         },
         "section 6": {
             "order_id": "6",
@@ -1901,27 +2075,32 @@
                             "order_id": "a",
                             "answer_text_fr": "À ce stade nous ne nous sommes pas penchés sur l'impact CO2 de notre activité data science ou de nos modèles prédictifs",
                             "answer_text_en": "At this stage we have not looked at the CO2 impact of our data science activity or our predictive models",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "6.1.b": {
                             "order_id": "b",
                             "answer_text_fr": "Nous avons élaboré des indicateurs définissant ce que nous souhaitons mesurer",
                             "answer_text_en": "We have developed indicators that define what we want to measure",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.67
                         },
                         "6.1.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous mesurons nos indicateurs régulièrement et nous incluons leurs mesures dans les généalogies de bout-en-bout des modèles",
                             "answer_text_en": "We measure our indicators regularly and include their measurements in the end-to-end genealogies of the models",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.33
                         },
                         "6.1.d": {
                             "order_id": "d",
                             "answer_text_fr": "Le fait de suivre nos indicateurs régulièrement est un processus formalisé et piloté, à partir duquel nous nous fixons des objectifs d'amélioration",
                             "answer_text_en": "Monitoring our indicators on a regular basis is a formalised and controlled process, from which we set ourselves improvement objectives",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 2": {
                     "order_id": "2",
@@ -1942,33 +2121,39 @@
                             "order_id": "a",
                             "answer_text_fr": "À ce stade nous ne nous penchons pas sur l'impact social de notre activité data science ou de nos modèles prédictifs",
                             "answer_text_en": "At this stage we are not looking at the social impact of our data science activity or our predictive models",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "6.2.b": {
                             "order_id": "b",
                             "answer_text_fr": "Dans certains cas nous nous interrogeons sur l'impact social",
                             "answer_text_en": "In some cases we study the social impact",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "6.2.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous menons ce travail de réflexion sur l'impact social à chaque projet",
                             "answer_text_en": "We study the social impact in each project",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "6.2.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous menons ce travail de réflexion sur l'impact social à chaque projet et l'impact social est documenté dans la généalogie de bout-en-bout de chaque modèle",
                             "answer_text_en": "We study the social impact in each project and it is documented in the end-to-end genealogy of each model",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.25
                         },
                         "6.2.e": {
                             "order_id": "e",
                             "answer_text_fr": "Nous menons ce travail de réflexion sur l'impact social à chaque projet, l'impact social est documenté dans la généalogie de bout-en-bout de chaque modèle, et nous entamons systématiquement un dialogue avec les parties prenantes concernées amont et aval",
                             "answer_text_en": "We study the social impact in each project, it is documented in the end-to-end genealogy of each model, and we systematically engage in a dialogue with the relevant stakeholders upstream and downstream the value chain.",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 2.0
                         }
-                    }
+                    },
+                    "element_max_score": 2.0
                 },
                 "element 3": {
                     "order_id": "3",
@@ -2025,29 +2210,69 @@
                             "order_id": "a",
                             "answer_text_fr": "À ce stade nous ne nous sommes pas encore penchés sur la dimension éthique",
                             "answer_text_en": "At this stage we have not yet addressed the ethical dimension of our data science projects",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "6.3.b": {
                             "order_id": "b",
                             "answer_text_fr": "Les collaborateurs concernés par les activités data science reçoivent une formation à l'éthique",
                             "answer_text_en": "Employees involved in data science activities receive training in ethics",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "6.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Notre organisation s'est dotée d'une politique en matière d'éthique",
                             "answer_text_en": "Our organisation has adopted an ethics policy",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "6.3.d": {
                             "order_id": "d",
                             "answer_text_fr": "Sur les projets le justifiant, nous mettons en place un comité d'éthique indépendant ou nous sollicitons l'évaluation d'un organisme validant l'éthique des projets",
                             "answer_text_en": "For projects justifying it, we set up an independent ethics committee or ask for the evaluation of an organisation validating the ethics of the projects",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
-                    }
+                    },
+                    "element_max_score": 3.0
                 }
-            }
+            },
+            "section_max_score": 7.0
+        }
+    },
+    "enriched_with_scoring": {
+        "scoring_version": "1",
+        "total_max_score": 68.0,
+        "recap_per_section": {
+            "section 1": 12.0,
+            "section 2": 6.5,
+            "section 3": 12.0,
+            "section 4": 12.5,
+            "section 5": 18.0,
+            "section 6": 7.0
+        }
+    },
+    "non_concerned_recap": {
+        "non_concerned_in_element": {
+            "3.2": 0.75,
+            "3.5": 1.0,
+            "3.7": 1.0,
+            "4.4": 1.25,
+            "4.5": 0.75,
+            "4.6": 1.0,
+            "5.1": 2.75,
+            "5.2": 2.75,
+            "5.3": 1.0,
+            "5.5": 1.5
+        },
+        "conditional_elements": {
+            "1.6": 0.5,
+            "1.7": 0.75,
+            "1.8": 1.25,
+            "1.9": 0.5,
+            "2.3": 1.75,
+            "2.4": 0.75
         }
     }
 }
