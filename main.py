@@ -9,12 +9,12 @@ import assessment
 #%% Preliminary cell - Configure here the information for the processing to perform
 # ---------------------------------------------------------------------------------
 
-ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-0.64.1-fr.md'
-ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.64.1-en.md'
-ASSESSMENT_VERSION = '0.64.1'
+ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-0.65-fr.md'
+ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.65-en.md'
+ASSESSMENT_VERSION = '0.65'
 ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'
 ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'
-OLD_VERSION_TO_CHECK = '0.64'
+OLD_VERSION_TO_CHECK = '0.65'
 OLD_SCORING_FILENAME = 'assessment-0.64_scoring-1.json'
 
 # --------------------------------------------------------------------------------------
