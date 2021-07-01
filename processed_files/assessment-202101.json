@@ -2,7 +2,7 @@
     "version": "202101",
     "name_fr": "Evaluation Data Science Responsable et de Confiance",
     "name_en": "Responsible and Trustworthy Data Science Assessment",
-    "timestamp": "01-Jul-2021 (13:53:50.612547)",
+    "timestamp": "01-Jul-2021 (14:50:57.331219)",
     "sections": {
         "section 1": {
             "order_id": "1",
@@ -210,13 +210,15 @@
                             "order_id": "c",
                             "answer_text_fr": "Pas encore, nous préparons actuellement l'audit ou la certification de la conformité de notre organisation aux exigences relatives aux données personnelles et confidentielles",
                             "answer_text_en": "We are currently preparing an upcoming audit or certification of our organisation's compliance with personal and confidential data requirements",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "1.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Pas au niveau de l'organisation, mais c'est en revanche le cas pour un projet au moins",
                             "answer_text_en": "Not at the organization level, but it is the case for at least one project",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
                     },
                     "element_max_score": 1.5
@@ -268,7 +270,8 @@
                             "order_id": "e",
                             "answer_text_fr": "Le principe de minimisation est connu des collaborateurs, mais son application n'est pas la norme. En revanche, nous apportons une attention particulière à mettre en oeuvre des mesures de limitation des risques pour les données à caractère personnel (par exemple : pseudonymiser certaines features par des identifiants avec une table de correspondance séparée, éclater les données en plusieurs bases ou tables réparties)",
                             "answer_text_en": "Employees are aware of the data minimisation principle, but it is not applied as a general standard. However, we give a particular attention to implementing personal data-related risk mitigation measures (i.e. pseudonymising some features by identifiers with a separate correspondence table, split datasets in multiple tables kept apart)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         }
                     },
                     "element_max_score": 2.0
@@ -846,31 +849,35 @@
                             "order_id": "a",
                             "answer_text_fr": "Complètement débutant",
                             "answer_text_en": "Complete beginner",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.0
                         },
                         "2.4.b": {
                             "order_id": "b",
                             "answer_text_fr": "Basique",
                             "answer_text_en": "Basic",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "2.4.c": {
                             "order_id": "c",
                             "answer_text_fr": "Confirmé",
                             "answer_text_en": "Confirmed",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         },
                         "2.4.d": {
                             "order_id": "d",
                             "answer_text_fr": "Expert",
                             "answer_text_en": "Expert",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.5
                         }
                     },
-                    "element_max_score": 0
+                    "element_max_score": 1.5
                 }
             },
-            "section_max_score": 5.0
+            "section_max_score": 6.5
         },
         "section 3": {
             "order_id": "3",
@@ -1466,22 +1473,25 @@
                             "order_id": "b",
                             "answer_text_fr": "Nous analysons les incidents ou comportements inattendus rencontrés, mais ne les publions pas",
                             "answer_text_en": "We analyse incidents or unexpected behaviour encountered, but don't publish or share it",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         },
                         "4.3.c": {
                             "order_id": "c",
                             "answer_text_fr": "Nous analysons les incidents ou comportements inattendus rencontrés et les publions lorsque cela est pertinent (e.g. article, blog)",
                             "answer_text_en": "We analyse incidents or unexpected behaviour encountered and publish them when relevant (e.g. article, blog)",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.5
                         },
                         "4.3.d": {
                             "order_id": "d",
                             "answer_text_fr": "Nous nous impliquons dans des clubs, cercles, ou associations professionnelles dans le domaine de la data science, et y faisons des retours d'expérience des incidents comportements inattendus que nous observons",
                             "answer_text_en": "We get involved in clubs, networks or professional associations in the field of data science, and give feedback on incidents of unexpected behaviour that we observe",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 0.25
                         }
                     },
-                    "element_max_score": 0.0
+                    "element_max_score": 1.0
                 },
                 "element 4": {
                     "order_id": "4",
@@ -1621,7 +1631,7 @@
                     "element_max_score": 2.0
                 }
             },
-            "section_max_score": 11.5
+            "section_max_score": 12.5
         },
         "section 5": {
             "order_id": "5",
@@ -2017,13 +2027,14 @@
                             "order_id": "f",
                             "answer_text_fr": "Nous sommes pionniers dans l'utilisation de registres publics pour les modèles d'IA, qui nous permettent de fournir de la transparence à nos parties prenantes et également de capter des retours utilisateurs",
                             "answer_text_en": "We are pionneers in using public AI registers, enabling us to provide transparency to our stakeholders and to capture user feedbacks",
-                            "is_concerned_switch": 0
+                            "is_concerned_switch": 0,
+                            "score_value": 1.0
                         }
                     },
-                    "element_max_score": 2.0
+                    "element_max_score": 3.0
                 }
             },
-            "section_max_score": 17.0
+            "section_max_score": 18.0
         },
         "section 6": {
             "order_id": "6",
@@ -2232,13 +2243,13 @@
     },
     "enriched_with_scoring": {
         "scoring_version": "1",
-        "total_max_score": 64.5,
+        "total_max_score": 68.0,
         "recap_per_section": {
             "section 1": 12.0,
-            "section 2": 5.0,
+            "section 2": 6.5,
             "section 3": 12.0,
-            "section 4": 11.5,
-            "section 5": 17.0,
+            "section 4": 12.5,
+            "section 5": 18.0,
             "section 6": 7.0
         }
     },
@@ -2253,7 +2264,7 @@
             "5.1": 2.75,
             "5.2": 2.75,
             "5.3": 1.0,
-            "5.5": 1.0
+            "5.5": 1.5
         },
         "conditional_elements": {
             "1.6": 0.5,
@@ -2261,7 +2272,7 @@
             "1.8": 1.25,
             "1.9": 0.5,
             "2.3": 1.75,
-            "2.4": 0.0
+            "2.4": 0.75
         }
     }
 }
