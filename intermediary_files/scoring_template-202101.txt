@@ -1,8 +1,8 @@
-Assessment version : [0.65]
+Assessment version : [202101]
 Scoring version : [1]
 
 Pre-filled score values are fetched from assessment-0.64_scoring-1.json
-(only for answer items set to 1 in assessment-0.65_upgrade_table.json vs. version 0.64)
+(only for answer items set to 1 in assessment-202101_upgrade_table.json vs. version 0.64)
 (answer items not set to 1 are pre-filled with '....' so you can identify them quickly)
 
 # section 1 - Protéger les données à caractère personnel ou confidentielles
