@@ -124,7 +124,8 @@ In data science projects, the data minimisation principle should guide the colle
 
 R1.5 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: use of personal or confidential data)_
 
 - [ ] 1.5.a We take care not to use any personal or confidential data. We are not concerned by this risk area
 - [ ] 1.5.b We need to use personal or confidential data in certain projects and the data minimisation principle is then systematically applied
@@ -675,7 +676,8 @@ In the case of data science projects where several players, including internal t
 
 R4.4 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: roles and responsibilities in data science projects are divided up multiple actors)_
 
 - [ ] 4.4.a Within our organisation, data science projects are carried out end-to-end by autonomous teams, including the elaboration of datasets and the exploitation of models for its own account. Consequently, for each project, an autonomous team is solely responsible | _(Concerned / Not concerned)_
 - [ ] 4.4.b We systematically identify the risks and responsibilities of each of the internal and external stakeholders with whom we work

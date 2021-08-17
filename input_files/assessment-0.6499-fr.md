@@ -124,7 +124,8 @@ Dans le cadre des projets de data science, le principe de minimisation doit guid
 
 R1.5 :  
 _(Type : réponse unique)_  
-_(Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet)_
+_(Sélectionner une seule réponse, correspondant le mieux au niveau de maturité de l'organisation sur ce sujet)_  
+_(Domaine de risque spécifique : utilisation de données personnelles ou confidentielles)_
 
 - [ ] 1.5.a Nous faisons en sorte de n'utiliser aucune données personnelles ou confidentielles. Nous ne sommes pas concernés par cet univers de risque
 - [ ] 1.5.b Nous avons besoin d'en utiliser dans certains projets et le principe de minimisation est alors systématiquement appliqué
@@ -671,7 +672,8 @@ Dans le cas de figure des projets de data science où plusieurs acteurs, y compr
 
 R4.4 :  
 _(Type : réponses multiples possibles)_  
-_(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_
+_(Sélectionner tous les éléments de réponse correspondant à des pratiques de votre organisation. Attention, certaines combinaisons ne seraient pas cohérentes)_  
+_(Domaine de risque spécifique : rôles et responsabilités morcelés dans les projets de data science)_
 
 - [ ] 4.4.a Au sein de notre organisation les projets de data science sont menés de bout-en-bout par des équipes autonomes, y compris l'élaboration de jeux de données et l'exploitation pour son propre compte des modèles. En conséquence, pour chaque projet une équipe autonome est seule responsable | _(Concerné / Non concerné)_
 - [ ] 4.4.b Nous procédons systématiquement à l'identification des risques et responsabilités de chacune des parties prenantes internes ou externes avec lesquelles nous collaborons
