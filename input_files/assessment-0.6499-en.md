@@ -314,7 +314,8 @@ Is your organisation involved in cases where predictive models are used in thema
 
 R2.2 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: discrimination against certain social groups)_
 
 - [ ] 2.2.a Concerned
 - [ ] 2.2.b Not concerned
@@ -402,7 +403,8 @@ In the case of data science projects based on distributed or federated learning 
 
 R3.2 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: federated leraning on sensitive data)_
 
 - [ ] 3.2.a We do not participate in *privacy-preserving* distributed learning projects | _(Concerned / Not concerned)_
 - [ ] 3.2.b We master and implement approaches to develop test datasets in such a way that there is no cross-contamination between training and test data from different partners
@@ -482,7 +484,8 @@ In cases where predictive models developed by your organisation are used in prod
 
 R3.5 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: use of predictive models in production systems)_
 
 - [ ] 3.5.a The models we develop are not used in production systems | _(Concerned / Not concerned)_
 - [ ] 3.5.b Performance is systematically re-evaluated when the model is updated
@@ -546,7 +549,8 @@ When your organization communicates on the results or performance of an AI syste
 
 R3.7 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: external communication on the performance of AI systems)_
 
 - [ ] 3.7.a We do not communicate or use the results or performance of our AI systems as an argument to our stakeholders, we are not concerned by this assessment element | _(Concerned / Not concerned)_
 - [ ] 3.7.b We communicate on our results and rely on them for our development without first having our work audited by an independent third party, without making available any evidence
@@ -698,7 +702,8 @@ Data science activities subcontracted to a third party organisation(s) are subje
 
 R4.5 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: subcontracting of data science activities)_
 
 - [ ] 4.5.a Not concerned, we do not subcontract these activities | _(Concerned / Not concerned)_
 - [ ] 4.5.b Yes, our responses to this evaluation take into account the practices of our subcontractors
@@ -718,7 +723,8 @@ In the case of data science projects where several partners work alongside your 
 
 R4.6 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: roles and responsibilities in data science projects are divided up multiple actors)_
 
 - [ ] 4.6.a Our organisation carries out its data science activities autonomously, including the development of datasets and the exploitation of models for its own account. It is therefore not concerned | _(Concerned / Not concerned)_
 - [ ] 4.6.b At this stage we have not structured this aspect of multi-partner data science projects
@@ -758,7 +764,8 @@ If your organisation uses predictive models on its own behalf:
 
 R5.1 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: use of predictive models, provision or operation of predictive model-based applications for customers or third parties)_
 
 - [ ] 5.1.a Our organisation does not use ML models on its own behalf | _(Concerned / Not concerned)_
 - [ ] 5.1.b **A predictive models register** identifies all the models used by the organisation and is kept up-to-date
@@ -784,7 +791,8 @@ If your organisation provides or operates predictive model-based applications to
 
 R5.2 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: use of predictive models, provision or operation of predictive model-based applications for customers or third parties)_
 
 - [ ] 5.2.a Our organisation does not provide its customers or third parties, nor does it operates on behalf of third parties, with applications based on ML models | _(Concerned / Not concerned)_
 - [ ] 5.2.b **A predictive models register** identifies all models or applications used by its customers and/or by the organisation on behalf of third parties, and is kept up-to-date
@@ -810,7 +818,8 @@ Automatic systems, especially when based on learned predictive models, are used 
 
 R5.3 :  
 _(Type: single answer)_  
-_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_
+_(Select one answer only, which best corresponds to the level of maturity of the organisation on this topic)_  
+_(Specific risk domain: use of predictive models, provision or operation of predictive model-based applications for customers or third parties)_
 
 - [ ] 5.3.a Our organisation does not use predictive models developed by machine learning on its own behalf or on behalf of its clients, and does not provide its clients with applications based on predictive models | _(Concerned / Not concerned)_
 - [ ] 5.3.b We implement ML models in integrated automatic systems, without mechanisms to overcome or avoid undesirable results due to model predictions
@@ -873,7 +882,8 @@ Your organisation uses for its own account, provides to its customers or operate
 
 R5.5 :  
 _(Type: multiple responses possible)_  
-_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_
+_(Select all response items that correspond to practices in your organisation. Please note that some combinations would not be coherent)_  
+_(Specific risk domain: use of predictive models, provision or operation of predictive model-based applications for customers or third parties)_
 
 - [ ] 5.5.a Our organisation does not use predictive models on its own behalf or on behalf of its clients, and does not provide its clients with applications based on predictive models | _(Concerned / Not concerned)_
 - [ ] 5.5.b Users are not informed that they are interacting with a predictive model developed with machine learning methods
