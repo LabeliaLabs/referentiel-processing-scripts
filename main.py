@@ -14,8 +14,8 @@ ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.6499-en.md'
 ASSESSMENT_VERSION = '0.6499'
 ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'
 ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'
-OLD_VERSION_TO_CHECK = '0.64'
-OLD_SCORING_FILENAME = 'assessment-0.64_scoring-1.json'
+OLD_VERSION_TO_CHECK = '0.63'
+OLD_SCORING_FILENAME = 'assessment-0.63_scoring-1.json'
 
 # --------------------------------------------------------------------------------------
 #%% First cell - Instantiate assessment, process it to .json and create scoring template
