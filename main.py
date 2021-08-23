@@ -9,13 +9,17 @@ import assessment
 #%% Preliminary cell - Configure here the information for the processing to perform
 # ---------------------------------------------------------------------------------
 
-ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-0.6499-fr.md'
-ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-0.6499-en.md'
-ASSESSMENT_VERSION = '0.6499'
-ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'
-ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'
-OLD_VERSION_TO_CHECK = '0.63'
-OLD_SCORING_FILENAME = 'assessment-0.63_scoring-1.json'
+# Filenames, assessment names, version and previous version numbers
+ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-202101-fr.md'  # Filename in FR
+ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-202101-en.md'  # Filename in EN
+ASSESSMENT_VERSION = '202101'  # Version number
+ASSESSMENT_PREVIOUS_VERSION = '0.6499'  # Version number of the previous assessment version
+ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'  # Name in FR
+ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'  # Name in EN
+
+# Assessment version and associated scoring to use to pre-fill the scoring template
+ASSESSMENT_VERSION_TO_PREFILL_SCORING_TEMPLATE = '0.6499'  # Used to fetch and copy elements and answer items
+SCORING_FILENAME_TO_PREFILL_SCORING_TEMPLATE = 'assessment-0.6499_scoring-1.json'  # Used to fetch and copy score values
 
 # --------------------------------------------------------------------------------------
 #%% First cell - Instantiate assessment, process it to .json and create scoring template
@@ -25,10 +29,11 @@ OLD_SCORING_FILENAME = 'assessment-0.63_scoring-1.json'
 new_assessment = assessment.Assessment(ASSESSMENT_MD_VERSION_FILENAME_FR,
                                        ASSESSMENT_MD_VERSION_FILENAME_EN,
                                        ASSESSMENT_VERSION,
+                                       ASSESSMENT_PREVIOUS_VERSION,
                                        ASSESSMENT_NAME_FR,
                                        ASSESSMENT_NAME_EN,
-                                       OLD_VERSION_TO_CHECK,
-                                       OLD_SCORING_FILENAME,
+                                       ASSESSMENT_VERSION_TO_PREFILL_SCORING_TEMPLATE,
+                                       SCORING_FILENAME_TO_PREFILL_SCORING_TEMPLATE,
                                        )
 
 # Create the .json file for the new assessment

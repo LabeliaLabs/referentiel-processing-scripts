@@ -27,6 +27,7 @@ class Assessment:
             filename_fr=None,
             filename_en=None,
             version=None,
+            previous_assessment_version=None,
             name_fr=None,
             name_en=None,
             prev_scores_assessment_version=None,
@@ -48,6 +49,7 @@ class Assessment:
             print(f"File path {self.raw_assessment_en_filepath} does not exist. Exiting...")
             sys.exit()
         self.version = version
+        self.previous_assessment_version = previous_assessment_version
         self.name_fr = name_fr
         self.name_en = name_en
 
@@ -82,6 +84,7 @@ class Assessment:
     def dictionarize_raw_assessment(self):
 
         self.dict["version"] = self.version
+        self.dict["previous_assessment_version"] = self.previous_assessment_version
         self.dict["name_fr"] = self.name_fr
         self.dict["name_en"] = self.name_en
         now = datetime.now()
