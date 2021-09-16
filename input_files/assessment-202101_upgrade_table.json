@@ -10,40 +10,244 @@
 				"6": 1
 			},
 			"elements" : {
-				"1.1": 1,
-				"1.2": 1,
-				"1.3": 1,
-				"1.4": "no_fetch",
-				"1.5": "no_fetch",
-				"1.6": 1,
-				"1.7": 1,
-				"1.8": 1,
-				"1.9": 1,
-				"2.1": 1,
-				"2.2": 1,
-				"2.3": 1,
-				"2.4": "no_fetch",
-				"3.1": 1,
-				"3.2": 1,
-				"3.3": 1,
-				"3.4": 1,
-				"3.5": 1,
-				"3.6": 1,
-				"3.7": 1,
-				"4.1": 1,
-				"4.2": 1,
-				"4.3": "no_fetch",
-				"4.4": 1,
-				"4.5": 1,
-				"4.6": 1,
-				"5.1": 1,
-				"5.2": 1,
-				"5.3": 1,
-				"5.4": 1,
-				"5.5": "no_fetch",
-				"6.1": 1,
-				"6.2": 1,
-				"6.3": 1
+				"1.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.4": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.5": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.7": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.8": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.9": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.4": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.5": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.7": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.3": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.5": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.5": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"6.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"6.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"6.3": {
+					"upgrade_status": 1
+					"pastille_fr": "",
+					"pastille_en":  "",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
 			},
 			"answer_items" : {
 				"1.1.a": 1,
