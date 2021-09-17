@@ -10,40 +10,244 @@
 				"6": 1
 			},
 			"elements" : {
-				"1.1": 1,
-				"1.2": 1,
-				"1.3": 1,
-				"1.4": "no_fetch",
-				"1.5": "no_fetch",
-				"1.6": 1,
-				"1.7": 1,
-				"1.8": 1,
-				"1.9": 1,
-				"2.1": 1,
-				"2.2": 1,
-				"2.3": 1,
-				"2.4": "no_fetch",
-				"3.1": 1,
-				"3.2": 1,
-				"3.3": 1,
-				"3.4": 1,
-				"3.5": 1,
-				"3.6": 1,
-				"3.7": 1,
-				"4.1": 1,
-				"4.2": 1,
-				"4.3": "no_fetch",
-				"4.4": 1,
-				"4.5": 1,
-				"4.6": 1,
-				"5.1": 1,
-				"5.2": 1,
-				"5.3": 1,
-				"5.4": 1,
-				"5.5": "no_fetch",
-				"6.1": 1,
-				"6.2": 1,
-				"6.3": 1
+				"1.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.4": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "Mis à jour",
+					"pastille_en":  "Updated",
+					"edito_fr":  "Dans la v202101 deux nouveaux items de réponse ont été ajouté pour affiner la gradation de maturité. Il est désormais possible d'indiquer qu'un projet au moins est concerné, et/ou que la démarche à l'échelle de l'organisation est en cours.",
+					"edito_en":  "In v202101 two new answer items were added to provide nuances in a the maturity level. It is now possible to indicate that 1 project a least is covered, and/or that the certification process for the organisation is in progress."
+				},
+				"1.5": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "Mis à jour",
+					"pastille_en":  "Updated",
+					"edito_fr":  "Dans la v202101 un nouvel item de réponse a été ajouté sur le sujet des mesures de limitation des risques dans le cas de figure où le principe de minimisation n'est pas strictement appliqué.",
+					"edito_en":  "Un v202101 a new answer item has been added on risk mitigation measures when the minimisation principle is not strictly enforced."
+				},
+				"1.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.7": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.8": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"1.9": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"2.4": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "Nouveau",
+					"pastille_en":  "New",
+					"edito_fr":  "Cet élément a été ajouté dans la v202101 pour couvrir le sujet des biais liés aux architectures de modèle et aux algorithmes d'apprentissage.",
+					"edito_en":  "This element was added in v2021 to cover the topic of bias consequential to model architectures and learning algorithms."
+				},
+				"3.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.5": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"3.7": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.3": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "Mis à jour",
+					"pastille_en":  "Updated",
+					"edito_fr":  "La v202101 apporte un nouvel item de réponse affinant les cas de figure de publication des analyses d'incident.",
+					"edito_en":  "v202101 comes with a new answer item bringing finer-grain option on the topic of incident analysis."
+				},
+				"4.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.5": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"4.6": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.4": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"5.5": {
+					"upgrade_status": "no_fetch",
+					"pastille_fr": "Mis à jour",
+					"pastille_en":  "Updated",
+					"edito_fr":  "La version 202101 apporte un nouvel item de réponse au sujet de l'usage d'un outil de Public AI Register.",
+					"edito_en":  "v202101 brings a new answer item related to using a Public AI Register tool."
+				},
+				"6.1": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"6.2": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				},
+				"6.3": {
+					"upgrade_status": 1,
+					"pastille_fr": "Inchangé",
+					"pastille_en":  "Unchanged",
+					"edito_fr":  "",
+					"edito_en":  ""
+				}
 			},
 			"answer_items" : {
 				"1.1.a": 1,
