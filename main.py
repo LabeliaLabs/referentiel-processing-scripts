@@ -10,16 +10,16 @@ import assessment
 # ---------------------------------------------------------------------------------
 
 # Filenames, assessment names, version and previous version numbers
-ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-202101-fr.md'  # Filename in FR
-ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-202101-en.md'  # Filename in EN
-ASSESSMENT_VERSION = '202101'  # Version number
-ASSESSMENT_PREVIOUS_VERSION = '0.6499'  # Version number of the previous assessment version
-ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance'  # Name in FR
-ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment'  # Name in EN
+ASSESSMENT_MD_VERSION_FILENAME_FR = 'assessment-202102-fr.md'  # Filename in FR
+ASSESSMENT_MD_VERSION_FILENAME_EN = 'assessment-202102-en.md'  # Filename in EN
+ASSESSMENT_VERSION = '202102'  # Version number
+ASSESSMENT_PREVIOUS_VERSION = '202101'  # Version number of the previous assessment version
+ASSESSMENT_NAME_FR = 'Evaluation Data Science Responsable et de Confiance - version 2021 S2'  # Name in FR
+ASSESSMENT_NAME_EN = 'Responsible and Trustworthy Data Science Assessment - release 2021 H2'  # Name in EN
 
 # Assessment version and associated scoring to use to pre-fill the scoring template
-ASSESSMENT_VERSION_TO_PREFILL_SCORING_TEMPLATE = '0.6499'  # Used to fetch and copy elements and answer items
-SCORING_FILENAME_TO_PREFILL_SCORING_TEMPLATE = 'assessment-0.6499_scoring-1.json'  # Used to fetch and copy score values
+ASSESSMENT_VERSION_TO_PREFILL_SCORING_TEMPLATE = '202101'  # Used to fetch and copy elements and answer items
+SCORING_FILENAME_TO_PREFILL_SCORING_TEMPLATE = 'assessment-202101_scoring-1.json'  # Used to fetch and copy score values
 
 # --------------------------------------------------------------------------------------
 #%% First cell - Instantiate assessment, process it to .json and create scoring template
