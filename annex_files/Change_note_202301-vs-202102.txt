@@ -1,0 +1,15 @@
+Change note assessment 202301 vs. 202102
+
+Section 2 
+x Finetune wording of elements 2.3 and 2.4 to widen discrimination to population bias in general
+
+Section 3
+x Remove item 3.1.d on multiple testsets as it didn't prove operationnally relevant
+x Add a answer item 3.1.d on documenting the train-test split technical choices (#175)
+
+Section 5
+x Issue #196 on logging of inferences/predictions: as a new element 5.6
+
+Section 6
+x Broaden language of element 6.1 to energy consumption measurement (issue #197)
+x Issue #197 on enhancing element 6.1 with aggegated carbon footprint of AI activities, and/or a SCAP
