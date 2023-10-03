@@ -16,7 +16,7 @@ This library provides several scripts enabling to:
 
 ### Standard use - Complete processing
 
-1. Fetch the remote version of the repository with `git fetch origin` and `git pull origin master` if needed, and checkout to a new branch (for example `git checkout -b process-new-assessment-version`)
+1. Fetch the remote version of the repository with `git fetch <remote_name>` and `git pull <remote_name> master` if needed, and checkout to a new branch (for example `git checkout -b process-new-assessment-version`)
 
 1. Prepare the new assessments (both French version and English version) you would like to process and place in folder `input_files`:
 
