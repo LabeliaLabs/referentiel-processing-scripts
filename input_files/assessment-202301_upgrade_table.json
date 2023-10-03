@@ -91,15 +91,15 @@
 					"upgrade_status": 1,
 					"pastille_fr": "Mis à jour",
 					"pastille_en": "Updated",
-					"edito_fr":  "La formulation de l'élément a été révisée pour élargir aux discriminations et aux biais populationnels en général.",
-					"edito_en":  "Finetune wording of elements 2.3 and 2.4 to widen discrimination to population bias in general."
+					"edito_fr":  "La formulation de l'élément a été révisée pour élargir aux discriminations et aux biais populationnels en général. (Votre sélection d'items de réponse a été conservée lors de la migration de version d'évaluation)",
+					"edito_en":  "Finetune wording of elements 2.3 and 2.4 to widen discrimination to population bias in general. (The answer items you selected have been preserved during the version update)"
 				},
 				"2.4": {
 					"upgrade_status": 1,
 					"pastille_fr": "Mis à jour",
 					"pastille_en": "Updated",
-					"edito_fr":  "La formulation de l'élément a été révisée pour élargir aux discriminations et aux biais populationnels en général.",
-					"edito_en":  "Finetune wording of elements 2.3 and 2.4 to widen discrimination to population bias in general."
+					"edito_fr":  "La formulation de l'élément a été révisée pour élargir aux discriminations et aux biais populationnels en général. (Votre sélection d'items de réponse a été conservée lors de la migration de version d'évaluation)",
+					"edito_en":  "Finetune wording of elements 2.3 and 2.4 to widen discrimination to population bias in general. (The answer items you selected have been preserved during the version update)"
 				},
 				"2.5": {
 					"upgrade_status": 1,
@@ -245,8 +245,8 @@
 					"upgrade_status": "no_fetch",
 					"pastille_fr": "Mis à jour",
 					"pastille_en": "Updated",
-					"edito_fr":  "L'élément a été enrichi de 2 items de réponse en lien avec l'empreinte carbone agrégée de l'activité d'IA, sa formulation a été révisée pour élargir à la mesure de la consommation d'énergie (au-delà des émissions de GES).",
-					"edito_en":  "The element was completed with 2 answer items related to the aggregated carbon footprint of AI activities, its wording was finetuned to broaden its scope to energy consumption measurement."
+					"edito_fr":  "L'élément a été enrichi de 2 items de réponse en lien avec l'empreinte carbone agrégée de l'activité d'IA, sa formulation a été révisée pour élargir à la mesure de la consommation d'énergie (au-delà des émissions de GES). (Votre sélection d'items de réponse a été conservée pour les items a, b, c, d, e) lors de la migration de version d'évaluation",
+					"edito_en":  "The element was completed with 2 answer items related to the aggregated carbon footprint of AI activities, its wording was finetuned to broaden its scope to energy consumption measurement. (The answer items you selected among a, b, c, d, e have been preserved during the version update)"
 				},
 				"6.2": {
 					"upgrade_status": 1,
