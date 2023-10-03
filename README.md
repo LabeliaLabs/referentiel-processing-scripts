@@ -87,3 +87,25 @@ If you only need to update the scoring template for an assessment already proces
       ```
 
 1. You should be good to go. Don't forget to commit your new scoring and updated structured assessment, and push them to the remote.
+
+### Elements on upgrade tables
+
+Keeping a complete history of differences between versions within a single upgrade table is not needed. It proves useful when it is desired to explicitly document the differences between a given new version and multiple previous ones.
+
+Below are listed the different values possible for certain syntax elements, and some writing rules to keep an homogeneous style:
+
+#### Values for upgrade_status of elements and for answer items
+
+- 1: when to be kept
+- "no_fetch": when not to be kept
+- "2.3": indicating a different corresponding element or item to fetch
+
+#### Values for "pastilles"
+
+- Inchangé / Unchanged
+- Mis à jour / Updated
+- Nouveau / New
+
+#### Values for "editos"
+
+- Write change editos as sentences ending with a period "."
