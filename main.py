@@ -10,14 +10,14 @@ import assessment
 # ---------------------------------------------------------------------------------
 
 # Filenames, assessment names, version and previous version numbers
-ASSESSMENT_MD_VERSION_FILENAME_FR = "assessment-202201-fr.md"  # Filename in FR
-ASSESSMENT_MD_VERSION_FILENAME_EN = "assessment-202201-en.md"  # Filename in EN
-ASSESSMENT_VERSION = "202201"  # Version number
+ASSESSMENT_MD_VERSION_FILENAME_FR = "assessment-202301-fr.md"  # Filename in FR
+ASSESSMENT_MD_VERSION_FILENAME_EN = "assessment-202301-en.md"  # Filename in EN
+ASSESSMENT_VERSION = "202301"  # Version number
 ASSESSMENT_PREVIOUS_VERSION = (
     "202102"  # Version number of the previous assessment version
 )
-ASSESSMENT_NAME_FR = "Evaluation Data Science Responsable et de Confiance - version 2022 S1"  # Name in FR
-ASSESSMENT_NAME_EN = "Responsible and Trustworthy Data Science Assessment - release 2022 H1"  # Name in EN
+ASSESSMENT_NAME_FR = "Evaluation Labelia - IA responsable et de confiance - version 2023 S1"  # Name in FR
+ASSESSMENT_NAME_EN = "Labelia Assessment - Responsible and Trustworthy AI - release 2023 H1"  # Name in EN
 
 # Assessment version and associated scoring to use to pre-fill the scoring template
 ASSESSMENT_VERSION_TO_PREFILL_SCORING_TEMPLATE = (
@@ -56,3 +56,5 @@ new_assessment.create_scoring_template()
 new_assessment.process_scoring_template_to_json()
 new_assessment.enrich_assessment_with_scoring_recap()
 new_assessment.enrich_assessment_with_non_concerned_recap()
+
+# %%
