@@ -80,6 +80,14 @@ It is a question of questioning the management of personal or confidential data 
 
 </details>
 
+<details>
+<summary>Resources1.2 :</summary>
+
+- (Web Article) CNIL article (in French) [IA : comment être en conformité avec le RGPD ?](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd), April 2022
+- (Technical guide) CNIL assessment (in French) [Se poser les bonnes questions avant d’utiliser un système d'intelligence artificielle](https://www.cnil.fr/fr/intelligence-artificielle/guide/se-poser-les-bonnes-questions-avant-dutiliser-un-systeme-dintelligence-artificielle), April 2022
+
+</details>
+
 ---
 
 Q1.3 : **Applicable legislation and contractual requirements - Regulatory surveillance**  
