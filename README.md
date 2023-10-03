@@ -61,7 +61,7 @@ This library provides several scripts enabling to:
    ```bash
    git add .
    git commit -m "Process version XX of the assessment"
-   git push origin process-new-assessment
+   git push <remote_name> process-new-assessment
    ```
 
 ### Processing only a new scoring template
